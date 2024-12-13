@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'optics',
+    'blog',
     'users'
 ]
 
@@ -58,7 +59,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "lws",
+        "NAME": "optics",
         "USER": os.environ.get("DB_SUPERUSER"),
         "PASSWORD": os.environ.get("DB_PASSWORD"),
     }

@@ -1,5 +1,23 @@
 from django.db import models
 
+from config.settings import NULLABLE
+from users.models import User
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    ordering = ['name']
+
+    class Meta:
+        verbose_name = 'Категория'
+        verbose_name_plural = 'Категории'
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name}"
+
+
 class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     description = models.TextField(**NULLABLE, verbose_name='Описание')
@@ -18,23 +36,42 @@ class Product(models.Model):
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
         ordering = ['name']
-        permissions = [
-            ('can_edit_description', 'может редактировать описание'),
-            ('can_edit_category', 'может редактировать категорию'),
-            ('can_published', 'может публиковать продукт'),
-        ]
 
     def __str__(self):
         return f"{self.name}"
 
-class Category(models.Model):
-    pass
 
 class Service(models.Model):
-    pass
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    description = models.TextField(blank=True, verbose_name='Описание')
 
-class Result_of_Service:
-    pass
+    class Meta:
+        verbose_name = 'Услуга'
+        verbose_name_plural = 'Услуги'
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name}"
+
+
+class ResultOfService(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Наименование')
+    description = models.TextField(blank=True, verbose_name='Описание')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Создан')
+    update_at = models.DateTimeField(auto_now=True, verbose_name='Изменен')
+    service = models.ForeignKey(to=Service, on_delete=models.PROTECT,
+                                 related_name='results', verbose_name='Услуга')
+    owner = models.ForeignKey(to=User, on_delete=models.SET_NULL, **NULLABLE,
+                                 related_name='results', verbose_name='Владелец')
+
+    class Meta:
+        verbose_name = 'Результат услуги'
+        verbose_name_plural = 'Результаты услуг'
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name}"
+
 
 class Feedback(models.Model):
     name = models.CharField(max_length=30, verbose_name='Имя')
