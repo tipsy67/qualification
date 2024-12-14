@@ -99,3 +99,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 AUTH_USER_MODEL = 'users.User'
 
 NULLABLE = {'blank': True, 'null': True}
+NUMBER_OF_REVIEWS_DISPLAYED = 5
