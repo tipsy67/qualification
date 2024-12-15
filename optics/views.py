@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
+from django.views.generic import CreateView
 
-from optics.models import Category, Product
+from optics.models import Category, Product, Feedback
 from optics.src.utils import get_random_reviews, get_random_quote
 
 
@@ -23,3 +25,22 @@ def mainpage(request):
     }
 
     return render(request, 'optics/index.html', context)
+
+
+class FeedbackCreateView(CreateView):
+    model = Feedback
+    fields = ['name', 'phone', 'message']
+    template_name = 'optics/contact.html'
+    success_url = reverse_lazy('optics:thank-you')
+
+def thank_you(request):
+    context = {
+    }
+
+    return render(request, 'optics/thank-you.html', context=context)
+
+def about(request):
+    context = {
+        'testimonials': get_random_reviews(),
+    }
+    return render(request, 'optics/about.html', context=context)
