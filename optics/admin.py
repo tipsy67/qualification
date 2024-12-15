@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from optics.models import Category, Product, Service, Feedback, ResultOfService, Brand
+from optics.models import Category, Product, Service, Feedback, ResultOfService, Brand, Quote
 
 
 @admin.register(Category)
@@ -39,4 +39,8 @@ class ResultOfServiceAdmin(admin.ModelAdmin):
 
 @admin.register(Feedback)
 class FeedbackAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Quote)
+class QuoteAdmin(admin.ModelAdmin):
     pass

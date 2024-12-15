@@ -19,6 +19,8 @@ class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     description = models.TextField(blank=True, verbose_name='Описание')
     is_published = models.BooleanField(default=False, verbose_name='Активно')
+    active_on_main_page = models.BooleanField(default=False, verbose_name='Активно на гл.стр.')
+
     ordering = ['name']
 
     class Meta:
@@ -103,3 +105,15 @@ class Feedback(models.Model):
         ordering = ['-created_at']
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзывы'
+
+class Quote(models.Model):
+    name = models.CharField(max_length=150, verbose_name='Имя')
+    quote = models.TextField(blank=True, verbose_name='Сообщение')
+    is_published = models.BooleanField(default=False, verbose_name='Публиковать')
+
+    def __str__(self):
+        return f"{self.name}"
+
+    class Meta:
+        verbose_name = 'Цитата'
+        verbose_name_plural = 'Цитаты'
