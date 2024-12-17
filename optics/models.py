@@ -61,6 +61,9 @@ class Product(models.Model):
 class Service(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     description = models.TextField(blank=True, verbose_name='Описание')
+    price = models.DecimalField(max_digits=15, decimal_places=2, verbose_name='Цена')
+    image = models.ImageField(upload_to='products/', **NULLABLE, verbose_name='Изображение')
+    is_published = models.BooleanField(default=False, verbose_name='Публиковать')
 
     class Meta:
         verbose_name = 'Услуга'
@@ -117,3 +120,19 @@ class Quote(models.Model):
     class Meta:
         verbose_name = 'Цитата'
         verbose_name_plural = 'Цитаты'
+
+class Contact(models.Model):
+    country = models.CharField(max_length=50, verbose_name='Страна')
+    inn = models.CharField(max_length=20, verbose_name='ИНН')
+    address = models.CharField(max_length=255, verbose_name='Адрес')
+    phone = models.CharField(max_length=30, verbose_name='Телефон')
+    email = models.EmailField(verbose_name='Эл.почта')
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.email}"
+
+    class Meta:
+        ordering = ['-updated_at']
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'

@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 
-from optics.models import Category, Product, Feedback
+from config.settings import NUMBER_OF_PRODUCTS_DISPLAYED
+from optics.models import Category, Product, Feedback, Service
 from optics.src.utils import get_random_reviews, get_random_quote
 
 
@@ -13,13 +14,17 @@ def mainpage(request):
     object_list = []
     for cat in category_list:
         product_set = Product.objects.filter(is_published=True, category=cat).order_by('?')
-        product_list = product_set[:4]
+        product_list = product_set[:NUMBER_OF_PRODUCTS_DISPLAYED]
         obj = {'category': cat, 'product_list': product_list}
         object_list.append(obj)
+
+    service_set = Service.objects.filter(is_published=True).order_by('?')
+    service_list = service_set[:NUMBER_OF_PRODUCTS_DISPLAYED]
 
     context = {
         'object_list' : object_list,
         'category_list' : category_list,
+        'service_list' : service_list,
         'testimonials' : get_random_reviews(),
         'quote' : get_random_quote()
     }
