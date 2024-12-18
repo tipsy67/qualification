@@ -3,16 +3,16 @@
 {% block content %}
 {% load static %}
 
-    <section class="site-banner jarallax padding-large" style="background: url(images/hero-image.jpg) no-repeat; background-position: top;">
+    <section class="site-banner jarallax padding-large" style="background: url('{% static 'optics/images/hero-image.png' %}') no-repeat; background-position: top;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="page-title">Contact us</h1>
+            <h1 class="page-title">Контакты</h1>
             <div class="breadcrumbs">
               <span class="item">
-                <a href="index.html">Home /</a>
+                <a href="{% url 'optics:home'%}">Главная /</a>
               </span>
-              <span class="item">Contact us</span>
+              <span class="item">Контакты</span>
             </div>
           </div>
         </div>

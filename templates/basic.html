@@ -127,11 +127,11 @@
                       <li><a href="{% url 'optics:about' %}" class="item-anchor" data-effect="About">О компании</a></li>
 
                       <li class="menu-item">
-                        <a href="shop.html" class="item-anchor d-flex align-item-center" data-effect="Shop">Товары</a>
+                        <a href="{% url 'optics:shop-list'%}" class="item-anchor d-flex align-item-center" data-effect="Shop">Товары</a>
                       </li>
 
                       <li class="menu-item">
-                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Услуги</a>
+                        <a href="{% url 'optics:service-list'%}" class="item-anchor d-flex align-item-center" data-effect="Pages">Услуги</a>
                       </li>
 
                       <li class="menu-item">

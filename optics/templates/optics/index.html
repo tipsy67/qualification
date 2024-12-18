@@ -63,7 +63,7 @@
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши услуги</h2>
             <div class="btn-wrap">
-                <a href="service.html" class="d-flex align-items-center">Посмотреть все услуги <i class="icon icon icon-arrow-io"></i></a>
+                <a href="{% url 'optics:service-list'%}" class="d-flex align-items-center">Посмотреть все услуги <i class="icon icon icon-arrow-io"></i></a>
             </div>
         </div>
                 <div class="row d-flex flex-wrap">
@@ -99,15 +99,16 @@
                 </div>
             </div>
 </section>
-
+<hr>
 <section id="selling-products" class="product-store bg-light-grey padding-large">
     <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши товары</h2>
             <div class="btn-wrap">
-                <a href="shop.html" class="d-flex align-items-center">Посмотреть все товары <i class="icon icon icon-arrow-io"></i></a>
+                <a href="{% url 'optics:shop-list'%}" class="d-flex align-items-center">Посмотреть все товары <i class="icon icon icon-arrow-io"></i></a>
             </div>
-        </div>        <ul class="tabs list-unstyled">
+        </div>
+        <ul class="tabs list-unstyled">
             {% for category in category_list %}
             <li data-tab-target="#{{ category.name }}" class="tab">{{ category.name }}</li>
             {% endfor %}
