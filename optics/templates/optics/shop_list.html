@@ -4,22 +4,7 @@
 {% load static %}
 {% load optics_tags %}
 
-<section class="site-banner jarallax min-height300 padding-large"
-         style="background: url('{% static 'optics/images/hero-image.png' %}') no-repeat; background-position: top;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-title">Наши товары</h1>
-                <div class="breadcrumbs">
-              <span class="item">
-                <a href="{% url 'optics:home'%}">Главная /</a>
-              </span>
-                    <span class="item">Магазин</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{% include 'streamer.html' %}
 
 <div class="shopify-grid padding-large">
     <div class="container">

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
 
-from config.settings import NUMBER_OF_PRODUCTS_DISPLAYED
+from config.settings import NUMBER_OF_PRODUCTS_DISPLAYED, MAIN_STREAMER_PATH
 from optics.models import Category, Product, Feedback, Service
 from optics.src.utils import get_random_reviews, get_random_quote
 
@@ -38,6 +38,14 @@ class FeedbackCreateView(CreateView):
     template_name = 'optics/contact.html'
     success_url = reverse_lazy('optics:thank-you')
 
+    streamer_content = {'title' : 'Контакты'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'Контакты', 'url' : '#'})
+    streamer_content['path'] = streamer_path
+    extra_context = {
+        'streamer_content' : streamer_content,
+    }
+
 def product_list_view(request):
 
     category_list = Category.objects.filter(is_published=True)
@@ -48,11 +56,17 @@ def product_list_view(request):
         obj = {'category': cat, 'product_list': product_list}
         object_list.append(obj)
 
+    streamer_content = {'title' : 'Наши товары'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'Магазин', 'url' : '#'})
+    streamer_content['path'] = streamer_path
+
     context = {
         'object_list' : object_list,
         'category_list' : category_list,
         'testimonials' : get_random_reviews(),
-        'quote' : get_random_quote()
+        'quote' : get_random_quote(),
+        'streamer_content' : streamer_content,
     }
 
     return render(request, 'optics/shop_list.html', context)
@@ -62,7 +76,14 @@ class ServiceListView(ListView):
     model = Product
     template_name = 'optics/shop_list.html'
     # paginate_by = 3
+
+    streamer_content = {'title' : 'Контакты'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'Контакты', 'url' : '#'})
+    streamer_content['path'] = streamer_path
+
     extra_context = {
+        'streamer_content' : streamer_content,
     }
     ordering = ['name']
 
@@ -76,7 +97,14 @@ def thank_you(request):
     return render(request, 'optics/thank-you.html', context=context)
 
 def about(request):
+    streamer_content = {'title' : 'ОПТИК СИТИ'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'о нас', 'url' : '#'})
+    streamer_content['path'] = streamer_path
+
     context = {
         'testimonials': get_random_reviews(),
+        'streamer_content' : streamer_content
     }
+
     return render(request, 'optics/about.html', context=context)

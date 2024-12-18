@@ -1,0 +1,22 @@
+{% load static %}
+<section class="site-banner jarallax min-height300 padding-large"
+         style="background: url('{% static 'optics/images/hero-image.png' %}') no-repeat;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title">{{streamer_content.title}}</h1>
+                <div class="breadcrumbs">
+                    {% for obj in streamer_content.path %}
+                        {% if forloop.last %}
+                            <span class="item">{{obj.name}}</span>
+                        {% else %}
+                            <span class="item">
+                                <a href="{% url obj.url %}">{{obj.name}} /</a>
+                            </span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

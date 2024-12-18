@@ -3,21 +3,7 @@
 {% block content %}
 {% load static %}
 
-    <section class="site-banner jarallax min-height300 padding-large" style="background: url({% static 'optics/images/hero-image.png' %}) no-repeat;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="page-title">ОПТИК СИТИ</h1>
-            <div class="breadcrumbs">
-              <span class="item">
-                <a href="{% url 'optics:home'%}">главная /</a>
-              </span>
-              <span class="item">о нас</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  {% include 'streamer.html' %}
 
   {% include 'shipping-info.html' %}
 
