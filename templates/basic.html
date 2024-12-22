@@ -109,8 +109,8 @@
             <div class="row d-flex align-items-center">
               <div class="col-lg-2 col-md-2">
                 <div class="main-logo">
-                  <a href="index.html">
-                    <img src="images/main-logo.png" alt="logo">
+                  <a href="{% url 'optics:home' %}">
+                    <img src="{% static 'optics/images/main-logo.png' %}" alt="logo">
                   </a>
                 </div>
               </div>
@@ -135,7 +135,7 @@
                       </li>
 
                       <li class="menu-item">
-                        <a href="blog.html" class="item-anchor d-flex align-item-center" data-effect="Blog">Блог</a>
+                        <a href="{% url 'blog:blog_list' %}" class="item-anchor d-flex align-item-center" data-effect="Blog">Блог</a>
                       </li>
 
                       <li><a href="{% url 'optics:contact' %}" class="item-anchor" data-effect="Contact">Контакты</a></li>

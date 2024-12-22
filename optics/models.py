@@ -62,8 +62,10 @@ class Service(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     description = models.TextField(blank=True, verbose_name='Описание')
     price = models.DecimalField(max_digits=15, decimal_places=2, verbose_name='Цена')
+    duration = models.PositiveSmallIntegerField(**NULLABLE, verbose_name='Длительность')
     image = models.ImageField(upload_to='products/', **NULLABLE, verbose_name='Изображение')
     is_published = models.BooleanField(default=False, verbose_name='Публиковать')
+    medic = models.ManyToManyField("users.User", related_name="services")
 
     class Meta:
         verbose_name = 'Услуга'
@@ -73,6 +75,13 @@ class Service(models.Model):
     def __str__(self):
         return f"{self.name}"
 
+class Appointment(models.Model):
+    day = models.DateField()
+    time = models.TimeField()
+    owner = models.ForeignKey(to=User, on_delete=models.CASCADE, **NULLABLE,
+                                 related_name='appointments', verbose_name='Владелец')
+    service = models.ForeignKey(to=Service, on_delete=models.PROTECT,
+                                 related_name='appointments', verbose_name='Услуга')
 
 class ResultOfService(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')

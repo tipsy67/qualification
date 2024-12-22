@@ -1,59 +1,53 @@
-{% extends 'base.html' %}
+{% extends 'basic.html' %}
 
 {% block content %}
 {% load blog_tags %}
-<div id="layoutSidenav_content">
-    <main>
-        <div class="container-fluid px-4">
-            <h1 class="mt-4">{{ title }}</h1>
 
-            <div class="card mb-4">
-                <div class="card-header d-flex justify-content-between">
-                    <span>
-                    <i class="fas fa-table me-1"></i>
-                    Список {{ title_plural }}
-                    </span>
-                    <a href="{% url 'blog:blog_create' %}"
-                       class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
-                        <i class="text-end bi bi-person-plus"></i>
-                        Добавить статью
+{% include 'streamer.html' %}
+
+<section id="latest-blog" class="post-grid padding-large">
+    <div class="container">
+        <div class="row d-flex flex-wrap">
+            {% for object in object_list %}
+            <article class="col-md-4 post-item">
+                <div class="image-holder zoom-effect">
+                    <a href="{% url 'blog:blog_detail' object.slug %}">
+                        {% if object.image %}
+                        <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
+                        {% endif %}
                     </a>
                 </div>
-                <div>
-                <div class="row m-1 row-cols-1 row-cols-md-3">
-                    {% for object in object_list %}
-                    <div class="card rounded-3 shadow-sm">
-                        <div class="card-header w-100">
-                            <h4 class="my-0 fw-normal">{{ object.title }}</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>
-                                {% if object.image %}
-                                <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
-                                {% endif %}
-                            </p>
-                            <p>
-                                {{ object.short_content }}
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a type="button" href="{% url 'blog:blog_detail' object.slug  %}"
-                               class="m-1 w-100 btn btn-lg btn-secondary">Подробнее</a>
-                            {% if perms.blog.change_blog or object.owner == user or user.is_content_manager %}
-                            <a type="button" href="{% url 'blog:blog_update' object.slug %}"
-                               class="m-1 w-100 btn btn-lg btn-primary">Редактировать</a>
-                            {% endif %}
-                        </div>
+                <div class="post-content d-flex">
+                    <div class="meta-date">
+                        <div class="meta-day text-primary">{{object.created_at|date:'d'}}</div>
+                        <div class="meta-month">{{object.created_at|date:'b-Y'}}</div>
                     </div>
-                    {% endfor %}
+                    <div class="post-header">
+                        <h3 class="post-title">
+                            <a href="{% url 'blog:blog_detail' object.slug  %}">{{ object.title }}</a>
+                        </h3>
+                        <a class="blog-categories">{{ object.short_content }}</a>
+                    </div>
                 </div>
+            </article>
+            {% endfor %}
+            <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+                <div class="pagination loop-pagination d-flex justify-content-center">
+                    <a href="#" class="pagination-arrow d-flex align-items-center">
+                        <i class="icon icon-arrow-left"></i>
+                    </a>
+                    <span aria-current="page" class="page-numbers current">1</span>
+                    <a class="page-numbers" href="#">2</a>
+                    <a class="page-numbers" href="#">3</a>
+                    <a href="#" class="pagination-arrow d-flex align-items-center">
+                        <i class="icon icon-arrow-right"></i>
+                    </a>
                 </div>
-            </div>
+            </nav>
         </div>
-    </main>
-    {% include 'footer.html' %}
+    </div>
+</section>
 
-</div>
 {% endblock content %}
 
 

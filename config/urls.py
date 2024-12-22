@@ -6,7 +6,9 @@ from config import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('optics.urls', namespace='optics'))
+    path('', include('optics.urls', namespace='optics')),
+    path('', include(('blog.urls', 'blog'), namespace='blog')),
+    # path('', include(('users.urls', 'users'), namespace='users')),
 ]
 
 if settings.DEBUG:
