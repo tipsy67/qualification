@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
 
-from config.settings import NUMBER_OF_PRODUCTS_DISPLAYED, MAIN_STREAMER_PATH
-from optics.models import Category, Product, Feedback, Service
-from optics.src.utils import get_random_reviews, get_random_quote
+from config.settings import MAIN_STREAMER_PATH, NUMBER_OF_PRODUCTS_DISPLAYED
+from optics.models import Category, Feedback, Product, Service
+from optics.src.utils import get_random_quote, get_random_reviews
 
 
 def mainpage(request):

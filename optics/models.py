@@ -3,6 +3,7 @@ from django.db import models
 from config.settings import NULLABLE
 from users.models import User
 
+
 class Brand(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     ordering = ['name']

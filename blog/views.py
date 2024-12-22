@@ -1,8 +1,6 @@
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.urls import reverse_lazy, reverse
-from django.views.generic import ListView, CreateView, UpdateView, DetailView, DeleteView
 
-from blog.forms import BlogForm, BlogContentForm
+from django.views.generic import (DetailView, ListView,)
+
 from blog.models import Blog
 from config.settings import MAIN_STREAMER_PATH
 

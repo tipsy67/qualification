@@ -1,8 +1,8 @@
-from optics.apps import OpticsConfig
 from django.urls import path
 
-from optics.views import mainpage, FeedbackCreateView, thank_you, about, \
-    product_list_view, ServiceListView
+from optics.apps import OpticsConfig
+from optics.views import (FeedbackCreateView, ServiceListView, about, mainpage,
+                          product_list_view, thank_you)
 
 app_name = OpticsConfig.name
 

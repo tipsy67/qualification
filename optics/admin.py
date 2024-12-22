@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from optics.models import Category, Product, Service, Feedback, ResultOfService, Brand, Quote
+from optics.models import (Brand, Category, Feedback, Product, Quote,
+                           ResultOfService, Service)
 
 
 @admin.register(Category)

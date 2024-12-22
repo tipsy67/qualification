@@ -4,7 +4,7 @@ from django.db import models
 from django.template.defaultfilters import truncatechars
 from pytils.translit import slugify
 
-from users.models import User, NULLABLE
+from users.models import NULLABLE, User
 
 
 class Blog(models.Model):
