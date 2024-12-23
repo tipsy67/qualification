@@ -261,7 +261,6 @@ h1.light, .h1, h2.light, .h2, h3.light, .h3, h4.light, .h4, h5.light, .h5, h6.li
 }
 h1, h2, h3 {
   margin: 25px 0;
-  text-transform: capitalize;
 }
 h5, h6 {
   letter-spacing: 1px;
@@ -556,9 +555,7 @@ form {
 .text-uppercase {
   text-transform: uppercase;
 }
-.text-capitalize {
-  text-transform: capitalize;
-}
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -885,7 +882,6 @@ fieldset[disabled] a.btn {
 ------------------------------------------------------------- */
 .btn-wrap {
   font-weight: 500;
-  text-transform: capitalize;
   width: fit-content;
 }
 .btn-wrap:hover i.icon.icon-arrow-io {
@@ -955,7 +951,6 @@ img.image-circle {
     font-weight: 800;
     line-height: 1em;
     letter-spacing: -0.02em;
-    text-transform: capitalize;
     color: var(--dark-color);
 }
 .breadcrumbs a:hover{
@@ -964,9 +959,7 @@ img.image-circle {
 .breadcrumbs{
   color: var(--accent-color);
 }
-.breadcrumbs .item{
-  text-transform: capitalize;
-}
+
 @media screen and (max-width: 1099px) {
   .site-banner h1.page-title{
       font-size: 6em;
@@ -1615,9 +1608,6 @@ blockquote cite {
 .stellarnav.desktop li.has-sub a{
   padding-right: 30px;
 }
-.menu-list a.item-anchor{
-  text-transform: capitalize;
-}
 .menu-list a.item-anchor.active{
   color: var(--primary-color);
 }
@@ -1937,7 +1927,6 @@ blockquote cite {
     font-weight: 800;
     line-height: 1em;
     letter-spacing: -0.02em;
-    text-transform: capitalize;
     color: var(--dark-color);
 }
 .banner-content p {

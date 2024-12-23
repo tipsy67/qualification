@@ -97,9 +97,9 @@ def thank_you(request):
     return render(request, 'optics/thank-you.html', context=context)
 
 def about(request):
-    streamer_content = {'title' : 'ОПТИК СИТИ'}
+    streamer_content = {'title' : 'ОПТИКA СИТИ'}
     streamer_path = MAIN_STREAMER_PATH.copy()
-    streamer_path.append({'name' : 'о нас', 'url' : '#'})
+    streamer_path.append({'name' : 'О нас', 'url' : '#'})
     streamer_content['path'] = streamer_path
 
     context = {
