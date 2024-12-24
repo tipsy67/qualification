@@ -81,7 +81,7 @@ def service_list_view(request):
 
     object_list = Service.objects.filter(is_published=True).order_by('name')
 
-    streamer_content = {'title' : 'Наши товары'}
+    streamer_content = {'title' : 'Наши услуги'}
     streamer_path = MAIN_STREAMER_PATH.copy()
     streamer_path.append({'name' : 'Услуги', 'url' : '#'})
     streamer_content['path'] = streamer_path
