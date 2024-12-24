@@ -63,7 +63,7 @@
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши услуги</h2>
             <div class="btn-wrap">
-                <a href="{% url 'optics:service-list'%}" class="d-flex align-items-center">Посмотреть все услуги <i class="icon icon icon-arrow-io"></i></a>
+                <a href="{% url 'optics:service-list' %}" class="d-flex align-items-center">Посмотреть все услуги <i class="icon icon icon-arrow-io"></i></a>
             </div>
         </div>
                 <div class="row d-flex flex-wrap">
@@ -105,7 +105,7 @@
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши товары</h2>
             <div class="btn-wrap">
-                <a href="{% url 'optics:shop-list'%}" class="d-flex align-items-center">Посмотреть все товары <i class="icon icon icon-arrow-io"></i></a>
+                <a href="{% url 'optics:shop-list' %}" class="d-flex align-items-center">Посмотреть все товары <i class="icon icon icon-arrow-io"></i></a>
             </div>
         </div>
         <ul class="tabs list-unstyled">
@@ -164,70 +164,36 @@
 <section id="latest-blog" class="padding-large">
     <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
-            <h2 class="section-title">наш Блог</h2>
+            <h2 class="section-title">Наш блог</h2>
             <div class="btn-wrap align-right">
-                <a href="blog.html" class="d-flex align-items-center">Все статьи <i class="icon icon icon-arrow-io"></i>
+                <a href="{% url 'blog:blog_list' %}" class="d-flex align-items-center">Все статьи <i class="icon icon icon-arrow-io"></i>
                 </a>
             </div>
         </div>
         <div class="row d-flex flex-wrap">
+            {% for object in blog_list %}
             <article class="col-md-4 post-item">
                 <div class="image-holder zoom-effect">
-                    <a href="single-post.html">
-                        <img src="{% static 'optics/images/post-img1.jpg' %}" alt="post" class="post-image">
+                    <a href="{% url 'blog:blog_detail' object.slug %}">
+                        {% if object.image %}
+                        <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
+                        {% endif %}
                     </a>
                 </div>
                 <div class="post-content d-flex">
                     <div class="meta-date">
-                        <div class="meta-day text-primary">22</div>
-                        <div class="meta-month">Aug-2021</div>
+                        <div class="meta-day text-primary">{{object.created_at|date:'d'}}</div>
+                        <div class="meta-month">{{object.created_at|date:'b-Y'}}</div>
                     </div>
                     <div class="post-header">
                         <h3 class="post-title">
-                            <a href="single-post.html">top 10 casual look ideas to dress up your kids</a>
+                            <a href="{% url 'blog:blog_detail' object.slug  %}">{{ object.title }}</a>
                         </h3>
-                        <a href="blog.html" class="blog-categories">Fashion</a>
+                        <a class="blog-categories">{{ object.short_content }}</a>
                     </div>
                 </div>
             </article>
-            <article class="col-md-4 post-item">
-                <div class="image-holder zoom-effect">
-                    <a href="single-post.html">
-                        <img src="{% static 'optics/images/post-img2.jpg' %}" alt="post" class="post-image">
-                    </a>
-                </div>
-                <div class="post-content d-flex">
-                    <div class="meta-date">
-                        <div class="meta-day text-primary">25</div>
-                        <div class="meta-month">Aug-2021</div>
-                    </div>
-                    <div class="post-header">
-                        <h3 class="post-title">
-                            <a href="single-post.html">Latest trends of wearing street wears supremely</a>
-                        </h3>
-                        <a href="blog.html" class="blog-categories">Trending</a>
-                    </div>
-                </div>
-            </article>
-            <article class="col-md-4 post-item">
-                <div class="image-holder zoom-effect">
-                    <a href="single-post.html">
-                        <img src="{% static 'optics/images/post-img3.jpg' %}" alt="post" class="post-image">
-                    </a>
-                </div>
-                <div class="post-content d-flex">
-                    <div class="meta-date">
-                        <div class="meta-day text-primary">28</div>
-                        <div class="meta-month">Aug-2021</div>
-                    </div>
-                    <div class="post-header">
-                        <h3 class="post-title">
-                            <a href="single-post.html">types of comfortable clothes ideas for women</a>
-                        </h3>
-                        <a href="blog.html" class="blog-categories">Inspiration</a>
-                    </div>
-                </div>
-            </article>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
 
+from blog.models import Blog
 from config.settings import MAIN_STREAMER_PATH, NUMBER_OF_PRODUCTS_DISPLAYED
 from optics.models import Category, Feedback, Product, Service
 from optics.src.utils import get_random_quote, get_random_reviews
@@ -21,10 +22,14 @@ def mainpage(request):
     service_set = Service.objects.filter(is_published=True).order_by('?')
     service_list = service_set[:NUMBER_OF_PRODUCTS_DISPLAYED]
 
+    blog_set = Blog.objects.filter(is_published=True).order_by('?')
+    blog_list = blog_set[:3]
+
     context = {
         'object_list' : object_list,
         'category_list' : category_list,
         'service_list' : service_list,
+        'blog_list' : blog_list,
         'testimonials' : get_random_reviews(),
         'quote' : get_random_quote()
     }
@@ -72,23 +77,23 @@ def product_list_view(request):
     return render(request, 'optics/shop_list.html', context)
 
 
-class ServiceListView(ListView):
-    model = Product
-    template_name = 'optics/shop_list.html'
-    # paginate_by = 3
+def service_list_view(request):
 
-    streamer_content = {'title' : 'Контакты'}
+    object_list = Service.objects.filter(is_published=True).order_by('name')
+
+    streamer_content = {'title' : 'Наши товары'}
     streamer_path = MAIN_STREAMER_PATH.copy()
-    streamer_path.append({'name' : 'Контакты', 'url' : '#'})
+    streamer_path.append({'name' : 'Услуги', 'url' : '#'})
     streamer_content['path'] = streamer_path
 
-    extra_context = {
+    context = {
+        'object_list' : object_list,
+        'testimonials' : get_random_reviews(),
+        'quote' : get_random_quote(),
         'streamer_content' : streamer_content,
     }
-    ordering = ['name']
 
-    def get_queryset(self):
-        return Product.objects.filter(is_published=True)
+    return render(request, 'optics/service_list.html', context)
 
 def thank_you(request):
     context = {
