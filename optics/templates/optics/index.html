@@ -1,0 +1,202 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+{% load optics_tags %}
+<section id="billboard" class="overflow-hidden">
+
+    <button class="button-prev">
+        <i class="icon icon-chevron-left"></i>
+    </button>
+    <button class="button-next">
+        <i class="icon icon-chevron-right"></i>
+    </button>
+    <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                 style="background-image: url('{% static 'optics/images/banner1.jpg' %}');background-repeat: no-repeat;background-size: cover;background-position: center;">
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="banner-title">Summer Collection</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+                                    ipsum enim pharetra hac.</p>
+                                <div class="btn-wrap">
+                                    <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center"
+                                       tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide"
+                 style="background-image: url('{% static 'optics/images/banner2.jpg' %}');background-repeat: no-repeat;background-size: cover;background-position: center;">
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="banner-title">Casual Collection</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+                                    ipsum enim pharetra hac.</p>
+                                <div class="btn-wrap">
+                                    <a href="shop.html"
+                                       class="btn btn-light btn-light-arrow btn-medium d-flex align-items-center"
+                                       tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'testimonials.html' %}
+
+<section id="featured-products" class="product-store padding-large">
+    <div class="container">
+        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="btn-wrap">
+                <a href="{% url 'optics:service-list' %}" class="d-flex align-items-center">Посмотреть все услуги <i class="icon icon icon-arrow-io"></i></a>
+            </div>
+        </div>
+                <div class="row d-flex flex-wrap">
+                    {% for service in service_list %}
+                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                        <div class="image-holder">
+                            {% if service.image %}
+                            <img class="card-img-left img-thumbnail" src="{{ service.image|add_media }}">
+                            {% endif %}
+                        </div>
+                        <div class="cart-concern">
+                            <div class="cart-button d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart
+                                    <i class="icon icon-arrow-io"></i>
+                                </button>
+                                <button type="button" class="view-btn tooltip d-flex">
+                                    <i class="icon icon-screen-full"></i>
+                                    <span class="tooltip-text">Quick view</span>
+                                </button>
+                                <button type="button" class="wishlist-btn">
+                                    <i class="icon icon-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <h4 class="product-title">
+                                <a href="single-product.html">{{ service.name }}</a>
+                            </h4>
+                            <div class="item-price text-primary">P {{ service.price }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+</section>
+<hr>
+<section id="selling-products" class="product-store bg-light-grey padding-large">
+    <div class="container">
+        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
+            <h2 class="section-title">Наши товары</h2>
+            <div class="btn-wrap">
+                <a href="{% url 'optics:shop-list' %}" class="d-flex align-items-center">Посмотреть все товары <i class="icon icon icon-arrow-io"></i></a>
+            </div>
+        </div>
+        <ul class="tabs list-unstyled">
+            {% for category in category_list %}
+            <li data-tab-target="#{{ category.name }}" class="tab">{{ category.name }}</li>
+            {% endfor %}
+        </ul>
+        <div class="tab-content">
+            {% for object in object_list %}
+            <div id="{{ object.category.name }}" data-tab-content {% if object.category.active_on_main_page %} class="active" {% endif %}>
+                <div class="row d-flex flex-wrap">
+                    {% for product in object.product_list %}
+                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                        <div class="image-holder">
+                            {% if product.image %}
+                            <img class="card-img-left img-thumbnail" src="{{ product.image|add_media }}">
+                            {% endif %}
+                        </div>
+                        <div class="cart-concern">
+                            <div class="cart-button d-flex justify-content-between align-items-center">
+                                <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart
+                                    <i class="icon icon-arrow-io"></i>
+                                </button>
+                                <button type="button" class="view-btn tooltip d-flex">
+                                    <i class="icon icon-screen-full"></i>
+                                    <span class="tooltip-text">Quick view</span>
+                                </button>
+                                <button type="button" class="wishlist-btn">
+                                    <i class="icon icon-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <h3 class="product-title">
+                                <a>{{ product.brand }}</a>
+                            </h3>
+                            <h4 class="product-title">
+                                <a href="single-product.html">{{ product.name }}</a>
+                            </h4>
+                            <div class="item-price text-primary">P {{ product.price }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include 'quotation.html' %}
+
+{% include 'shipping-info.html' %}
+
+<hr>
+<section id="latest-blog" class="padding-large">
+    <div class="container">
+        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
+            <h2 class="section-title">Наш блог</h2>
+            <div class="btn-wrap align-right">
+                <a href="{% url 'blog:blog_list' %}" class="d-flex align-items-center">Все статьи <i class="icon icon icon-arrow-io"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row d-flex flex-wrap">
+            {% for object in blog_list %}
+            <article class="col-md-4 post-item">
+                <div class="image-holder zoom-effect">
+                    <a href="{% url 'blog:blog_detail' object.slug %}">
+                        {% if object.image %}
+                        <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="post-content d-flex">
+                    <div class="meta-date">
+                        <div class="meta-day text-primary">{{object.created_at|date:'d'}}</div>
+                        <div class="meta-month">{{object.created_at|date:'b-Y'}}</div>
+                    </div>
+                    <div class="post-header">
+                        <h3 class="post-title">
+                            <a href="{% url 'blog:blog_detail' object.slug  %}">{{ object.title }}</a>
+                        </h3>
+                        <a class="blog-categories">{{ object.short_content }}</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}

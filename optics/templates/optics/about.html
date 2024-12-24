@@ -1,0 +1,114 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+
+  {% include 'streamer.html' %}
+
+  {% include 'shipping-info.html' %}
+
+    <section id="about-us">
+      <div class="container ">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="image-holder">
+              <img src="{% static 'optics/images/single-image1.png' %}" alt="single" class="about-image">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="detail">
+              <div class="display-header">
+                <h3 class="section-title">Почему клиенты выбирают ОПТИКА СИТИ</h3>
+                <p>	Наша приверженность совершенству начинается с инвестиций в современное оборудование. Мы понимаем, что точность и аккуратность имеют первостепенное значение в офтальмологии, поэтому мы оснастили наши учреждения новейшими достижениями в области оптических технологий. Это позволяет нам предлагать комплексные проверки зрения, точные рецепты и широкий ассортимент очков, адаптированных к уникальным потребностям каждого клиента.
+                <br>
+                <br>
+					В ОПТИКА СИТИ считают, что каждая пара глаз так же уникальна, как и человек, который смотрит через них. Вот почему мы применяем индивидуальный подход к уходу за глазами. Наша команда уделяет время изучению вашего образа жизни, предпочтений и особых потребностей в области зрения. Независимо от того, являетесь ли вы спортсменом, профессионалом или ценителем модных очков, мы подбираем варианты, которые идеально соответствуют вашему индивидуальному стилю и требованиям.
+                <br>
+				<br>
+					Смотря в будущее, ОПТИКА СИТИ по-прежнему стремится расширять границы возможного в области ухода за глазами. Наша история — это история постоянной эволюции, движимая нашим желанием предоставить лучшее для наших клиентов. Мы гордимся тем, что создали наследие доверия и качества, и мы стремимся поддерживать эти стандарты на протяжении многих лет. </p>
+                <div class="btn-wrap">
+                  <a href="shop.html" class="btn btn-dark btn-medium d-flex align-items-center" tabindex="0">Shop our store<i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  {% include 'testimonials.html' %}
+
+    <hr>
+    <section id="latest-blog" class="padding-large">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
+          <h2 class="section-title">our Journal</h2>
+          <div class="btn-wrap align-right">
+            <a href="blog.html" class="d-flex align-items-center">Read All Articles <i class="icon icon icon-arrow-io"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <article class="col-md-4 post-item">
+            <div class="image-holder zoom-effect">
+              <a href="single-post.html">
+                <img src="{% static 'optics/images/post-img1.jpg' %}" alt="post" class="post-image">
+              </a>
+            </div>
+            <div class="post-content d-flex">
+              <div class="meta-date">
+                <div class="meta-day text-primary">22</div>
+                <div class="meta-month">Aug-2021</div>
+              </div>
+              <div class="post-header">
+                <h3 class="post-title">
+                  <a href="single-post.html">top 10 casual look ideas to dress up your kids</a>
+                </h3>
+                <a href="blog.html" class="blog-categories">Fashion</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 post-item">
+            <div class="image-holder zoom-effect">
+              <a href="single-post.html">
+                <img src="images/post-img2.jpg" alt="post" class="post-image">
+              </a>
+            </div>
+            <div class="post-content d-flex">
+              <div class="meta-date">
+                <div class="meta-day text-primary">25</div>
+                <div class="meta-month">Aug-2021</div>
+              </div>
+              <div class="post-header">
+                <h3 class="post-title">
+                  <a href="single-post.html">Latest trends of wearing street wears supremely</a>
+                </h3>
+                <a href="blog.html" class="blog-categories">Trending</a>
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 post-item">
+            <div class="image-holder zoom-effect">
+              <a href="single-post.html">
+                <img src="images/post-img3.jpg" alt="post" class="post-image">
+              </a>
+            </div>
+            <div class="post-content d-flex">
+              <div class="meta-date">
+                <div class="meta-day text-primary">28</div>
+                <div class="meta-month">Aug-2021</div>
+              </div>
+              <div class="post-header">
+                <h3 class="post-title">
+                  <a href="single-post.html">types of comfortable clothes ideas for women</a>
+                </h3>
+                <a href="blog.html" class="blog-categories">Inspiration</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+{% endblock content %}
