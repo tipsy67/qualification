@@ -76,14 +76,6 @@ class Service(models.Model):
     def __str__(self):
         return f"{self.name}"
 
-class Appointment(models.Model):
-    day = models.DateField()
-    time = models.TimeField()
-    owner = models.ForeignKey(to=User, on_delete=models.CASCADE, **NULLABLE,
-                                 related_name='appointments', verbose_name='Владелец')
-    service = models.ForeignKey(to=Service, on_delete=models.PROTECT,
-                                 related_name='appointments', verbose_name='Услуга')
-
 class ResultOfService(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     description = models.TextField(blank=True, verbose_name='Описание')
