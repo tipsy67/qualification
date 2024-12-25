@@ -25,7 +25,7 @@
                 </div>
                 <div class="product-detail">
                     <h4 class="product-title">
-                        <a href="single-product.html">{{ service.name }}</a>
+                        <a href="{% url 'optics:service-detail' service.pk %}">{{ service.name }}</a>
                     </h4>
                     <div class="item-price text-primary">P {{ service.price }}</div>
                 </div>

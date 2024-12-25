@@ -95,6 +95,27 @@ def service_list_view(request):
 
     return render(request, 'optics/service_list.html', context)
 
+def service_detail_view(request, pk):
+
+    obj = Service.objects.filter(pk=pk).first()
+    print (obj)
+
+    streamer_content = {'title' : 'Наши услуги'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'Услуги', 'url' : 'optics:service-list'})
+    streamer_content['path'] = streamer_path
+    streamer_path.append({'name' : 'Текущая', })
+    streamer_content['path'] = streamer_path
+
+    context = {
+        'object' : obj,
+        'testimonials' : get_random_reviews(),
+        'quote' : get_random_quote(),
+        'streamer_content' : streamer_content,
+    }
+
+    return render(request, 'optics/service_detail.html', context)
+
 def thank_you(request):
     context = {
     }

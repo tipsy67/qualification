@@ -12,8 +12,9 @@ class User(AbstractUser):
         max_length=50, **NULLABLE, verbose_name="телеграм chat id"
     )
     avatar = models.ImageField(upload_to='users/', **NULLABLE, verbose_name='аватар')
-    image = models.ImageField(upload_to='users/', **NULLABLE, verbose_name='аватар')
-    is_a_medic = models.BooleanField(default=False, verbose_name='это медик')
+    image = models.ImageField(upload_to='users/', **NULLABLE, verbose_name='фото')
+    is_medic = models.BooleanField(default=False, verbose_name='это медик')
+    profession = models.CharField(max_length=100, **NULLABLE, verbose_name='профессия')
     phone = models.CharField(max_length=30, **NULLABLE, verbose_name='телефон')
     token = models.CharField(max_length=100, **NULLABLE, verbose_name='токен')
 

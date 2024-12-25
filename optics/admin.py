@@ -3,6 +3,7 @@ from django.utils.safestring import mark_safe
 
 from optics.models import (Brand, Category, Feedback, Product, Quote,
                            ResultOfService, Service)
+from users.models import User
 
 
 @admin.register(Category)
@@ -33,6 +34,11 @@ class ProductAdmin(admin.ModelAdmin):
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
     pass
+
+    def formfield_for_manytomany(self, db_field, request, **kwargs):
+        if db_field.name == "medic":
+            kwargs["queryset"] = User.objects.filter(is_medic=True)
+        return super().formfield_for_manytomany(db_field, request, **kwargs)
 
 @admin.register(ResultOfService)
 class ResultOfServiceAdmin(admin.ModelAdmin):

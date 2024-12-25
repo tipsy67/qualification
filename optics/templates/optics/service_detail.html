@@ -1,0 +1,51 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+{% load optics_tags %}
+
+{% include 'streamer.html' %}
+
+{% include 'shipping-info.html' %}
+
+<div class="main-content d-flex flex-wrap padding-large">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="post-meta">
+                    <span class="post-date">{{ object.price }} P</span> / <a href="{% url 'blog:blog_list' %}" class="service-link link-success">Записаться</a>
+                </div>
+                <h1 class="page-title">{{ object.title }}</h1>
+                <div class="feature-image">
+                    {% if object.image %}
+                    <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="post-content">
+                    <p>{{ object.description }}</p>
+                    <div class="social-links d-flex margin-small">
+                        <div class="element-title">Поделиться:</div>
+                        <ul class="d-flex list-unstyled">
+                            <li>
+                                <a href="#"><i class="icon icon-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon icon-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon icon-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon icon-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -2341,6 +2341,17 @@ a.blog-categories {
 a.blog-categories:hover{
     color: var(--primary-color);
 }
+a.service-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgb(0,128,0);
+}
+a.service-link:hover{
+    color: var(--primary-color);
+}
 @media screen and (max-width: 1599px) {
   #latest-blog .meta-date {
       margin-right: 15px;
