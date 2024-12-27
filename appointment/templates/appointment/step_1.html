@@ -2,32 +2,31 @@
 
 {% block content %}
 {% load static %}
-{% load optics_tags %}
+{% load appointment_tags %}
 
-{% include 'streamer.html' %}
-
-<section id="services" class="product-store padding-large">
+<section id="staff" class="product-store padding-large">
     <div class="container">
         <div class="row d-flex flex-wrap">
-            {% for service in object_list %}
+            {% for object in object_list %}
             <div class="product-item col-lg-3 col-md-6 col-sm-6">
                 <div class="image-holder">
-                    {% if service.image %}
-                    <img class="card-img-left img-thumbnail" src="{{ service.image|add_media }}">
+                    {% if object.image %}
+                    <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
                     {% endif %}
                 </div>
                 <div class="cart-concern">
                     <div class="cart-button d-flex justify-content-between align-items-center">
-                        <a href="{% url 'appointment:step-1' %}?service_pk={{ service.pk }}" class="btn-wrap cart-link d-flex align-items-center" role="button" >записаться
+                        <a href="{% url 'appointment:step-2' %}?service_pk={{ service_pk }}&staff_pk={{ object.pk }}"
+                           role="button" class="btn-wrap cart-link d-flex align-items-center">записаться
                             <i class="icon icon-arrow-io"></i>
                         </a>
                     </div>
                 </div>
                 <div class="product-detail">
                     <h4 class="product-title">
-                        <a href="{% url 'optics:service-detail' service.pk %}">{{ service.name }}</a>
+                        <a href="#">{{ object.profession }}</a>
                     </h4>
-                    <div class="item-price text-primary">P {{ service.price }}</div>
+                    <div class="item-price text-primary">{{ object.last_name }} {{ object.first_name }}</div>
                 </div>
             </div>
             {% endfor %}
@@ -46,10 +45,8 @@
             </a>
         </div>
     </nav>
-    </div>
 </section>
-<hr>
 
-{% include 'testimonials.html' %}
+{% include 'shipping-info.html' %}
 
 {% endblock content %}
