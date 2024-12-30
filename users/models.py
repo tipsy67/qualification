@@ -25,6 +25,10 @@ class User(AbstractUser):
     def __str__(self):
         return f"{self.username}"
 
+    @property
+    def fio(self):
+        return f'{self.last_name} {self.first_name}'
+
     @staticmethod
     def generate_password(length: int):
         characters = string.ascii_letters + string.digits + string.punctuation

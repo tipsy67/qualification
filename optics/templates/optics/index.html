@@ -63,41 +63,36 @@
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши услуги</h2>
             <div class="btn-wrap">
-                <a href="{% url 'optics:service-list' %}" class="d-flex align-items-center">Посмотреть все услуги <i class="icon icon icon-arrow-io"></i></a>
+                <a href="{% url 'optics:service-list' %}" class="d-flex align-items-center">Посмотреть все услуги <i
+                        class="icon icon icon-arrow-io"></i></a>
             </div>
         </div>
-                <div class="row d-flex flex-wrap">
-                    {% for service in service_list %}
-                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
-                        <div class="image-holder">
-                            {% if service.image %}
-                            <img class="card-img-left img-thumbnail" src="{{ service.image|add_media }}">
-                            {% endif %}
-                        </div>
-                        <div class="cart-concern">
-                            <div class="cart-button d-flex justify-content-between align-items-center">
-                                <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart
-                                    <i class="icon icon-arrow-io"></i>
-                                </button>
-                                <button type="button" class="view-btn tooltip d-flex">
-                                    <i class="icon icon-screen-full"></i>
-                                    <span class="tooltip-text">Quick view</span>
-                                </button>
-                                <button type="button" class="wishlist-btn">
-                                    <i class="icon icon-heart"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <h4 class="product-title">
-                                <a href="single-product.html">{{ service.name }}</a>
-                            </h4>
-                            <div class="item-price text-primary">P {{ service.price }}</div>
-                        </div>
+        <div class="row d-flex flex-wrap">
+            {% for service in service_list %}
+            <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                    {% if service.image %}
+                    <img class="card-img-left img-thumbnail" src="{{ service.image|add_media }}">
+                    {% endif %}
+                </div>
+                <div class="cart-concern">
+                    <div class="cart-button d-flex justify-content-between align-items-center">
+                        <a href="{% url 'appointment:step-1' %}?service_pk={{ service.pk }}"
+                           class="btn-wrap cart-link d-flex align-items-center" role="button">записаться
+                            <i class="icon icon-arrow-io"></i>
+                        </a>
                     </div>
-                    {% endfor %}
+                </div>
+                <div class="product-detail">
+                    <h4 class="product-title">
+                        <a href="{% url 'optics:service-detail' service.pk %}">{{ service.name }}</a>
+                    </h4>
+                    <div class="item-price text-primary">P {{ service.price }}</div>
                 </div>
             </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
 <hr>
 <section id="selling-products" class="product-store bg-light-grey padding-large">
@@ -105,7 +100,8 @@
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши товары</h2>
             <div class="btn-wrap">
-                <a href="{% url 'optics:shop-list' %}" class="d-flex align-items-center">Посмотреть все товары <i class="icon icon icon-arrow-io"></i></a>
+                <a href="{% url 'optics:shop-list' %}" class="d-flex align-items-center">Посмотреть все товары <i
+                        class="icon icon icon-arrow-io"></i></a>
             </div>
         </div>
         <ul class="tabs list-unstyled">
@@ -115,7 +111,8 @@
         </ul>
         <div class="tab-content">
             {% for object in object_list %}
-            <div id="{{ object.category.name }}" data-tab-content {% if object.category.active_on_main_page %} class="active" {% endif %}>
+            <div id="{{ object.category.name }}" data-tab-content {% if object.category.active_on_main_page %}
+                 class="active" {% endif %}>
                 <div class="row d-flex flex-wrap">
                     {% for product in object.product_list %}
                     <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -166,7 +163,8 @@
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наш блог</h2>
             <div class="btn-wrap align-right">
-                <a href="{% url 'blog:blog_list' %}" class="d-flex align-items-center">Все статьи <i class="icon icon icon-arrow-io"></i>
+                <a href="{% url 'blog:blog_list' %}" class="d-flex align-items-center">Все статьи <i
+                        class="icon icon icon-arrow-io"></i>
                 </a>
             </div>
         </div>

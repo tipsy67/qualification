@@ -11,12 +11,12 @@
             <div class="product-item col-lg-3 col-md-6 col-sm-6">
                 <div class="image-holder">
                     {% if object.image %}
-                    <img class="card-img-left img-thumbnail" src="{{ object.image|add_media }}">
+                    <img class="card-img-left img-fluid img-thumbnail" src="{{ object.image|add_media }}">
                     {% endif %}
                 </div>
                 <div class="cart-concern">
                     <div class="cart-button d-flex justify-content-between align-items-center">
-                        <a href="{% url 'appointment:step-2' %}?service_pk={{ service_pk }}&staff_pk={{ object.pk }}"
+                        <a href="{% url 'appointment:step-2' %}?service_pk={{ service_pk }}&medic_pk={{ object.pk }}"
                            role="button" class="btn-wrap cart-link d-flex align-items-center">записаться
                             <i class="icon icon-arrow-io"></i>
                         </a>
