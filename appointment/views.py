@@ -1,9 +1,11 @@
+import copy
 import datetime
 
 from django.shortcuts import render
 from django.utils import timezone
 
-from appointment.forms import SecondStepForm
+from appointment.forms import SecondStepForm, ThirdStepForm
+from appointment.src.utils import get_context_data
 from optics.models import Service
 from users.models import User
 
@@ -23,26 +25,22 @@ def step_1(request):
     return render (request, 'appointment/step_1.html', context)
 
 def step_2(request):
+    context = get_context_data(request)
     if request.method == 'GET':
-        service_pk = request.GET.get('service_pk')
-        medic_pk = request.GET.get('medic_pk')
-        appointment_day = timezone.now().date()
-        form = SecondStepForm(initial={
-            'service_pk' : service_pk,
-            'medic_pk' : medic_pk,
-            'appointment_day' : appointment_day.isoformat(),
-        })
+         return render (request, 'appointment/step_2.html', context)
+    else:
+        form = SecondStepForm(request.POST)
+        if form.is_valid():
+            next_form = ThirdStepForm(initial=form.data)
+            context['form'] = next_form
+            return render(request, 'appointment/step_3.html', context)
+        else:
+            context['form'] = form
+            return render(request, 'appointment/step_2.html', context)
 
-        service = Service.objects.filter(pk=service_pk).first()
-        medic = User.objects.filter(pk=medic_pk).first()
 
-        context = {
-            'form' : form,
-            'service' : service,
-            'medic' : medic,
-        }
-
-        return render (request, 'appointment/step_2.html', context)
-
-def step_3(request):
-    return render(request, 'appointment/step_3.html', )
+def step_3(request,context):
+    if request.method == 'GET':
+        return render(request, 'appointment/step_3.html', context)
+    else:
+        return render(request, 'appointment/thank-you.html', context)

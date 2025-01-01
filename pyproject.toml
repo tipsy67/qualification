@@ -16,6 +16,7 @@ pytils = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13.2"
+black = "^24.10.0"
 
 [build-system]
 requires = ["poetry-core"]

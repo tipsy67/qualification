@@ -13,9 +13,9 @@
                         <h3>{{ service.name }}</h3>
                         <p> {{ medic.fio }} ({{ medic.profession }})</p>
                     </div>
-                    <form action="{% url 'appointment:step-3' %}" method="post">
+                    <form method="post">
                         {% csrf_token %}
-                        <p>{{ form.appointment_day }}</p>
+                        <p>{{ form.appointment_day.label }}: {{ form.appointment_day }}</p>
                         <div class="button-area col-md-10">
                             <button class="btn btn-dark btn-full" type="submit">Следующий шаг</button>
                             <a href="{% url 'appointment:step-1' %}?service_pk={{ service.pk }}"
