@@ -22,9 +22,4 @@ class ThirdStepForm(forms.Form):
         widget=forms.DateInput(attrs={'type': 'date',
                                       'readonly': True}),
     )
-
-# class FoursStepForm(forms.Form):
-#     service_pk = forms.IntegerField(widget=forms.HiddenInput())
-#     staff_pk = forms.IntegerField(widget=forms.HiddenInput())
-#     appointment_day = forms.DateField(widget=forms.HiddenInput())
-#     appointment_slot = forms.CharField()
+    appointment_slot = forms.ChoiceField(label='Выберите время', choices=[])
