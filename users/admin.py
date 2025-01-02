@@ -5,7 +5,7 @@ from users.models import User
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['pk', 'username']
 
     def save_model(self, request, obj, form, change):
         if "password" in form.changed_data:

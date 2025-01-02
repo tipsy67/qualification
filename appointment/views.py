@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.utils import timezone
 
 from appointment.forms import SecondStepForm, ThirdStepForm
+from appointment.models import Appointment
 from appointment.src.utils import get_time_slots
 from optics.models import Service
 from users.models import User
@@ -47,11 +48,12 @@ def step_3(request):
         if form.is_valid():
             service = Service.objects.filter(pk=form.data.get('service_pk')).first()
             medic = User.objects.filter(pk=form.data.get('medic_pk')).first()
+            day = form.data.get('appointment_day')
 
             next_form = ThirdStepForm(initial=form.data)
-            next_form.fields['appointment_slot'].choices = get_time_slots()
+            next_form.fields['appointment_slot'].choices = get_time_slots(day, service, medic)
 
-            context = {'form': next_form, 'service': service, 'medic': medic, 'date': form.data.get('appointment_day')}
+            context = {'form': next_form, 'service': service, 'medic': medic, 'date': day}
             return render(request, 'appointment/step_3.html', context)
         else:
 
@@ -63,9 +65,14 @@ def step_4(request):
         if form.is_valid():
             service = Service.objects.filter(pk=form.data.get('service_pk')).first()
             medic = User.objects.filter(pk=form.data.get('medic_pk')).first()
+            day = form.data.get('appointment_day')
+            time = form.data.get('appointment_slot')
+            owner = User.objects.filter(pk=3).first()
+
+            Appointment.objects.create(day=day, time=time, service=service, owner=owner)
 
             context = {'service': service, 'medic': medic,
-                       'date': form.data.get('appointment_day'), 'slot': form.data.get('appointment_slot')}
+                       'date': day, 'slot': time}
             return render(request, 'appointment/thank-you.html', context)
         else:
 
