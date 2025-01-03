@@ -9,7 +9,7 @@ urlpatterns = [
     path('', include('optics.urls', namespace='optics')),
     path('', include(('blog.urls', 'blog'), namespace='blog')),
     path('', include(('appointment.urls', 'appointment'), namespace='appointment')),
-    # path('', include(('users.urls', 'users'), namespace='users')),
+    path('', include(('users.urls', 'users'), namespace='users')),
 ]
 
 if settings.DEBUG:

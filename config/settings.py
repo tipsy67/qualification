@@ -99,6 +99,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'users.User'
 
+LOGIN_REDIRECT_URL = 'optics:home'
+LOGOUT_REDIRECT_URL = 'optics:home'
+LOGIN_URL = 'users:login'
+
 NULLABLE = {'blank': True, 'null': True}
 MAIN_STREAMER_PATH = [{'url' : "optics:home", 'name' : "Главная"}]
 NUMBER_OF_REVIEWS_DISPLAYED = 5

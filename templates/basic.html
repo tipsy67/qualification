@@ -30,41 +30,6 @@
       </div>
     </div>
 
-    <div class="search-popup">
-      <div class="search-popup-container">
-
-        <form role="search" method="get" class="search-form" action="">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
-          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
-        </form>
-
-        <h5 class="cat-list-title">Browse Categories</h5>
-        
-        <ul class="cat-list">
-          <li class="cat-list-item">
-            <a href="shop.html" title="Men Jackets">Men Jackets</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Fashion">Fashion</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Casual Wears">Casual Wears</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Women">Women</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Trending">Trending</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Hoodie">Hoodie</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Kids">Kids</a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <header id="header">
       <div id="header-wrap">
         <nav class="secondary-nav border-bottom">
@@ -79,26 +44,39 @@
               </div>
               <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
+                  {% if user.is_authenticated %}
                   <li>
-                    <a href="login.html">
+                    <a title="Профиль" href="{% url 'users:profile' %}">
                       <i class="icon icon-user"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="cart.html">
-                      <i class="icon icon-shopping-cart"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="wishlist.html">
+                    <a title="Моя медкарта" href="wishlist.html">
                       <i class="icon icon-heart"></i>
                     </a>
                   </li>
-                  <li class="user-items search-item pe-3">
-                    <a href="#" class="search-button">
-                      <i class="icon icon-search"></i>
+                  <li>
+                    <a title="Выйти" href="{% url 'users:logout_form' %}">
+                      <i class="icon icon-cancel"></i>
                     </a>
                   </li>
+                  {% else %}
+                  <li>
+                    <a title="Войти" href="{% url 'users:login' %}">
+                      <i class="icon icon-user"></i>
+                    </a>
+                  </li>
+<!--                  <li>-->
+<!--                    <a href="#">-->
+<!--                      <i class="icon icon-shopping-cart"></i>-->
+<!--                    </a>-->
+<!--                  </li>-->
+                  {% endif %}
+<!--                  <li class="user-items search-item pe-3">-->
+<!--                    <a href="#" class="search-button">-->
+<!--                      <i class="icon icon-search"></i>-->
+<!--                    </a>-->
+<!--                  </li>-->
                 </ul>
               </div>
             </div>
