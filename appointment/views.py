@@ -2,14 +2,15 @@ from django.shortcuts import render, redirect
 from django.utils import timezone
 
 from appointment.forms import SecondStepForm, ThirdStepForm
-from appointment.models import Appointment
+from appointment.models import Appointment, ResultOfService
 from appointment.src.utils import get_time_slots
+from config.settings import MAIN_STREAMER_PATH
 from optics.models import Service
 from users.models import User
-
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-
+@login_required
 def step_1(request):
     service_pk = request.GET.get('service_pk')
     service = Service.objects.filter(pk=service_pk).first()
@@ -22,6 +23,7 @@ def step_1(request):
 
     return render (request, 'appointment/step_1.html', context)
 
+@login_required
 def step_2(request):
     service_pk = request.GET.get('service_pk')
     medic_pk = request.GET.get('medic_pk')
@@ -41,7 +43,7 @@ def step_2(request):
 
     return render (request, 'appointment/step_2.html', context)
 
-
+@login_required
 def step_3(request):
     if request.method == 'POST':
         form = SecondStepForm(request.POST)
@@ -59,6 +61,7 @@ def step_3(request):
 
             return redirect(request, 'appointment/step_2.html', form.data)
 
+@login_required
 def step_4(request):
     if request.method == 'POST':
         form = SecondStepForm(request.POST)
@@ -67,9 +70,9 @@ def step_4(request):
             medic = User.objects.filter(pk=form.data.get('medic_pk')).first()
             day = form.data.get('appointment_day')
             time = form.data.get('appointment_slot')
-            owner = User.objects.filter(pk=3).first()
+            owner = request.user
 
-            Appointment.objects.create(day=day, time=time, service=service, owner=owner)
+            Appointment.objects.create(day=day, time=time, service=service, owner=owner, medic=medic)
 
             context = {'service': service, 'medic': medic,
                        'date': day, 'slot': time}
@@ -77,3 +80,37 @@ def step_4(request):
         else:
 
             return redirect(request, 'appointment/step_3.html', form.data)
+
+def appointments_list(request):
+    object_list = Appointment.objects.filter(owner=request.user)
+
+    streamer_content = {'title' : 'Медкарта'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'Записи', 'url' : 'appointment:appointment-list'})
+    streamer_content['path'] = streamer_path
+
+
+    context = {
+        'object_list': object_list,
+        'streamer_content': streamer_content,
+    }
+
+    return render(request, 'appointment/appointment-list.html', context)
+
+
+def appointments_detail(request, pk):
+
+    streamer_content = {'title' : 'Медкарта'}
+    streamer_path = MAIN_STREAMER_PATH.copy()
+    streamer_path.append({'name' : 'Записи', 'url' : 'appointment:appointment-list'})
+    streamer_path.append({'name' : 'Текущая', })
+    streamer_content['path'] = streamer_path
+
+    result = ResultOfService.objects.filter(pk=pk).first()
+
+    context = {
+        'streamer_content': streamer_content,
+        'result': result,
+    }
+
+    return render(request, 'appointment/appointment-detail.html', context)

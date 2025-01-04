@@ -104,7 +104,6 @@ def service_detail_view(request, pk):
     streamer_content = {'title' : 'Наши услуги'}
     streamer_path = MAIN_STREAMER_PATH.copy()
     streamer_path.append({'name' : 'Услуги', 'url' : 'optics:service-list'})
-    streamer_content['path'] = streamer_path
     streamer_path.append({'name' : 'Текущая', })
     streamer_content['path'] = streamer_path
 

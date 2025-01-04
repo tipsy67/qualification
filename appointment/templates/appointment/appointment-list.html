@@ -1,0 +1,51 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+{% load optics_tags %}
+
+{% include 'streamer.html' %}
+
+<section id="results" class="product-store padding-large">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <h3>Записи на прием и результаты</h3>
+                <table class="u-full-width">
+                    <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th>Услуга</th>
+                        <th>Врач</th>
+                        <th>Результат</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for object in object_list %}
+                    <tr>
+                        <td>{{ object.day }}</td>
+                        <td>{{ object.time }}</td>
+                        <td>{{ object.service }}</td>
+                        <td>{{ object.medic }}</td>
+                        {% if object.result is None %}
+                        <td>нет результатов</td>
+                        {% else %}
+                        <td><a href="{% url 'appointment:appointment-detail' object.result_id %}">
+                            {{ object.result }}
+                        </a></td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+{% include 'shipping-info.html' %}
+
+{% endblock content %}

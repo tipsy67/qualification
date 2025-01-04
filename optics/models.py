@@ -76,22 +76,5 @@ class Service(models.Model):
     def __str__(self):
         return f"{self.name}"
 
-class ResultOfService(models.Model):
-    name = models.CharField(max_length=100, verbose_name='Наименование')
-    description = models.TextField(blank=True, verbose_name='Описание')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Создан')
-    update_at = models.DateTimeField(auto_now=True, verbose_name='Изменен')
-    service = models.ForeignKey(to=Service, on_delete=models.PROTECT,
-                                 related_name='results', verbose_name='Услуга')
-    owner = models.ForeignKey(to=User, on_delete=models.SET_NULL, **NULLABLE,
-                                 related_name='results', verbose_name='Владелец')
-
-    class Meta:
-        verbose_name = 'Результат услуги'
-        verbose_name_plural = 'Результаты услуг'
-        ordering = ['name']
-
-    def __str__(self):
-        return f"{self.name}"
 
 

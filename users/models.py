@@ -23,7 +23,7 @@ class User(AbstractUser):
         verbose_name_plural = "пользователи"
 
     def __str__(self):
-        return f"{self.username}"
+        return f"{self.last_name} {self.first_name[:1]}."
 
     @property
     def fio(self):

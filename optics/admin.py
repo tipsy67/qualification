@@ -1,8 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from optics.models import (Brand, Category, Product,
-                           ResultOfService, Service)
+from optics.models import (Brand, Category, Product, Service)
 from users.models import User
 
 
@@ -40,7 +39,4 @@ class ServiceAdmin(admin.ModelAdmin):
             kwargs["queryset"] = User.objects.filter(is_medic=True)
         return super().formfield_for_manytomany(db_field, request, **kwargs)
 
-@admin.register(ResultOfService)
-class ResultOfServiceAdmin(admin.ModelAdmin):
-    pass
 

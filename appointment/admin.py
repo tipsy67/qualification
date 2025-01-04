@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from appointment.models import Appointment, Schedule
+from appointment.models import Appointment, Schedule, ResultOfService, Eye
 from users.models import User
 
 
@@ -36,4 +36,13 @@ class ScheduleAdmin(admin.ModelAdmin):
         if db_field.name == "medic":
             kwargs["queryset"] = User.objects.filter(is_medic=True)
         return super(ScheduleAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+
+
+@admin.register(ResultOfService)
+class ResultOfServiceAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Eye)
+class EyeAdmin(admin.ModelAdmin):
+    pass
 

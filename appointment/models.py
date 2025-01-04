@@ -5,6 +5,39 @@ from optics.models import Service
 from users.models import User
 
 
+class Eye(models.Model):
+    sph = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='SPH')
+    cyl = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='CYL')
+    ax = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='AX')
+    pr = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='Pr')
+    bas = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='BAS')
+    dp = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='DP')
+    add = models.DecimalField(**NULLABLE, max_digits=5, decimal_places=2, verbose_name='ADD')
+
+    class Meta:
+        verbose_name = 'Результат измерений'
+        verbose_name_plural = 'Результаты измерений'
+
+    def __str__(self):
+        return f"sph {self.sph} .."
+
+
+class ResultOfService(models.Model):
+    od = models.OneToOneField(to=Eye, **NULLABLE, on_delete=models.CASCADE, verbose_name='OD', related_name='od')
+    os = models.OneToOneField(to=Eye, **NULLABLE, on_delete=models.CASCADE, verbose_name='OD', related_name='os')
+    recommendations = models.TextField(blank=True, verbose_name='Рекомендации')
+    comment = models.TextField(blank=True, verbose_name='Комментарий')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Создан')
+    update_at = models.DateTimeField(auto_now=True, verbose_name='Изменен')
+
+    class Meta:
+        verbose_name = 'Результат услуги'
+        verbose_name_plural = 'Результаты услуг'
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"OD: {self.od} , OS: {self.os}"
+
 class Appointment(models.Model):
     day = models.DateField(verbose_name='День')
     time = models.TimeField(verbose_name='Время')
@@ -15,11 +48,17 @@ class Appointment(models.Model):
                                  related_name='appointments', verbose_name='Услуга')
     medic = models.ForeignKey(to=User, on_delete=models.SET_NULL, **NULLABLE,
                                  verbose_name='Медик')
+    result = models.OneToOneField(to=ResultOfService, **NULLABLE, on_delete=models.CASCADE,
+                                 related_name='appointment', verbose_name='Результат')
 
     class Meta:
         verbose_name = 'Запись'
         verbose_name_plural = 'Записи'
         ordering = ['service', 'day', 'time']
+
+    def __str__(self):
+        return f"{self.owner} {self.service} ({self.day})"
+
 
 class Schedule(models.Model):
     day = models.DateField(verbose_name='День')
@@ -32,3 +71,5 @@ class Schedule(models.Model):
         verbose_name = 'Расписание'
         verbose_name_plural = 'Расписание'
         ordering = ['medic','day']
+
+
