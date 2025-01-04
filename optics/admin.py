@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from optics.models import (Brand, Category, Feedback, Product, Quote,
+from optics.models import (Brand, Category, Product,
                            ResultOfService, Service)
 from users.models import User
 
@@ -44,10 +44,3 @@ class ServiceAdmin(admin.ModelAdmin):
 class ResultOfServiceAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Feedback)
-class FeedbackAdmin(admin.ModelAdmin):
-    pass
-
-@admin.register(Quote)
-class QuoteAdmin(admin.ModelAdmin):
-    pass

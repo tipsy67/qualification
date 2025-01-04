@@ -24,7 +24,8 @@ INSTALLED_APPS = [
     'optics',
     'appointment',
     'blog',
-    'users'
+    'users',
+    'tunes',
 ]
 
 MIDDLEWARE = [

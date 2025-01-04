@@ -4,11 +4,12 @@ from django.views.generic import CreateView, ListView
 
 from blog.models import Blog
 from config.settings import MAIN_STREAMER_PATH, NUMBER_OF_PRODUCTS_DISPLAYED
-from optics.models import Category, Feedback, Product, Service
+from optics.models import Category, Product, Service
+from tunes.models import Feedback
 from optics.src.utils import get_random_quote, get_random_reviews
 
 
-def mainpage(request):
+def main_page(request):
 
     category_list = Category.objects.filter(is_published=True)
 

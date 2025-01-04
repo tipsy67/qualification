@@ -1,5 +1,5 @@
 from config.settings import NUMBER_OF_REVIEWS_DISPLAYED
-from optics.models import Feedback, Quote
+from tunes.models import Feedback, Quote
 
 
 def get_random_reviews():
