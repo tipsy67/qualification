@@ -1,5 +1,4 @@
-
-from django.views.generic import (DetailView, ListView,)
+from django.views.generic import DetailView, ListView
 
 from blog.models import Blog
 from config.settings import MAIN_STREAMER_PATH
@@ -8,9 +7,9 @@ from config.settings import MAIN_STREAMER_PATH
 class BlogListView(ListView):
     model = Blog
 
-    streamer_content = {'title' : 'Наш блог'}
+    streamer_content = {'title': 'Наш блог'}
     streamer_path = MAIN_STREAMER_PATH.copy()
-    streamer_path.append({'name' : 'Статьи', 'url' : '#'})
+    streamer_path.append({'name': 'Статьи', 'url': '#'})
     streamer_content['path'] = streamer_path
 
     extra_context = {
@@ -24,11 +23,15 @@ class BlogListView(ListView):
 class BlogDetailView(DetailView):
     model = Blog
 
-    streamer_content = {'title' : 'Наш блог'}
+    streamer_content = {'title': 'Наш блог'}
     streamer_path = MAIN_STREAMER_PATH.copy()
-    streamer_path.append({'name' : 'Статьи', 'url' : 'blog:blog_list'})
+    streamer_path.append({'name': 'Статьи', 'url': 'blog:blog_list'})
     streamer_content['path'] = streamer_path
-    streamer_path.append({'name' : 'Текущая', })
+    streamer_path.append(
+        {
+            'name': 'Текущая',
+        }
+    )
     streamer_content['path'] = streamer_path
 
     extra_context = {

@@ -35,4 +35,3 @@ class User(AbstractUser):
         password = ''.join(random.choice(characters) for _ in range(length))
 
         return password
-

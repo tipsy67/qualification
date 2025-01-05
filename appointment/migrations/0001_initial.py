@@ -18,12 +18,38 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Appointment',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('day', models.DateField()),
                 ('time', models.TimeField()),
                 ('comment', models.CharField(blank=True, max_length=100, null=True)),
-                ('owner', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='appointments', to=settings.AUTH_USER_MODEL, verbose_name='Владелец')),
-                ('service', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='appointments', to='optics.service', verbose_name='Услуга')),
+                (
+                    'owner',
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name='appointments',
+                        to=settings.AUTH_USER_MODEL,
+                        verbose_name='Владелец',
+                    ),
+                ),
+                (
+                    'service',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name='appointments',
+                        to='optics.service',
+                        verbose_name='Услуга',
+                    ),
+                ),
             ],
         ),
     ]

@@ -22,7 +22,16 @@ class ProfileUpdateForm(forms.ModelForm):
 class CreateUserForm(UserCreationForm):
     class Meta:
         model = get_user_model()
-        fields = ('username', 'email', 'first_name', 'last_name', 'password1', 'password2', 'phone', 'avatar')
+        fields = (
+            'username',
+            'email',
+            'first_name',
+            'last_name',
+            'password1',
+            'password2',
+            'phone',
+            'avatar',
+        )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

@@ -20,6 +20,7 @@ class Feedback(models.Model):
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзывы'
 
+
 class Quote(models.Model):
     name = models.CharField(max_length=150, verbose_name='Имя')
     quote = models.TextField(blank=True, verbose_name='Сообщение')
@@ -32,6 +33,7 @@ class Quote(models.Model):
         # db_table = 'optics_quote'
         verbose_name = 'Цитата'
         verbose_name_plural = 'Цитаты'
+
 
 class Contact(models.Model):
     country = models.CharField(max_length=50, verbose_name='Страна')

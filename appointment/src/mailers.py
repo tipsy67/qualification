@@ -3,26 +3,8 @@ import smtplib
 from email.header import Header
 from email.mime.text import MIMEText
 
-import requests
 
-
-
-# def send_telegram_message(obj):
-#     """Функция отправки телеграм напоминания о привычке"""
-#     payload = {
-#         "chat_id": obj.owner.tg_chat_id,
-#         "text": f"Запланированная привычка: {obj.name}\n"
-#         + f"Вы должны сделать: {obj.action}\n"
-#         + f"Время на выполнение: {obj.time_to_complete} сек.\n"
-#         + f"{text_good_dog}",
-#     }
-#
-#     requests.post(
-#         f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage", data=payload
-#     )
-
-
-def sendmail(recipients_emails: list, title: str, content: str):
+def sendmail_cmd(recipients_emails: list, title: str, content: str):
     """
     Функция отправки писем
     """

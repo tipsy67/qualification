@@ -13,10 +13,21 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Quote',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=30, verbose_name='Имя')),
                 ('quote', models.TextField(blank=True, verbose_name='Сообщение')),
-                ('is_published', models.BooleanField(default=False, verbose_name='Публиковать')),
+                (
+                    'is_published',
+                    models.BooleanField(default=False, verbose_name='Публиковать'),
+                ),
             ],
             options={
                 'verbose_name': 'Цитата',

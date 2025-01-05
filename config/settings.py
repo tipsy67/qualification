@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-
+from celery.schedules import crontab
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,7 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    # 'django_celery_beat',
     'optics',
     'appointment',
     'blog',
@@ -104,8 +104,36 @@ LOGIN_REDIRECT_URL = 'optics:home'
 LOGOUT_REDIRECT_URL = 'optics:home'
 LOGIN_URL = 'users:login'
 
+CACHE_ENABLED = True
+
+if CACHE_ENABLED:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+            'LOCATION': 'redis://127.0.0.1:6379',
+        }
+    }
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 3600
+
+CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL")
+CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND")
+CELERY_TIMEZONE = TIME_ZONE
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT = 30 * 60
+# CELERY_RESULT_EXPIRES = 60
+# CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+CELERY_BEAT_SCHEDULE = {
+    'cleanup-task-results': {
+        'task': 'celery.backend_cleanup',
+        'schedule': crontab(hour=4, minute=0),
+    },
+}
+
 NULLABLE = {'blank': True, 'null': True}
-MAIN_STREAMER_PATH = [{'url' : "optics:home", 'name' : "Главная"}]
+MAIN_STREAMER_PATH = [{'url': "optics:home", 'name': "Главная"}]
 NUMBER_OF_REVIEWS_DISPLAYED = 5
 NUMBER_OF_PRODUCTS_DISPLAYED = 4
 DEFAULT_SERVICE_DURATION = 30

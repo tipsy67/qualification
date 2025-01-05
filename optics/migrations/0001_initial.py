@@ -8,14 +8,21 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=100, verbose_name='Наименование')),
                 ('description', models.TextField(blank=True, verbose_name='Описание')),
             ],
@@ -28,12 +35,26 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Feedback',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=30, verbose_name='Имя')),
                 ('phone', models.CharField(max_length=20, verbose_name='Телефон')),
                 ('message', models.TextField(blank=True, verbose_name='Сообщение')),
-                ('created_at', models.DateTimeField(auto_now_add=True, verbose_name='Создано')),
-                ('is_read', models.BooleanField(default=False, verbose_name='Прочитано')),
+                (
+                    'created_at',
+                    models.DateTimeField(auto_now_add=True, verbose_name='Создано'),
+                ),
+                (
+                    'is_read',
+                    models.BooleanField(default=False, verbose_name='Прочитано'),
+                ),
             ],
             options={
                 'verbose_name': 'Отзыв',
@@ -44,11 +65,25 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ResultOfService',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=100, verbose_name='Наименование')),
                 ('description', models.TextField(blank=True, verbose_name='Описание')),
-                ('created_at', models.DateTimeField(auto_now_add=True, verbose_name='Создан')),
-                ('update_at', models.DateTimeField(auto_now=True, verbose_name='Изменен')),
+                (
+                    'created_at',
+                    models.DateTimeField(auto_now_add=True, verbose_name='Создан'),
+                ),
+                (
+                    'update_at',
+                    models.DateTimeField(auto_now=True, verbose_name='Изменен'),
+                ),
             ],
             options={
                 'verbose_name': 'Результат услуги',
@@ -59,7 +94,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Service',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=100, verbose_name='Наименование')),
                 ('description', models.TextField(blank=True, verbose_name='Описание')),
             ],
@@ -72,15 +115,56 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Product',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('name', models.CharField(max_length=100, verbose_name='Наименование')),
-                ('description', models.TextField(blank=True, null=True, verbose_name='Описание')),
-                ('price', models.DecimalField(decimal_places=2, max_digits=15, verbose_name='Цена')),
-                ('image', models.ImageField(blank=True, null=True, upload_to='products/', verbose_name='Изображение')),
-                ('created_at', models.DateTimeField(auto_now_add=True, verbose_name='Создан')),
-                ('update_at', models.DateTimeField(auto_now=True, verbose_name='Изменен')),
-                ('is_published', models.BooleanField(default=False, verbose_name='Активно')),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='products', to='optics.category', verbose_name='Категория')),
+                (
+                    'description',
+                    models.TextField(blank=True, null=True, verbose_name='Описание'),
+                ),
+                (
+                    'price',
+                    models.DecimalField(
+                        decimal_places=2, max_digits=15, verbose_name='Цена'
+                    ),
+                ),
+                (
+                    'image',
+                    models.ImageField(
+                        blank=True,
+                        null=True,
+                        upload_to='products/',
+                        verbose_name='Изображение',
+                    ),
+                ),
+                (
+                    'created_at',
+                    models.DateTimeField(auto_now_add=True, verbose_name='Создан'),
+                ),
+                (
+                    'update_at',
+                    models.DateTimeField(auto_now=True, verbose_name='Изменен'),
+                ),
+                (
+                    'is_published',
+                    models.BooleanField(default=False, verbose_name='Активно'),
+                ),
+                (
+                    'category',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name='products',
+                        to='optics.category',
+                        verbose_name='Категория',
+                    ),
+                ),
             ],
             options={
                 'verbose_name': 'Продукт',

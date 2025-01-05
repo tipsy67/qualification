@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from appointment.models import Appointment, Schedule, ResultOfService, Eye
+from appointment.models import Appointment, Eye, ResultOfService, Schedule
+from appointment.src.celery_cmd import write_reminder
 from users.models import User
 
 
@@ -17,6 +18,7 @@ class MedicFilter(admin.SimpleListFilter):
             return queryset.all()
         return queryset.filter(medic=self.value())
 
+
 @admin.register(Appointment)
 class AppointmentAdmin(admin.ModelAdmin):
     list_display = ('service', 'day', 'time', 'owner', 'medic', 'comment')
@@ -25,7 +27,13 @@ class AppointmentAdmin(admin.ModelAdmin):
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "medic":
             kwargs["queryset"] = User.objects.filter(is_medic=True)
-        return super(AppointmentAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+        return super(AppointmentAdmin, self).formfield_for_foreignkey(
+            db_field, request, **kwargs
+        )
+
+    def save_model(self, request, obj, form, change):
+        super().save_model(request, obj, form, change)
+        write_reminder(obj.owner.pk, obj.pk)
 
 @admin.register(Schedule)
 class ScheduleAdmin(admin.ModelAdmin):
@@ -35,14 +43,16 @@ class ScheduleAdmin(admin.ModelAdmin):
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "medic":
             kwargs["queryset"] = User.objects.filter(is_medic=True)
-        return super(ScheduleAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+        return super(ScheduleAdmin, self).formfield_for_foreignkey(
+            db_field, request, **kwargs
+        )
 
 
 @admin.register(ResultOfService)
 class ResultOfServiceAdmin(admin.ModelAdmin):
     pass
 
+
 @admin.register(Eye)
 class EyeAdmin(admin.ModelAdmin):
     pass
-

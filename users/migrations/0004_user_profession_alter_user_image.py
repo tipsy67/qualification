@@ -13,11 +13,15 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='user',
             name='profession',
-            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='профессия'),
+            field=models.CharField(
+                blank=True, max_length=100, null=True, verbose_name='профессия'
+            ),
         ),
         migrations.AlterField(
             model_name='user',
             name='image',
-            field=models.ImageField(blank=True, null=True, upload_to='users/', verbose_name='фото'),
+            field=models.ImageField(
+                blank=True, null=True, upload_to='users/', verbose_name='фото'
+            ),
         ),
     ]
