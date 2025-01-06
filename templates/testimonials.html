@@ -1,37 +1,39 @@
-    <section id="testimonials" class="padding-large">
-      <div class="container">
+<hr>
+<section id="testimonials" class="padding-small no-padding-top">
+    <div class="container">
         <div class="reviews-content">
-          <div class="row d-flex flex-wrap">
-            <div class="col-md-2">
-              <div class="review-icon">
-                <i class="icon icon-right-quote"></i>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="swiper testimonial-swiper overflow-hidden">
-                <div class="swiper-wrapper">
-                  {% for testimonial in testimonials %}
-                  <div class="swiper-slide">
-                    <div class="testimonial-detail">
-                      <p>{{ testimonial.message }}</p>
-                      <div class="author-detail">
-                        <div class="name">{{ testimonial.name }}</div>
-                      </div>
+            <div class="row d-flex flex-wrap">
+                <div class="col-md-2">
+                    <div class="review-icon">
+                        <i class="icon icon-right-quote"></i>
                     </div>
-                  </div>
-                  {% endfor %}
                 </div>
-              </div>
-              <div class="swiper-arrows">
-                <button class="prev-button">
-                  <i class="icon icon-arrow-left"></i>
-                </button>
-                <button class="next-button">
-                  <i class="icon icon-arrow-right"></i>
-                </button>
-              </div>
+                <div class="col-md-8">
+                    <div class="swiper testimonial-swiper overflow-hidden">
+                        <div class="swiper-wrapper">
+                            {% for testimonial in testimonials %}
+                            <div class="swiper-slide">
+                                <div class="testimonial-detail">
+                                    <p>{{ testimonial.message }}</p>
+                                    <div class="author-detail">
+                                        <div class="name">{{ testimonial.name }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="swiper-arrows">
+                        <button class="prev-button">
+                            <i class="icon icon-arrow-left"></i>
+                        </button>
+                        <button class="next-button">
+                            <i class="icon icon-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+<hr>

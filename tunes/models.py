@@ -51,3 +51,16 @@ class Contact(models.Model):
         ordering = ['-updated_at']
         verbose_name = 'Контакт'
         verbose_name_plural = 'Контакты'
+
+
+class TunesDict(models.Model):
+    key = models.CharField(max_length=30, unique=True, verbose_name='Ключ')
+    value_int = models.CharField(**NULLABLE, verbose_name='Целочисленное значение')
+    value_char = models.CharField(max_length=100, **NULLABLE,  verbose_name='Строковое значение')
+    value_time = models.TimeField( **NULLABLE,  verbose_name='Константа времени')
+    value_date = models.DateField( **NULLABLE,  verbose_name='Константа даты')
+
+    class Meta:
+        ordering = ['key']
+        verbose_name = 'Тонкие настройки'
+        verbose_name_plural = 'Тонкие настройки'

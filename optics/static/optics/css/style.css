@@ -1016,6 +1016,9 @@ h2.product-title{
 
 /* - Section Padding
 --------------------------------------------------------------*/
+.padding-my {
+  padding-top: 2em;
+}
 .padding-xsmall {
   padding-top: 0.5em;
   padding-bottom: 0.5em;

@@ -4,6 +4,7 @@ from config.settings import DEFAULT_BEGIN_TIME, DEFAULT_END_TIME, NULLABLE
 from optics.models import Service
 from users.models import User
 
+weekdays = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
 
 class Eye(models.Model):
     sph = models.DecimalField(
@@ -121,3 +122,7 @@ class Schedule(models.Model):
         verbose_name = 'Расписание'
         verbose_name_plural = 'Расписание'
         ordering = ['medic', 'day']
+
+    @property
+    def day_of_week(self):
+        return weekdays[self.day.weekday()]
