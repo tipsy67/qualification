@@ -23,7 +23,7 @@ class Feedback(models.Model):
 
 class Quote(models.Model):
     name = models.CharField(max_length=150, verbose_name='Имя')
-    quote = models.TextField(blank=True, verbose_name='Сообщение')
+    quote = models.TextField(blank=True, verbose_name='Цитата')
     is_published = models.BooleanField(default=False, verbose_name='Публиковать')
 
     def __str__(self):
@@ -64,3 +64,6 @@ class TunesDict(models.Model):
         ordering = ['key']
         verbose_name = 'Тонкие настройки'
         verbose_name_plural = 'Тонкие настройки'
+
+    def __str__(self):
+        return f"{self.key}"
