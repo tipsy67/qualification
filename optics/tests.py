@@ -1,4 +1,7 @@
-from django.test import RequestFactory, TestCase
+from django.test import TestCase, Client
+from django.urls import reverse
+
+from optics.templatetags.optics_tags import add_media
 
 from config.settings import NUMBER_OF_REVIEWS_DISPLAYED
 from types import SimpleNamespace
@@ -12,13 +15,13 @@ class OpticsAppTest(TestCase):
 
     @classmethod
     def setUpTestData(cls):
-        brand = Brand.objects.create(name='Brand for test')
-        category= Category.objects.create(name='Category for test')
-        Product.objects.create(name='Product for test', price=1.11, category=category, brand=brand)
-        Service.objects.create(name='Service for test', price=1.11)
+        cls.brand = Brand.objects.create(name='Brand for test')
+        cls.category = Category.objects.create(name='Category for test')
+        cls.product = Product.objects.create(name='Product for test', price=1.11, category=cls.category, brand=cls.brand)
+        cls.service = Service.objects.create(name='Service for test', price=1.11)
 
     def test_brand_model(self):
-        brand=Brand.objects.get(id=1)
+        brand=Brand.objects.get(id=self.brand.pk)
 
         field_label = Brand._meta.get_field('name').verbose_name
         self.assertEqual(field_label,'Наименование')
@@ -31,7 +34,7 @@ class OpticsAppTest(TestCase):
 
 
     def test_category_model(self):
-        category=Category.objects.get(id=1)
+        category=Category.objects.get(id=self.category.pk)
 
         field_label = Category._meta.get_field('name').verbose_name
         self.assertEqual(field_label,'Наименование')
@@ -54,7 +57,7 @@ class OpticsAppTest(TestCase):
 
 
     def test_product_model(self):
-        product=Product.objects.get(id=1)
+        product=Product.objects.get(id=self.product.pk)
 
         field_label = Product._meta.get_field('name').verbose_name
         self.assertEqual(field_label,'Наименование')
@@ -96,7 +99,7 @@ class OpticsAppTest(TestCase):
 
 
     def test_service_model(self):
-        service = Service.objects.get(id=1)
+        service = Service.objects.get(id=self.service.pk)
 
         field_label = Service._meta.get_field('name').verbose_name
         self.assertEqual(field_label, 'Наименование')
@@ -125,6 +128,52 @@ class OpticsAppTest(TestCase):
         self.assertEqual(expected_object_name, str(service))
 
         self.assertEqual(service.is_published, False)
+
+    def test_views_main_page(self):
+        url = reverse('optics:home')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/index.html')
+
+    def test_views_FeedbackCreateView(self):
+        url = reverse('optics:contact')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/contact.html')
+
+    def test_views_thank_you(self):
+        url = reverse('optics:thank-you')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/thank-you.html')
+
+    def test_views_about(self):
+        url = reverse('optics:about')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/about.html')
+
+    def test_views_product_list_view(self):
+        url = reverse('optics:shop-list')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/shop_list.html')
+
+    def test_views_service_list_view(self):
+        url = reverse('optics:service-list')
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/service_list.html')
+
+    def test_views_service_detail_view(self):
+        url = reverse('optics:service-detail', args=[self.service.pk])
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'optics/service_detail.html')
+
+    def test_optics_tags(self):
+        self.assertEqual(add_media(None), "#")
+        self.assertEqual(add_media("test.img"), "/media/test.img")
 
 class OpticsUtilsTest(TestCase):
 

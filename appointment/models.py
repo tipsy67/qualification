@@ -49,7 +49,7 @@ class ResultOfService(models.Model):
         to=Eye,
         **NULLABLE,
         on_delete=models.CASCADE,
-        verbose_name='OD',
+        verbose_name='OS',
         related_name='os',
     )
     recommendations = models.TextField(blank=True, verbose_name='Рекомендации')
@@ -63,7 +63,7 @@ class ResultOfService(models.Model):
         ordering = ['-created_at']
 
     def __str__(self):
-        return f"OD: {self.od} , OS: {self.os}"
+        return f"OD: {self.od}, OS: {self.os}"
 
 
 class Appointment(models.Model):
@@ -122,6 +122,9 @@ class Schedule(models.Model):
         verbose_name = 'Расписание'
         verbose_name_plural = 'Расписание'
         ordering = ['medic', 'day']
+
+    def __str__(self):
+        return f"{self.medic} {self.day} {self.begin_time} {self.end_time}"
 
     @property
     def day_of_week(self):
