@@ -6,7 +6,7 @@ ENV PYTHONPATH="/app"
 ENV POETRY_VIRTUALENVS_CREATE=false
 
 COPY pyproject.toml poetry.lock ./
-RUN poetry install --only main
+RUN poetry install --only main --no-root
 RUN poetry remove python-dotenv
 RUN poetry add python-dotenv
 
