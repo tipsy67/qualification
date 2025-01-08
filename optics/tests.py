@@ -4,7 +4,7 @@ from config.settings import NUMBER_OF_REVIEWS_DISPLAYED
 from types import SimpleNamespace
 
 from optics.models import Brand, Category, Product, Service
-from optics.src.utils import get_random_reviews
+from optics.src.utils import get_random_reviews, get_random_quote
 from tunes.models import Feedback, Quote
 
 
@@ -155,4 +155,7 @@ class OpticsUtilsTest(TestCase):
             self.assertEqual(test_obj.is_published, True)
 
 
-
+    def test_get_random_quote(self):
+        test_obj = get_random_quote(self.request)
+        self.assertEqual(type(test_obj), Quote)
+        self.assertEqual(test_obj.is_published, True)

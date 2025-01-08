@@ -40,6 +40,8 @@ class Blog(models.Model):
         return truncatechars(self.content, 100)
 
     def save(self, *args, **kwargs):
-        if not self.pk:
-            self.slug = slugify(self.title)
-        super(Blog, self).save(*args, **kwargs)
+        obj = super(Blog, self).save(*args, **kwargs)
+        obj.slug = slugify(obj.title)
+        obj.save()
+
+        return obj
