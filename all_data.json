@@ -1,1 +1,2481 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2024-12-14T15:35:07.199Z", "user": 3, "content_type": 6, "object_id": "1", "object_repr": "Оправы", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2024-12-14T15:36:47.278Z", "user": 3, "content_type": 10, "object_id": "1", "object_repr": "LORA LETI 8258 c1", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2024-12-14T15:51:31.842Z", "user": 3, "content_type": 10, "object_id": "1", "object_repr": "LORA LETI 8258 c1", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0430\\u0440\\u0430\\u043c\\u0435\\u0442\\u0440\", \"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2024-12-14T15:53:28.958Z", "user": 3, "content_type": 10, "object_id": "1", "object_repr": "LORA LETI 8258 c1", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2024-12-14T15:58:38.598Z", "user": 3, "content_type": 10, "object_id": "1", "object_repr": "LORA LETI 8258 c1", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2024-12-14T16:03:29.133Z", "user": 3, "content_type": 10, "object_id": "2", "object_repr": "LORA LETI YJ0062 c2", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2024-12-14T16:05:04.031Z", "user": 3, "content_type": 10, "object_id": "3", "object_repr": "LORA LETI 8258 c2", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2024-12-14T16:07:37.450Z", "user": 3, "content_type": 10, "object_id": "4", "object_repr": "LORA LETI NS 21045 c5", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2024-12-14T16:09:38.257Z", "user": 3, "content_type": 10, "object_id": "5", "object_repr": "LORA LETI 3673 c3", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2024-12-14T16:11:55.108Z", "user": 3, "content_type": 10, "object_id": "6", "object_repr": "LORA LETI M2682 c9", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2024-12-14T16:15:27.861Z", "user": 3, "content_type": 10, "object_id": "7", "object_repr": "BELLA VIVA XC62119 c5", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2024-12-14T16:17:49.284Z", "user": 3, "content_type": 6, "object_id": "2", "object_repr": "Линзы", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2024-12-14T16:19:21.639Z", "user": 3, "content_type": 10, "object_id": "8", "object_repr": "Линза полимерная COMPUTRON HMC EMI UV N=1,56 D70мм (0,00… -4,00)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2024-12-14T16:20:40.592Z", "user": 3, "content_type": 10, "object_id": "9", "object_repr": "Линза полимерная COMPUTRON HMC EMI UV N=1,56 D70мм (-4,25… -6,00)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2024-12-14T16:24:27.714Z", "user": 3, "content_type": 10, "object_id": "10", "object_repr": "Линза полимерная асферическая UNI-MAX As HMC EMI UV Blue block N=1,56 D70мм (+0,5…+4,0)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2024-12-14T19:18:41.841Z", "user": 3, "content_type": 10, "object_id": "7", "object_repr": "BELLA VIVA XC62119 c5", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2024-12-14T19:31:03.760Z", "user": 3, "content_type": 13, "object_id": "1", "object_repr": "LORA LETI", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2024-12-14T19:31:28.440Z", "user": 3, "content_type": 13, "object_id": "2", "object_repr": "BELLA VIVA", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2024-12-14T19:32:09.266Z", "user": 3, "content_type": 10, "object_id": "7", "object_repr": "XC62119 c5", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2024-12-14T19:32:23.213Z", "user": 3, "content_type": 10, "object_id": "5", "object_repr": "3673 c3", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2024-12-14T19:32:38.512Z", "user": 3, "content_type": 10, "object_id": "1", "object_repr": "8258 c1", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2024-12-14T19:36:22.759Z", "user": 3, "content_type": 10, "object_id": "3", "object_repr": "8258 c2", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2024-12-14T19:36:34.144Z", "user": 3, "content_type": 10, "object_id": "6", "object_repr": "M2682 c9", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2024-12-14T19:36:43.099Z", "user": 3, "content_type": 10, "object_id": "4", "object_repr": "LORA LETI", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2024-12-14T19:37:02.659Z", "user": 3, "content_type": 10, "object_id": "4", "object_repr": "NS 21045 c5", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2024-12-14T19:37:10.058Z", "user": 3, "content_type": 10, "object_id": "2", "object_repr": "YJ0062 c2", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2024-12-14T19:37:26.273Z", "user": 3, "content_type": 13, "object_id": "3", "object_repr": "COMPUTRON", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2024-12-14T19:37:37.355Z", "user": 3, "content_type": 10, "object_id": "8", "object_repr": "HMC EMI UV N=1,56 D70мм (0,00… -4,00)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2024-12-14T19:37:47.697Z", "user": 3, "content_type": 10, "object_id": "9", "object_repr": "HMC EMI UV N=1,56 D70мм (-4,25… -6,00)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2024-12-14T19:38:03.139Z", "user": 3, "content_type": 13, "object_id": "4", "object_repr": "UNI-MAX", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2024-12-14T19:38:09.624Z", "user": 3, "content_type": 10, "object_id": "10", "object_repr": "As HMC EMI UV Blue block N=1,56 D70мм (+0,5…+4,0)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2024-12-14T19:44:50.229Z", "user": 3, "content_type": 6, "object_id": "2", "object_repr": "Линзы", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2024-12-14T19:44:53.560Z", "user": 3, "content_type": 6, "object_id": "1", "object_repr": "Оправы", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2024-12-14T19:44:59.237Z", "user": 3, "content_type": 6, "object_id": "2", "object_repr": "Линзы", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2024-12-15T18:39:54.562Z", "user": 3, "content_type": 6, "object_id": "2", "object_repr": "Линзы", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2024-12-15T18:59:48.362Z", "user": 3, "content_type": 6, "object_id": "1", "object_repr": "Оправы", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e \\u043d\\u0430 \\u0433\\u043b.\\u0441\\u0442\\u0440.\"]}}]"}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2024-12-15T19:05:02.977Z", "user": 3, "content_type": 7, "object_id": "1", "object_repr": "Юля Тихонова, 2024-12-15 19:05:02.976415+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2024-12-15T19:05:40.947Z", "user": 3, "content_type": 7, "object_id": "2", "object_repr": "Екатерина Машутова, 2024-12-15 19:05:40.946293+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2024-12-15T19:06:03.809Z", "user": 3, "content_type": 7, "object_id": "3", "object_repr": "Владимир Г., 2024-12-15 19:06:03.808261+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2024-12-15T19:06:30.174Z", "user": 3, "content_type": 7, "object_id": "4", "object_repr": "Галина Ильичева, 2024-12-15 19:06:30.173455+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2024-12-15T19:06:59.218Z", "user": 3, "content_type": 7, "object_id": "5", "object_repr": "Ольга Елисеева, 2024-12-15 19:06:59.217735+00:00", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2024-12-15T19:13:35.431Z", "user": 3, "content_type": 14, "object_id": "1", "object_repr": "1", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2024-12-15T19:14:29.344Z", "user": 3, "content_type": 14, "object_id": "1", "object_repr": "Директор НИЦ офтальмологии РНИМУ им. Н.И. Пирогова, академик РАН Христо Тахчиди", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2024-12-15T19:15:27.236Z", "user": 3, "content_type": 14, "object_id": "2", "object_repr": "Основатель МНТК С.Н. Федоров", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2024-12-15T19:16:34.328Z", "user": 3, "content_type": 14, "object_id": "3", "object_repr": "Народное творчество", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2024-12-15T19:16:42.210Z", "user": 3, "content_type": 14, "object_id": "3", "object_repr": "Народное творчество", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2024-12-15T20:51:29.040Z", "user": 3, "content_type": 7, "object_id": "6", "object_repr": "Sam, 2024-12-15 20:48:23.085725+00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2024-12-17T17:29:32.716Z", "user": 3, "content_type": 9, "object_id": "1", "object_repr": "Подбор контактных линз (18+)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2024-12-17T17:49:13.693Z", "user": 3, "content_type": 9, "object_id": "1", "object_repr": "Подбор контактных линз (18+)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2024-12-17T17:50:19.220Z", "user": 3, "content_type": 9, "object_id": "2", "object_repr": "Рецепт на очки (18+)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2024-12-17T17:51:18.080Z", "user": 3, "content_type": 9, "object_id": "3", "object_repr": "Проверка зрения детям", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2024-12-17T17:52:23.552Z", "user": 3, "content_type": 9, "object_id": "4", "object_repr": "Экспресс-диагностика зрения", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2024-12-17T18:07:21.100Z", "user": 3, "content_type": 9, "object_id": "1", "object_repr": "Подбор контактных линз (18+)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2024-12-17T18:07:26.500Z", "user": 3, "content_type": 9, "object_id": "3", "object_repr": "Проверка зрения детям", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2024-12-17T18:07:30.625Z", "user": 3, "content_type": 9, "object_id": "2", "object_repr": "Рецепт на очки (18+)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2024-12-17T18:07:35.334Z", "user": 3, "content_type": 9, "object_id": "4", "object_repr": "Экспресс-диагностика зрения", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2024-12-22T20:36:35.961Z", "user": 3, "content_type": 11, "object_id": "1", "object_repr": "Конъюнктивит. Просто и по полочкам", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2024-12-22T20:39:55.260Z", "user": 3, "content_type": 11, "object_id": "1", "object_repr": "Конъюнктивит. Просто и по полочкам", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2024-12-23T19:33:36.681Z", "user": 3, "content_type": 11, "object_id": "2", "object_repr": "Поляризационные и антибликовые очки. В чем разница?", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2024-12-23T19:36:33.458Z", "user": 3, "content_type": 11, "object_id": "3", "object_repr": "Слезоточивость на морозе. Норма?", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2024-12-23T19:37:28.551Z", "user": 3, "content_type": 11, "object_id": "2", "object_repr": "Поляризационные и антибликовые очки. В чем разница?", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2024-12-25T19:11:44.148Z", "user": 3, "content_type": 12, "object_id": "4", "object_repr": "ИвановаА", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2024-12-25T19:12:44.387Z", "user": 3, "content_type": 12, "object_id": "5", "object_repr": "ПетроваЖ", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2024-12-25T19:12:59.609Z", "user": 3, "content_type": 12, "object_id": "4", "object_repr": "ИвановаА", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u043e\\u0444\\u0435\\u0441\\u0441\\u0438\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2024-12-25T19:15:24.395Z", "user": 3, "content_type": 12, "object_id": "5", "object_repr": "ПетроваЖ", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2024-12-25T19:15:36.562Z", "user": 3, "content_type": 12, "object_id": "5", "object_repr": "ПетроваЖ", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2024-12-25T19:15:47.036Z", "user": 3, "content_type": 12, "object_id": "4", "object_repr": "ИвановаА", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2024-12-25T19:23:47.385Z", "user": 3, "content_type": 9, "object_id": "1", "object_repr": "Подбор контактных линз (18+)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2024-12-25T19:23:52.798Z", "user": 3, "content_type": 9, "object_id": "3", "object_repr": "Проверка зрения детям", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2024-12-25T19:23:59.844Z", "user": 3, "content_type": 9, "object_id": "2", "object_repr": "Рецепт на очки (18+)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2024-12-25T19:24:06.748Z", "user": 3, "content_type": 9, "object_id": "4", "object_repr": "Экспресс-диагностика зрения", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2024-12-27T20:12:35.345Z", "user": 3, "content_type": 12, "object_id": "5", "object_repr": "ПетроваЖ", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2025-01-02T18:46:02.889Z", "user": 3, "content_type": 17, "object_id": "1", "object_repr": "Appointment object (1)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2025-01-02T20:14:36.540Z", "user": 3, "content_type": 18, "object_id": "1", "object_repr": "Schedule object (1)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2025-01-02T20:15:10.192Z", "user": 3, "content_type": 18, "object_id": "2", "object_repr": "Schedule object (2)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2025-01-02T20:31:13.980Z", "user": 3, "content_type": 18, "object_id": "2", "object_repr": "Schedule object (2)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0430\\u0431\\u043e\\u0447\\u0438\\u0439 \\u0434\\u0435\\u043d\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2025-01-02T20:55:21.950Z", "user": 3, "content_type": 17, "object_id": "1", "object_repr": "Appointment object (1)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0434\\u0438\\u043a\"]}}]"}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2025-01-04T20:19:15.514Z", "user": 3, "content_type": 22, "object_id": "1", "object_repr": "sph -1.75 ..", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2025-01-04T20:19:30.841Z", "user": 3, "content_type": 22, "object_id": "1", "object_repr": "sph -2.75 ..", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"SPH\"]}}]"}}, {"model": "admin.logentry", "pk": 80, "fields": {"action_time": "2025-01-04T20:19:46.293Z", "user": 3, "content_type": 22, "object_id": "2", "object_repr": "sph 1.75 ..", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 81, "fields": {"action_time": "2025-01-04T20:19:49.126Z", "user": 3, "content_type": 23, "object_id": "1", "object_repr": "OD: sph -2.75 .. , OS: sph 1.75 ..", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 82, "fields": {"action_time": "2025-01-04T20:19:50.549Z", "user": 3, "content_type": 17, "object_id": "1", "object_repr": "Торопов Д. Проверка зрения детям (2025-01-15)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442\"]}}]"}}, {"model": "admin.logentry", "pk": 83, "fields": {"action_time": "2025-01-04T21:01:44.460Z", "user": 3, "content_type": 22, "object_id": "3", "object_repr": "sph -1.75 ..", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 84, "fields": {"action_time": "2025-01-04T21:05:14.438Z", "user": 3, "content_type": 22, "object_id": "4", "object_repr": "sph -2.75 ..", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 85, "fields": {"action_time": "2025-01-04T21:05:37.627Z", "user": 3, "content_type": 23, "object_id": "2", "object_repr": "OD: sph -2.75 .. , OS: sph -1.75 ..", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 86, "fields": {"action_time": "2025-01-04T21:10:39.969Z", "user": 3, "content_type": 17, "object_id": "2", "object_repr": "Торопов Д. Рецепт на очки (18+) (2025-01-16)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0434\\u0438\\u043a\", \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442\"]}}]"}}, {"model": "admin.logentry", "pk": 87, "fields": {"action_time": "2025-01-05T20:28:22.284Z", "user": 3, "content_type": 17, "object_id": "3", "object_repr": "Торопов Д. Проверка зрения детям (2025-01-08)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 88, "fields": {"action_time": "2025-01-05T20:28:41.303Z", "user": 3, "content_type": 17, "object_id": "4", "object_repr": "Торопов Д. Проверка зрения детям (2025-01-06)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\", \"\\u0412\\u0440\\u0435\\u043c\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 89, "fields": {"action_time": "2025-01-05T20:48:34.121Z", "user": 3, "content_type": 17, "object_id": "2", "object_repr": "Торопов Д. Рецепт на очки (18+) (2025-01-06)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\", \"\\u0412\\u0440\\u0435\\u043c\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 90, "fields": {"action_time": "2025-01-05T20:49:48.937Z", "user": 3, "content_type": 17, "object_id": "2", "object_repr": "Торопов Д. Рецепт на очки (18+) (2025-01-05)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 91, "fields": {"action_time": "2025-01-05T21:03:18.713Z", "user": 3, "content_type": 17, "object_id": "4", "object_repr": "Торопов Д. Проверка зрения детям (2025-01-06)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f\"]}}]"}}, {"model": "admin.logentry", "pk": 92, "fields": {"action_time": "2025-01-05T21:03:27.595Z", "user": 3, "content_type": 17, "object_id": "4", "object_repr": "Торопов Д. Проверка зрения детям (2025-01-07)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\"]}}]"}}, {"model": "admin.logentry", "pk": 93, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "10", "object_repr": "Schedule object (10)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 94, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "9", "object_repr": "Schedule object (9)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 95, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "8", "object_repr": "Schedule object (8)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 96, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "7", "object_repr": "Schedule object (7)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 97, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "6", "object_repr": "Schedule object (6)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 98, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "5", "object_repr": "Schedule object (5)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 99, "fields": {"action_time": "2025-01-06T21:11:06.917Z", "user": 3, "content_type": 18, "object_id": "4", "object_repr": "Schedule object (4)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 100, "fields": {"action_time": "2025-01-06T21:12:44.237Z", "user": 3, "content_type": 24, "object_id": "1", "object_repr": "TunesDict object (1)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 101, "fields": {"action_time": "2025-01-06T21:19:24.494Z", "user": 3, "content_type": 18, "object_id": "18", "object_repr": "Schedule object (18)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 102, "fields": {"action_time": "2025-01-06T21:46:08.052Z", "user": 3, "content_type": 24, "object_id": "1", "object_repr": "TunesDict object (1)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0440\\u043e\\u043a\\u043e\\u0432\\u043e\\u0435 \\u0437\\u043d\\u0430\\u0447\\u0435\\u043d\\u0438\\u0435\", \"\\u041a\\u043e\\u043d\\u0441\\u0442\\u0430\\u043d\\u0442\\u0430 \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u0438\"]}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add content type", "content_type": 4, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change content type", "content_type": 4, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete content type", "content_type": 4, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view content type", "content_type": 4, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add session", "content_type": 5, "codename": "add_session"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change session", "content_type": 5, "codename": "change_session"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete session", "content_type": 5, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view session", "content_type": 5, "codename": "view_session"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add Категория", "content_type": 6, "codename": "add_category"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change Категория", "content_type": 6, "codename": "change_category"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete Категория", "content_type": 6, "codename": "delete_category"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view Категория", "content_type": 6, "codename": "view_category"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add Отзыв", "content_type": 7, "codename": "add_feedback"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change Отзыв", "content_type": 7, "codename": "change_feedback"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete Отзыв", "content_type": 7, "codename": "delete_feedback"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view Отзыв", "content_type": 7, "codename": "view_feedback"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add Результат услуги", "content_type": 8, "codename": "add_resultofservice"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change Результат услуги", "content_type": 8, "codename": "change_resultofservice"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete Результат услуги", "content_type": 8, "codename": "delete_resultofservice"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view Результат услуги", "content_type": 8, "codename": "view_resultofservice"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add Услуга", "content_type": 9, "codename": "add_service"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change Услуга", "content_type": 9, "codename": "change_service"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete Услуга", "content_type": 9, "codename": "delete_service"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view Услуга", "content_type": 9, "codename": "view_service"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add Продукт", "content_type": 10, "codename": "add_product"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change Продукт", "content_type": 10, "codename": "change_product"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete Продукт", "content_type": 10, "codename": "delete_product"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view Продукт", "content_type": 10, "codename": "view_product"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add Статья", "content_type": 11, "codename": "add_blog"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change Статья", "content_type": 11, "codename": "change_blog"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete Статья", "content_type": 11, "codename": "delete_blog"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can view Статья", "content_type": 11, "codename": "view_blog"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can publish article", "content_type": 11, "codename": "can_publish_article"}}, {"model": "auth.permission", "pk": 46, "fields": {"name": "Can add пользователь", "content_type": 12, "codename": "add_user"}}, {"model": "auth.permission", "pk": 47, "fields": {"name": "Can change пользователь", "content_type": 12, "codename": "change_user"}}, {"model": "auth.permission", "pk": 48, "fields": {"name": "Can delete пользователь", "content_type": 12, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 49, "fields": {"name": "Can view пользователь", "content_type": 12, "codename": "view_user"}}, {"model": "auth.permission", "pk": 50, "fields": {"name": "Can add Бренд", "content_type": 13, "codename": "add_brand"}}, {"model": "auth.permission", "pk": 51, "fields": {"name": "Can change Бренд", "content_type": 13, "codename": "change_brand"}}, {"model": "auth.permission", "pk": 52, "fields": {"name": "Can delete Бренд", "content_type": 13, "codename": "delete_brand"}}, {"model": "auth.permission", "pk": 53, "fields": {"name": "Can view Бренд", "content_type": 13, "codename": "view_brand"}}, {"model": "auth.permission", "pk": 54, "fields": {"name": "Can add Цитата", "content_type": 14, "codename": "add_quote"}}, {"model": "auth.permission", "pk": 55, "fields": {"name": "Can change Цитата", "content_type": 14, "codename": "change_quote"}}, {"model": "auth.permission", "pk": 56, "fields": {"name": "Can delete Цитата", "content_type": 14, "codename": "delete_quote"}}, {"model": "auth.permission", "pk": 57, "fields": {"name": "Can view Цитата", "content_type": 14, "codename": "view_quote"}}, {"model": "auth.permission", "pk": 58, "fields": {"name": "Can add Контакт", "content_type": 15, "codename": "add_contact"}}, {"model": "auth.permission", "pk": 59, "fields": {"name": "Can change Контакт", "content_type": 15, "codename": "change_contact"}}, {"model": "auth.permission", "pk": 60, "fields": {"name": "Can delete Контакт", "content_type": 15, "codename": "delete_contact"}}, {"model": "auth.permission", "pk": 61, "fields": {"name": "Can view Контакт", "content_type": 15, "codename": "view_contact"}}, {"model": "auth.permission", "pk": 62, "fields": {"name": "Can add appointment", "content_type": 16, "codename": "add_appointment"}}, {"model": "auth.permission", "pk": 63, "fields": {"name": "Can change appointment", "content_type": 16, "codename": "change_appointment"}}, {"model": "auth.permission", "pk": 64, "fields": {"name": "Can delete appointment", "content_type": 16, "codename": "delete_appointment"}}, {"model": "auth.permission", "pk": 65, "fields": {"name": "Can view appointment", "content_type": 16, "codename": "view_appointment"}}, {"model": "auth.permission", "pk": 66, "fields": {"name": "Can add appointment", "content_type": 17, "codename": "add_appointment"}}, {"model": "auth.permission", "pk": 67, "fields": {"name": "Can change appointment", "content_type": 17, "codename": "change_appointment"}}, {"model": "auth.permission", "pk": 68, "fields": {"name": "Can delete appointment", "content_type": 17, "codename": "delete_appointment"}}, {"model": "auth.permission", "pk": 69, "fields": {"name": "Can view appointment", "content_type": 17, "codename": "view_appointment"}}, {"model": "auth.permission", "pk": 70, "fields": {"name": "Can add Расписание", "content_type": 18, "codename": "add_schedule"}}, {"model": "auth.permission", "pk": 71, "fields": {"name": "Can change Расписание", "content_type": 18, "codename": "change_schedule"}}, {"model": "auth.permission", "pk": 72, "fields": {"name": "Can delete Расписание", "content_type": 18, "codename": "delete_schedule"}}, {"model": "auth.permission", "pk": 73, "fields": {"name": "Can view Расписание", "content_type": 18, "codename": "view_schedule"}}, {"model": "auth.permission", "pk": 74, "fields": {"name": "Can add Контакт", "content_type": 19, "codename": "add_contact"}}, {"model": "auth.permission", "pk": 75, "fields": {"name": "Can change Контакт", "content_type": 19, "codename": "change_contact"}}, {"model": "auth.permission", "pk": 76, "fields": {"name": "Can delete Контакт", "content_type": 19, "codename": "delete_contact"}}, {"model": "auth.permission", "pk": 77, "fields": {"name": "Can view Контакт", "content_type": 19, "codename": "view_contact"}}, {"model": "auth.permission", "pk": 78, "fields": {"name": "Can add Отзыв", "content_type": 20, "codename": "add_feedback"}}, {"model": "auth.permission", "pk": 79, "fields": {"name": "Can change Отзыв", "content_type": 20, "codename": "change_feedback"}}, {"model": "auth.permission", "pk": 80, "fields": {"name": "Can delete Отзыв", "content_type": 20, "codename": "delete_feedback"}}, {"model": "auth.permission", "pk": 81, "fields": {"name": "Can view Отзыв", "content_type": 20, "codename": "view_feedback"}}, {"model": "auth.permission", "pk": 82, "fields": {"name": "Can add Цитата", "content_type": 21, "codename": "add_quote"}}, {"model": "auth.permission", "pk": 83, "fields": {"name": "Can change Цитата", "content_type": 21, "codename": "change_quote"}}, {"model": "auth.permission", "pk": 84, "fields": {"name": "Can delete Цитата", "content_type": 21, "codename": "delete_quote"}}, {"model": "auth.permission", "pk": 85, "fields": {"name": "Can view Цитата", "content_type": 21, "codename": "view_quote"}}, {"model": "auth.permission", "pk": 86, "fields": {"name": "Can add eye", "content_type": 22, "codename": "add_eye"}}, {"model": "auth.permission", "pk": 87, "fields": {"name": "Can change eye", "content_type": 22, "codename": "change_eye"}}, {"model": "auth.permission", "pk": 88, "fields": {"name": "Can delete eye", "content_type": 22, "codename": "delete_eye"}}, {"model": "auth.permission", "pk": 89, "fields": {"name": "Can view eye", "content_type": 22, "codename": "view_eye"}}, {"model": "auth.permission", "pk": 90, "fields": {"name": "Can add Результат услуги", "content_type": 23, "codename": "add_resultofservice"}}, {"model": "auth.permission", "pk": 91, "fields": {"name": "Can change Результат услуги", "content_type": 23, "codename": "change_resultofservice"}}, {"model": "auth.permission", "pk": 92, "fields": {"name": "Can delete Результат услуги", "content_type": 23, "codename": "delete_resultofservice"}}, {"model": "auth.permission", "pk": 93, "fields": {"name": "Can view Результат услуги", "content_type": 23, "codename": "view_resultofservice"}}, {"model": "auth.permission", "pk": 94, "fields": {"name": "Can add Тонкие настройки", "content_type": 24, "codename": "add_tunesdict"}}, {"model": "auth.permission", "pk": 95, "fields": {"name": "Can change Тонкие настройки", "content_type": 24, "codename": "change_tunesdict"}}, {"model": "auth.permission", "pk": 96, "fields": {"name": "Can delete Тонкие настройки", "content_type": 24, "codename": "delete_tunesdict"}}, {"model": "auth.permission", "pk": 97, "fields": {"name": "Can view Тонкие настройки", "content_type": 24, "codename": "view_tunesdict"}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "optics", "model": "category"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "optics", "model": "feedback"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "optics", "model": "resultofservice"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "optics", "model": "service"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "optics", "model": "product"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "blog", "model": "blog"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "users", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "optics", "model": "brand"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "optics", "model": "quote"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "optics", "model": "contact"}}, {"model": "contenttypes.contenttype", "pk": 16, "fields": {"app_label": "optics", "model": "appointment"}}, {"model": "contenttypes.contenttype", "pk": 17, "fields": {"app_label": "appointment", "model": "appointment"}}, {"model": "contenttypes.contenttype", "pk": 18, "fields": {"app_label": "appointment", "model": "schedule"}}, {"model": "contenttypes.contenttype", "pk": 19, "fields": {"app_label": "tunes", "model": "contact"}}, {"model": "contenttypes.contenttype", "pk": 20, "fields": {"app_label": "tunes", "model": "feedback"}}, {"model": "contenttypes.contenttype", "pk": 21, "fields": {"app_label": "tunes", "model": "quote"}}, {"model": "contenttypes.contenttype", "pk": 22, "fields": {"app_label": "appointment", "model": "eye"}}, {"model": "contenttypes.contenttype", "pk": 23, "fields": {"app_label": "appointment", "model": "resultofservice"}}, {"model": "contenttypes.contenttype", "pk": 24, "fields": {"app_label": "tunes", "model": "tunesdict"}}, {"model": "sessions.session", "pk": "8nsswi9p0655y4glzmz8x4w9ifckelm6", "fields": {"session_data": ".eJxVjDsOwjAQBe_iGlmxvTZeSvqcIXrrDwmgRMqnQtwdIqWA9s3Me6kO29p321Lmbsjqopw6_W6C9CjjDvId423SaRrXeRC9K_qgi26nXJ7Xw_076LH039pycpGNqxIsBQ_rGIYiA03KtQpMArF4G33jyIOkkYwQmOQMSV69P9aUN_E:1tMBUD:eg60YuxIG913KidKArxoeua6a26UoZlpUA-sBWu9Zno", "expire_date": "2024-12-27T19:38:05.443Z"}}, {"model": "sessions.session", "pk": "xn6130xmu29s37snyo8j2rk5p8v8gyom", "fields": {"session_data": ".eJxVjDsOwjAQBe_iGlmxvTZeSvqcIXrrDwmgRMqnQtwdIqWA9s3Me6kO29p321Lmbsjqopw6_W6C9CjjDvId423SaRrXeRC9K_qgi26nXJ7Xw_076LH039pycpGNqxIsBQ_rGIYiA03KtQpMArF4G33jyIOkkYwQmOQMSV69P9aUN_E:1tU92r:iJIOUdllVGlMKYBAHNdu-9coeCp5coWRb3pgm8Cst24", "expire_date": "2025-01-18T18:38:45.085Z"}}, {"model": "optics.brand", "pk": 1, "fields": {"name": "LORA LETI"}}, {"model": "optics.brand", "pk": 2, "fields": {"name": "BELLA VIVA"}}, {"model": "optics.brand", "pk": 3, "fields": {"name": "COMPUTRON"}}, {"model": "optics.brand", "pk": 4, "fields": {"name": "UNI-MAX"}}, {"model": "optics.category", "pk": 1, "fields": {"name": "Оправы", "description": "Оправы", "is_published": true, "active_on_main_page": true}}, {"model": "optics.category", "pk": 2, "fields": {"name": "Линзы", "description": "Линзы", "is_published": true, "active_on_main_page": false}}, {"model": "optics.product", "pk": 1, "fields": {"brand": 1, "name": "8258 c1", "description": "Оправа товарного знака Lora Leti", "price": "11200.00", "image": "products/LORA-LETI-8258-c1_Qw670Z5.webp", "created_at": "2024-12-14T15:36:47.251Z", "update_at": "2024-12-14T19:32:38.511Z", "category": 1, "owner": null, "parameter": "52-18-138 мм", "is_published": true}}, {"model": "optics.product", "pk": 2, "fields": {"brand": 1, "name": "YJ0062 c2", "description": "Оправа товарного знака Lora Leti", "price": "10900.00", "image": "products/LORA-LETI-YJ0062-c2.webp", "created_at": "2024-12-14T16:03:29.130Z", "update_at": "2024-12-14T19:37:10.057Z", "category": 1, "owner": null, "parameter": "51-19-142 мм", "is_published": true}}, {"model": "optics.product", "pk": 3, "fields": {"brand": 1, "name": "8258 c2", "description": "Оправа товарного знака Lora Leti", "price": "11200.00", "image": "products/LORA-LETI-8258-c2.webp", "created_at": "2024-12-14T16:05:04.030Z", "update_at": "2024-12-14T19:36:22.757Z", "category": 1, "owner": null, "parameter": "52-18-138 мм", "is_published": true}}, {"model": "optics.product", "pk": 4, "fields": {"brand": 1, "name": "NS 21045 c5", "description": "Оправа товарного знака Lora Leti", "price": "11900.00", "image": "products/LORA-LETI-NS-21045-c5.webp", "created_at": "2024-12-14T16:07:37.449Z", "update_at": "2024-12-14T19:37:02.657Z", "category": 1, "owner": null, "parameter": "45-22-140 мм", "is_published": true}}, {"model": "optics.product", "pk": 5, "fields": {"brand": 1, "name": "3673 c3", "description": "Оправа товарного знака Lora Leti", "price": "10900.00", "image": "products/LORA-LETI-3673-c3.webp", "created_at": "2024-12-14T16:09:38.256Z", "update_at": "2024-12-14T19:32:23.211Z", "category": 1, "owner": null, "parameter": "55-17-140 мм", "is_published": true}}, {"model": "optics.product", "pk": 6, "fields": {"brand": 1, "name": "M2682 c9", "description": "Оправа товарного знака Lora Leti", "price": "8960.00", "image": "products/LORA-LETI-M2682-c9.webp", "created_at": "2024-12-14T16:11:55.107Z", "update_at": "2024-12-14T19:36:34.143Z", "category": 1, "owner": null, "parameter": "52-18-140 мм", "is_published": true}}, {"model": "optics.product", "pk": 7, "fields": {"brand": 2, "name": "XC62119 c5", "description": "Оправа товарного знака BELLA VIVA", "price": "7840.00", "image": "products/BELLA-VIVA-XC62119-c5.webp", "created_at": "2024-12-14T16:15:27.859Z", "update_at": "2024-12-14T19:32:09.265Z", "category": 1, "owner": null, "parameter": "55-17-140 мм", "is_published": true}}, {"model": "optics.product", "pk": 8, "fields": {"brand": 3, "name": "HMC EMI UV N=1,56 D70мм (0,00… -4,00)", "description": "Стигматические полимерные линзы COMPUTRON\r\n\r\nХарактеристики:\r\n\r\nКоэффициент преломления 1.56\r\nЧисло АББЕ 38\r\nСветопропускание 98,5%\r\nЗащита от УФ излучения 380 нм\r\nМногослойное металлизированное, упрочняющее, гидрофобное, антибликовое покрытие (остаточный рефлекс — зеленый)", "price": "900.00", "image": "products/IMG_5876.webp", "created_at": "2024-12-14T16:19:21.638Z", "update_at": "2024-12-14T19:37:37.353Z", "category": 2, "owner": null, "parameter": null, "is_published": true}}, {"model": "optics.product", "pk": 9, "fields": {"brand": 3, "name": "HMC EMI UV N=1,56 D70мм (-4,25… -6,00)", "description": "Стигматические полимерные линзы COMPUTRON\r\n\r\nХарактеристики:\r\n\r\nКоэффициент преломления 1.56\r\nЧисло АББЕ 38\r\nСветопропускание 98,5%\r\nЗащита от УФ излучения 380 нм\r\nМногослойное металлизированное, упрочняющее, гидрофобное, антибликовое покрытие (остаточный рефлекс — зеленый)", "price": "1000.00", "image": "products/IMG_5876_LQcL2dG.webp", "created_at": "2024-12-14T16:20:40.590Z", "update_at": "2024-12-14T19:37:47.696Z", "category": 2, "owner": null, "parameter": null, "is_published": true}}, {"model": "optics.product", "pk": 10, "fields": {"brand": 4, "name": "As HMC EMI UV Blue block N=1,56 D70мм (+0,5…+4,0)", "description": "Асферические полимерные линзы с многослойным покрытием.\r\n\r\nХарактеристики:\r\n\r\nКоэффициент преломления 1.61\r\nУпрочняющее покрытие (8H)\r\nБлокирует пропускание коротких волн света синего спектра\r\nЗащита от УФ излучения до 420 нм\r\nЗащита от электро-магнитного излучения\r\nМногослойное гидрофобное, антистатическое, антибликовое покрытие (остаточный рефлекс — зеленый)", "price": "2200.00", "image": "products/Uni-Max-2.webp", "created_at": "2024-12-14T16:24:27.712Z", "update_at": "2024-12-14T19:38:09.622Z", "category": 2, "owner": null, "parameter": null, "is_published": true}}, {"model": "optics.service", "pk": 1, "fields": {"name": "Подбор контактных линз (18+)", "description": "Процедура для взрослых занимает 30-40 минут и включает в себя:\r\nСбор анамнеза.\r\nПроверка на авторефрактометре (компьютерная диагностика).\r\nПроверка зрения с помощью тестов.\r\nИсследование характера зрения.\r\nОбсуждение ваших зрительных потребностей.\r\nПримерка пробной пары контактных линз.\r\nОценка посадки линз.\r\nОбучение манипуляция с линзами, а также уходу за ними (если вы ранее не носили линзы).\r\nКонсультации по режиму ношения и посещению офтальмолога.\r\nЗаполнение компьютерной карты пациента.", "price": "1500.00", "duration": null, "image": "products/i10.png", "is_published": true, "medic": [4]}}, {"model": "optics.service", "pk": 2, "fields": {"name": "Рецепт на очки (18+)", "description": "Проверка зрения для подбора очков занимает 25-30 минут и включает в себя:\r\nОбсуждение истории заболевания\r\nПроверка на авторефрактометре (компьютерная диагностика)\r\nПроверка очков пациента на диоптриметре*\r\nПроверка остроты зрения с помощью тестов\r\nОпределение полной и переносимой коррекции в пробной оправе\r\nИсследование характера зрения, фории, аккомодации и конвергенции (при необходимости)\r\nОбсуждение зрительных потребностей пациента\r\nПрезентация рекомендуемых очковых линз\r\nЗаполнение компьютерной карты пациента и выписка необходимых рецептов", "price": "1500.00", "duration": null, "image": "products/i9.png", "is_published": true, "medic": [4, 5]}}, {"model": "optics.service", "pk": 3, "fields": {"name": "Проверка зрения детям", "description": "Сбор анамнеза ребенка (история рождения, особенности раннего развития, у каких специалистов наблюдается).\r\nВид и степень нарушения зрения. Принесите с собой предыдущее заключение офтальмолога, а также расскажите врачу о коррекции, которой в данный момент пользуется ребенок. Захватите с собой очки его или рецепт на них и/или на контактные линзы.\r\nОсмотр передней поверхности глаз.\r\nКомпьютерная авторефрактокератометрия.\r\nИзмерение расстояния между оптическими центрами обоих глаз.\r\nТест на выявление явного или скрытого косоглазия.\r\nОпределение остроты зрения вдаль и вблизи. Проводится сначала без использования средств коррекции, а затем с помощью очков или контактных линз, которые носит ребенок.\r\nИсследование максимальной субъективной коррекции вдаль для каждого глаза отдельно по тестовым таблицам . Проводится с помощью пробной оправы и очковых линз из пробного набора.\r\nИсследование состояния характера зрения, мышечного баланса, аккомодации, конвергенции. При необходимости могут проводиться дополнительные тесты.\r\nЦиклоплегия. Врач дважды закапывает специальные капли, которые расширяют зрачок и позволяют провести осмотр глазного дна. Для этого исследования используются современные препараты короткого действия, поэтому глаза ребенока быстро вернутся к исходному состоянию. Через 30-40 минут врач проводит повторную авторефрактокератометрия, а также обследует глазное дно. В некоторых случаях применяются дополнительные тесты с диафрагмами.\r\nПодбор средств коррекции. После циклоплегии детский офтальмолог подбирает очки, учитывая зрительные потребности ребенка,а также переносимость очков. Врач дает рекомендации родителям по режиму режим ношения очков, а также может посоветовать определенные тип и дизайн очковых линз.\r\nВыписка рецепта.\r\nДополнительные рекомендации по аппаратному лечению, использованию тренажеров, компьютерных программ.", "price": "2000.00", "duration": null, "image": "products/i12.png", "is_published": true, "medic": [4]}}, {"model": "optics.service", "pk": 4, "fields": {"name": "Экспресс-диагностика зрения", "description": "Специалист бесплатно проверит зрение в очках и без них и даст свои рекомендации.\r\n\r\nОсмотр включает:\r\n\r\nкраткий анамнез\r\nавторефрактометрию (проверка зрения на специальном компьютерном оборудовании)\r\nопределение остроты зрения в ваших очках или линзах\r\nпроверку очков пациента на диоптриметре\r\nконсультацию по дальнейшему обследованию", "price": "500.00", "duration": null, "image": "products/i11.png", "is_published": true, "medic": [4, 5]}}, {"model": "appointment.eye", "pk": 1, "fields": {"sph": "-2.75", "cyl": null, "ax": null, "pr": null, "bas": null, "dp": null, "add": null}}, {"model": "appointment.eye", "pk": 2, "fields": {"sph": "1.75", "cyl": null, "ax": null, "pr": null, "bas": null, "dp": null, "add": null}}, {"model": "appointment.eye", "pk": 3, "fields": {"sph": "-1.75", "cyl": null, "ax": null, "pr": null, "bas": null, "dp": null, "add": null}}, {"model": "appointment.eye", "pk": 4, "fields": {"sph": "-2.75", "cyl": null, "ax": null, "pr": null, "bas": null, "dp": null, "add": null}}, {"model": "appointment.resultofservice", "pk": 1, "fields": {"od": 1, "os": 2, "recommendations": "hrhffh jdjkdfkj", "comment": "", "created_at": "2025-01-04T20:19:49.122Z", "update_at": "2025-01-04T20:19:49.122Z"}}, {"model": "appointment.resultofservice", "pk": 2, "fields": {"od": 4, "os": 3, "recommendations": "", "comment": "", "created_at": "2025-01-04T21:05:37.624Z", "update_at": "2025-01-04T21:05:37.625Z"}}, {"model": "appointment.appointment", "pk": 1, "fields": {"day": "2025-01-15", "time": "14:00:00", "comment": null, "owner": 3, "service": 3, "medic": 4, "result": 1}}, {"model": "appointment.appointment", "pk": 2, "fields": {"day": "2025-01-05", "time": "23:50:00", "comment": null, "owner": 3, "service": 2, "medic": 5, "result": 2}}, {"model": "appointment.appointment", "pk": 4, "fields": {"day": "2025-01-07", "time": "00:05:00", "comment": null, "owner": 3, "service": 3, "medic": 4, "result": null}}, {"model": "appointment.schedule", "pk": 1, "fields": {"day": "2025-01-17", "begin_time": "10:00:00", "end_time": "13:00:00", "is_working_day": true, "medic": 4}}, {"model": "appointment.schedule", "pk": 2, "fields": {"day": "2025-01-18", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": false, "medic": 4}}, {"model": "appointment.schedule", "pk": 11, "fields": {"day": "2025-01-19", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": false, "medic": 4}}, {"model": "appointment.schedule", "pk": 12, "fields": {"day": "2025-01-20", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 4}}, {"model": "appointment.schedule", "pk": 13, "fields": {"day": "2025-01-21", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 4}}, {"model": "appointment.schedule", "pk": 14, "fields": {"day": "2025-01-22", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 4}}, {"model": "appointment.schedule", "pk": 15, "fields": {"day": "2025-01-23", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 4}}, {"model": "appointment.schedule", "pk": 16, "fields": {"day": "2025-01-24", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 4}}, {"model": "appointment.schedule", "pk": 17, "fields": {"day": "2025-01-25", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": false, "medic": 4}}, {"model": "appointment.schedule", "pk": 18, "fields": {"day": "2025-01-07", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": false, "medic": 5}}, {"model": "appointment.schedule", "pk": 19, "fields": {"day": "2025-01-08", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 20, "fields": {"day": "2025-01-09", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 21, "fields": {"day": "2025-01-10", "begin_time": "10:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 22, "fields": {"day": "2025-01-11", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 23, "fields": {"day": "2025-01-12", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 24, "fields": {"day": "2025-01-13", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": false, "medic": 5}}, {"model": "appointment.schedule", "pk": 25, "fields": {"day": "2025-01-14", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": false, "medic": 5}}, {"model": "appointment.schedule", "pk": 26, "fields": {"day": "2025-01-15", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 27, "fields": {"day": "2025-01-16", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "appointment.schedule", "pk": 28, "fields": {"day": "2025-01-17", "begin_time": "11:00:00", "end_time": "16:00:00", "is_working_day": true, "medic": 5}}, {"model": "blog.blog", "pk": 1, "fields": {"title": "Конъюнктивит. Просто и по полочкам", "slug": "konyunktivit-prosto-i-po-polochkam", "image": "products/2-_39_.jpg", "created_at": "2024-12-22T20:36:35.958Z", "update_at": "2024-12-24T19:29:22.652Z", "is_published": true, "views_counter": 7, "content": "Казалось бы, с конъюнктивитом сталкивался практически каждый – либо болел сам, либо слышал от знакомых. Но первый же вопрос «Что такое конъюнктива?», и, если вы не офтальмолог, становится понятно, что ничего непонятно. Что такое конъюнктивит? Конъюнктива в переводе с латинского означает соединяющую оболочку. Эта прозрачная ткань покрывает верхнюю часть глазного яблока и внутреннюю поверхность глаза. В ней содержатся лимфатические и кровеносные сосуды, нервы и железы. Она выполняет множество функций – от защиты от механических повреждений до увлажнения глаза и уничтожения бактерий. Поэтому повреждения конъюнктивы очень негативно сказываются на здоровье глаз. Конъюнктивит — воспаление конъюнктивы и внутренней поверхности век, может быть как хроническим, так и острым. Различают: Вирусный (часто возникает при простудных заболеваниях); Бактериальный (вызван бактериями и отличается чаще всего воспалением одного глаза); Аллергический (появляется вследствие аллергии и отличается воспалением сразу двух глаз). Вирусный и бактериальный конъюнктивиты весьма заразны, они могут передаваться воздушно-капельным путем или через грязные руки. Симптомы конъюнктивита Симптомы отличаются в зависимости от вида конъюнктивита, но можно выделить общие: Гнойные или слизистые выделения; Жжение и зуд; Светобоязнь; Ощущение песка в глазах; Отек и покраснение слизистой. При острой форме заболевание длится в среднем 4 недели, при хронической форме – больше месяца. Причины Самая частая причина конъюнктивита – несоблюдение режима гигиены, но не всегда чистые руки могут уберечь от этой напасти, ведь существует еще ряд причин: Аллергическая реакция; Травмы глаз (механические повреждения, термические и химические ожоги); Вирусные инфекции; Аутоиммунный заболевания; Бактериальные инфекции; Грибковые поражения глаз. Помимо основных причин, благоприятствуют развитию заболевания следующие факторы: Переохлаждение; Неправильное ношение контактных линз; Длительное воздействие УФ-лучей; Длительное напряжение глаз; Несоблюдение личной гигиены; Хронические заболевания; Авитаминоз. Лечение конъюнктивита Оговоримся сразу: никакое самолечение и прикладывание чайных пакетиков на глаза не сделают лучше, возможно даже наоборот! После определения вида и причин конъюнктивита офтальмолог подберет подходяще лечение. Чаще всего назначаются мази и глазные капли с антибиотиками.", "owner": null}}, {"model": "blog.blog", "pk": 2, "fields": {"title": "Поляризационные и антибликовые очки. В чем разница?", "slug": "polyarizatsionnyie-i-antiblikovyie-ochki-v-chem-raznitsa", "image": "products/132761.text.4815.jpg", "created_at": "2024-12-23T19:33:36.679Z", "update_at": "2025-01-01T18:50:22.091Z", "is_published": true, "views_counter": 19, "content": "Очки принято разделять на те, что для зрения, и те, что защищают от солнца. Но на самом деле видов оптики куда больше. Сегодня рассказываем о поляризационных и антибликовых очках. В чем заключаются их ключевые преимущества, чем они отличаются друг от друга, и, быть может, вы после этой статьи поймете, что эти очки – именно то, чего вам не хватало для комфорта за рулем или во время прогулки. В чем особенность антибликовых и поляризационных очков? Такие очки – это очки со специальным покрытием, которое улучшает их оптические характеристики и повышают комфорт использования. Антибликовые и поляризационные очки пользуются особой популярностью среди автомобилистов, потому что позволяют видеть более четко и не позволяют солнечным бликам застилать обзор. Давайте поговорим о том, в чем их сходства и различия. Сходства И антибликовые, и поляризационные очки предназначены для спасения от отсветов. Они поддерживают глаза и спасают их от перенапряжения. Более того, и те, и другие очки очень привередливы в хранении: царапины на поверхности снижают их эффективность, поэтому хранить их следует в футляре и регулярно протирать специальной салфеткой. Различия Антибликовые очки Линза с обеих сторон покрывается пленкой или обрабатывается специальным составом; Способны устранить блики от фар встречных автомобилей; Хорошо пропускают свет. Потеря света не превышает 0,6%; У антибликовых очков отсутствует эффект блика линзы, о чем и говорит их название; Снимают напряжение с глаз; Чаще всего они не броские, поэтому их преимуществом можно назвать эстетичность; Обладают «просветляющими» характеристиками, то есть вы получаете чистое и яркое изображение. В чем разница поляризационных и антибликовых очков Поляризационные очки Они создаются из специального материала или, к и в случае с антибликовых очками, используется пленка, но уже с фильтрующими свойствами; Более популярны среди людей, занимающимися активными видами спорта (горнолыжный спорт, скалолазание и т.д.); Поток света в таких очках делится, поэтому пропускная способность у них ниже, чем у антибликовых; Поляризационные очки спасают от ослепления солнечным светом, поскольку компенсируют чрезмерную интенсивность УФ лучей; Аналогично снимают напряжение глаз. Выводы Антибликовые очки – оптика с дополнительным покрытием на линзе, которое увеличивает их прозрачность и способность пропускать свет. Они устраняют блики от фар и других источников света. Как результат: улучшается острота зрения и контрастность картинки. Отличный выбор для водителей. Поляризационные очки – очки, в которых используются линзы из специального материала, которые устраняют блики, возникающие при отражении света от поверхности. Эти очки буквально спасают от ослепления бликами мокрого асфальта или воды в солнечный день, так как они не пропускают лучи, отраженные от горизонтальной поверхности. Идеальны для любителей активного отдыха и спорта. Ну что, вам уже захотелось приобрести пару таких очков?", "owner": null}}, {"model": "blog.blog", "pk": 3, "fields": {"title": "Слезоточивость на морозе. Норма?", "slug": "slezotochivost-na-moroze-norma", "image": "products/images-1.jpg", "created_at": "2024-12-23T19:36:33.456Z", "update_at": "2025-01-01T18:50:16.294Z", "is_published": true, "views_counter": 12, "content": "Зима — пора белоснежных сугробов, бодрящего мороза и новогоднего настроения. А для многих — еще и пора слезящихся глаз. Почему организм так реагирует на температурные изменения? Нормально ли это? Разберемся в причинах этого явления. Почему слезятся глаза? Предпосылок для частого «плача» зимой на самом деле не так много. 1 причина — пробки в носослезном канале. Посмотрим на строение «слезной» системы. Если говорить простым языком, то этот аппарат состоит из двух частей: Производство слезы (слезная железа); Перемещение слезы (выводные протоки, слезные канальцы, слезный мешок и носослезный канал). Если с производством слез зимой проблем, как правило, не возникает, то на этапе их передвижения могут возникнуть затруднения. Морозная погода вызывает сужение слезных каналов и провоцирует их спазм. Более того, холод может стать причиной так называемых пробок в этих каналах. Слезы копятся, «дамба» рушится — и накопившиеся слезы вырываются из глаз и драматично стекают по вашим щекам. 2 причина — аллергия. У большого количества людей есть аллергия на мороз. Да-да, и такая существует. Аллергикам не повезло мириться с раздражением глаз, слезоточивостью и зудом только по той причине, что их аллергеном выступают, например, не коты или цитрусовые, которых легко избежать, а мороз, от которого скрыться уже не так просто. 3 причина — повышенная чувствительность к свету. Многие из нас ощущали эту болезненную резь в глазах, когда выходишь из темного помещения в солнечный зимний день. Причиной тому служит цвет снега. Белый цвет лучше всего отражает свет, и мы вынуждены бороться не только с прямым воздействием ультрафиолета, но и с его отражением. Опасна ли повышенная слезоточивость? Удивительно, но постоянные слезы на морозе, которые мы привыкли считать нормой, на самом деле не такие уж и безобидные. Постоянные слезы создают дискомфорт, временно ухудшают способность ясно видеть, раздражают кожу, повышают риск развития гнойных и воспалительных заболеваний глаз и окружающих органов. Если после того, как вы вошли в теплое помещение, слезы продолжают неконтролируемо течь, есть повод запланировать визит к офтальмологу — это может быть признаком серьезных глазных заболеваний. Как помочь своим глазам на морозе? Солнцезащитные очки Их необходимость не исчезает с наступлением зимы, а увеличивается из-за пагубной способности снега отражать солнечные лучи и делать их вдвое ярче и опаснее. Искусственная слеза Это необычное название для самых обыкновенных капель, которые помогают дополнительно увлажнить глаз в ветреную погоду. Еда и витамины Разнообразьте свой рацион продуктами, полезными для глаз: морковью, морской рыбой, черникой, орехами. Гигиена Чтобы не вызывать раздражение и не заносить грязь в глаза, правильно вытирайте слезы: промакивайте веко от наружного края к носу и вверх. Самопроверка Для того, чтобы понять, обычные ли это слезы от мороза или все же есть какие-то проблемы, стоит ответить на два вопроса: Слезится один глаз или оба? Непрошенные слезы появляются постоянно или только в холодную погоду? Если слезы постоянные или слезится только один глаз, то следует незамедлительно провериться у офтальмолога.", "owner": null}}, {"model": "users.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$870000$jIu2z66zhnK2VWa8tLFtVe$CalnFO4M9tB/sjqHYWRD4lPDdUKA/6UPbsep0cuMgKk=", "last_login": null, "is_superuser": true, "username": "", "first_name": "", "last_name": "", "email": "dtoropov@yandex.ru", "is_staff": true, "is_active": true, "date_joined": "2024-12-13T19:29:32.487Z", "tg_chat_id": null, "avatar": "", "image": "", "is_medic": false, "profession": null, "phone": "1", "token": null, "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 3, "fields": {"password": "pbkdf2_sha256$870000$EZ0woM2VDXLm7hzg0Q0WVH$uA125AUFwpu9HakbwJ0sA3jzK1mbO7k/q9LAjpWK5pU=", "last_login": "2025-01-06T21:47:37.631Z", "is_superuser": true, "username": "negoro", "first_name": "Даниил", "last_name": "Торопов", "email": "dtoropov@yandex.ru", "is_staff": true, "is_active": true, "date_joined": "2024-12-13T19:37:40.299Z", "tg_chat_id": null, "avatar": "", "image": "", "is_medic": false, "profession": null, "phone": "+79203201146", "token": null, "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 4, "fields": {"password": "pbkdf2_sha256$870000$e9TEbUptjDZJyQvnESFX1K$dZ3VeQr4xb8Xg8eE/rOEoS2yDhIlo5H+dyFAVJNnycs=", "last_login": null, "is_superuser": false, "username": "ИвановаА", "first_name": "Анжела", "last_name": "Иванова", "email": "", "is_staff": false, "is_active": true, "date_joined": "2024-12-25T19:09:18Z", "tg_chat_id": null, "avatar": "", "image": "users/acabextm4svcwxh27h8y1k0fwa0uge6f.jpg", "is_medic": true, "profession": "Врач-офтальмолог", "phone": "1", "token": null, "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 5, "fields": {"password": "pbkdf2_sha256$870000$IJpscwtFiOiMA2PqEvnwvz$vNECG7kIKPTgrQZ11v8FB3s6xuw9+5FIVspvhXZt6mE=", "last_login": null, "is_superuser": false, "username": "ПетроваЖ", "first_name": "Жанна", "last_name": "Петрова", "email": "", "is_staff": false, "is_active": true, "date_joined": "2024-12-25T19:11:55Z", "tg_chat_id": null, "avatar": "", "image": "users/111.jpg", "is_medic": true, "profession": "Оптометрист", "phone": "1", "token": null, "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 6, "fields": {"password": "pbkdf2_sha256$870000$F6AuQ4Z7rlljMjK09EQoIl$t4qZG62MsI5F8QcF5xbG3sAnj2pa6Fzbsbydl1XGBaQ=", "last_login": "2025-01-04T18:09:30.287Z", "is_superuser": false, "username": "test", "first_name": "1", "last_name": "2", "email": "dtoropov@yandex.ru", "is_staff": false, "is_active": true, "date_joined": "2025-01-03T20:17:30.334Z", "tg_chat_id": null, "avatar": "", "image": "", "is_medic": false, "profession": null, "phone": "+79203201146", "token": "430a8689a4275203e015ca30e767e539", "groups": [], "user_permissions": []}}, {"model": "users.user", "pk": 7, "fields": {"password": "pbkdf2_sha256$870000$rVv5Ief3WPk96UXfxC5ZaG$W4zDrb61vmfjD9SG/KjFXLBAWoL6+yaOMxjwftf6zB8=", "last_login": null, "is_superuser": false, "username": "test_new", "first_name": "1", "last_name": "2", "email": "dtoropov@yandex.ru", "is_staff": false, "is_active": false, "date_joined": "2025-01-03T20:25:02.108Z", "tg_chat_id": null, "avatar": "", "image": "", "is_medic": false, "profession": null, "phone": "+79203201146", "token": "87cf4842d659bbee541f3a3b52fa6414", "groups": [], "user_permissions": []}}, {"model": "tunes.feedback", "pk": 1, "fields": {"name": "Юля Тихонова", "phone": null, "message": "Отличная оптика! Всем рекомендую. Прекрасная консультация и адекватные цены, по своему опыту, скажу: лучшая оптика в городе!", "created_at": "2024-12-15T19:05:02.976Z", "is_read": true, "is_published": true}}, {"model": "tunes.feedback", "pk": 2, "fields": {"name": "Екатерина Машутова", "phone": null, "message": "В первый раз была в этой Оптики и осталась довольна. Девушка которая там работает помогла с выбором очков и все подробно рассказала.Большое спасибо мастеру который делает очки, он сделал все быстро))) Советую эту Оптику!", "created_at": "2024-12-15T19:05:40.946Z", "is_read": true, "is_published": true}}, {"model": "tunes.feedback", "pk": 3, "fields": {"name": "Владимир Г.", "phone": null, "message": "Обратился за помощью в Оптика Сити.\r\nМенеджер оказалась очень приветлива, помогла с выбором очков.\r\nОстался очень доволен, буду обращаться только сюда.\r\nВсем рекомендую, останетесь очень довольны.", "created_at": "2024-12-15T19:06:03.808Z", "is_read": true, "is_published": true}}, {"model": "tunes.feedback", "pk": 4, "fields": {"name": "Галина Ильичева", "phone": null, "message": "Замечательное и очень приятное обслуживание, профессиональный подбор оправы и хорошие советы по подбору солнечных очков. Большое спасибо .", "created_at": "2024-12-15T19:06:30.173Z", "is_read": true, "is_published": true}}, {"model": "tunes.feedback", "pk": 5, "fields": {"name": "Ольга Елисеева", "phone": null, "message": "Всё сделано на высшем уровне! Цены приятные. Выбор оправ хороший, на любой кошелек.\r\nПриятные бонусы в подарок- салфетка для протирки очков и мешочек - порадовали. Приветливое общение, подробно разъяснили всё, что интересовало. Вообще впечатление осталось очень позитивное. Теперь буду обращаться только сюда!)", "created_at": "2024-12-15T19:06:59.217Z", "is_read": true, "is_published": true}}, {"model": "tunes.feedback", "pk": 7, "fields": {"name": "Sam", "phone": "+79889898", "message": "sssss", "created_at": "2024-12-15T20:53:33.937Z", "is_read": false, "is_published": false}}, {"model": "tunes.feedback", "pk": 8, "fields": {"name": "sss", "phone": "sdsad", "message": "dsasdsdas", "created_at": "2025-01-05T21:41:45.161Z", "is_read": false, "is_published": false}}, {"model": "tunes.quote", "pk": 1, "fields": {"name": "Директор НИЦ офтальмологии РНИМУ им. Н.И. Пирогова, академик РАН Христо Тахчиди", "quote": "Древний человек, в основном он жил и работал в природе. В первую очередь он должен был защитить себя, а значит, увидеть опасность как можно быстрее и как можно дальше. Эффективно находить пищу на расстоянии. По законам эволюции выживали те, у кого было хорошее зрение вдаль и при этом глаз не напрягался. Поэтому глаз при взгляде в даль как бы отдыхает, он не напряжен. Он напрягается при взгляде вблизи. И вот это напряжение дает перегрузку глазу. Современный человек практически на даль не работает, до 90% зрения им используется вблизи: это письмо, чтение, гаджеты, мелкая работа, ограниченные пространства и т.д. В результате сегодня катастрофически растут аномалии рефракции глаза — близорукость, дальнозоркость, астигматизм — это всё от ненормального развития глаза из-за перегрузки.", "is_published": true}}, {"model": "tunes.quote", "pk": 2, "fields": {"name": "Основатель МНТК С.Н. Федоров", "quote": "Посмотрите, люди, как прекрасна жизнь, природа, Земля! Можно жить сто и тысячи лет, и каждый день не переставать удивляться восходу и закату солнца, пению птиц, краскам лесного озера, вкусному обеду, хорошему умному слову... Нет, самое замечательное, что у нас есть – это жизнь! Жаль, что она быстротечна. Обидно, что наука и медицина пока не в силах тут ничего изменить. Вот за это и надо бороться врачам! Всеми силами ума, таланта, души. Моя самая заветная мечта – задержать старение людей и начать... с глаза. Я хочу хотя бы начать, получить какие-то первые результаты, а дальше дело пойдет", "is_published": true}}, {"model": "tunes.quote", "pk": 3, "fields": {"name": "Народное творчество", "quote": "И один глаз — да зорок, не надо и со́рок...", "is_published": true}}, {"model": "tunes.tunesdict", "pk": 1, "fields": {"key": "begin_time", "value_int": null, "value_char": null, "value_time": "11:00:00", "value_date": null}}]
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-12-14T15:35:07.199Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Оправы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-12-14T15:36:47.278Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "LORA LETI 8258 c1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-12-14T15:51:31.842Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "LORA LETI 8258 c1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0430\\u0440\\u0430\\u043c\\u0435\\u0442\\u0440\", \"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-12-14T15:53:28.958Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "LORA LETI 8258 c1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-12-14T15:58:38.598Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "LORA LETI 8258 c1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-12-14T16:03:29.133Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "LORA LETI YJ0062 c2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-12-14T16:05:04.031Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "LORA LETI 8258 c2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-12-14T16:07:37.450Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "LORA LETI NS 21045 c5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-12-14T16:09:38.257Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "LORA LETI 3673 c3",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-12-14T16:11:55.108Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "LORA LETI M2682 c9",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-12-14T16:15:27.861Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "BELLA VIVA XC62119 c5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-12-14T16:17:49.284Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Линзы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-12-14T16:19:21.639Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "Линза полимерная COMPUTRON HMC EMI UV N=1,56 D70мм (0,00… -4,00)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-12-14T16:20:40.592Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "Линза полимерная COMPUTRON HMC EMI UV N=1,56 D70мм (-4,25… -6,00)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-12-14T16:24:27.714Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "10",
+      "object_repr": "Линза полимерная асферическая UNI-MAX As HMC EMI UV Blue block N=1,56 D70мм (+0,5…+4,0)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-12-14T19:18:41.841Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "BELLA VIVA XC62119 c5",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-12-14T19:31:03.760Z",
+      "user": 3,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "LORA LETI",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-12-14T19:31:28.440Z",
+      "user": 3,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "BELLA VIVA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-12-14T19:32:09.266Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "XC62119 c5",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-12-14T19:32:23.213Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "3673 c3",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-12-14T19:32:38.512Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "8258 c1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-12-14T19:36:22.759Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "8258 c2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-12-14T19:36:34.144Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "M2682 c9",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-12-14T19:36:43.099Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "LORA LETI",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2024-12-14T19:37:02.659Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "NS 21045 c5",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2024-12-14T19:37:10.058Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "YJ0062 c2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2024-12-14T19:37:26.273Z",
+      "user": 3,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "COMPUTRON",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2024-12-14T19:37:37.355Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "HMC EMI UV N=1,56 D70мм (0,00… -4,00)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2024-12-14T19:37:47.697Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "HMC EMI UV N=1,56 D70мм (-4,25… -6,00)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2024-12-14T19:38:03.139Z",
+      "user": 3,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "UNI-MAX",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2024-12-14T19:38:09.624Z",
+      "user": 3,
+      "content_type": 10,
+      "object_id": "10",
+      "object_repr": "As HMC EMI UV Blue block N=1,56 D70мм (+0,5…+4,0)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0411\\u0440\\u0435\\u043d\\u0434\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2024-12-14T19:44:50.229Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Линзы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2024-12-14T19:44:53.560Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Оправы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2024-12-14T19:44:59.237Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Линзы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2024-12-15T18:39:54.562Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Линзы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2024-12-15T18:59:48.362Z",
+      "user": 3,
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "Оправы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u043a\\u0442\\u0438\\u0432\\u043d\\u043e \\u043d\\u0430 \\u0433\\u043b.\\u0441\\u0442\\u0440.\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2024-12-15T19:05:02.977Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Юля Тихонова, 2024-12-15 19:05:02.976415+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2024-12-15T19:05:40.947Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Екатерина Машутова, 2024-12-15 19:05:40.946293+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2024-12-15T19:06:03.809Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Владимир Г., 2024-12-15 19:06:03.808261+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2024-12-15T19:06:30.174Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Галина Ильичева, 2024-12-15 19:06:30.173455+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2024-12-15T19:06:59.218Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Ольга Елисеева, 2024-12-15 19:06:59.217735+00:00",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2024-12-15T19:13:35.431Z",
+      "user": 3,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "1",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2024-12-15T19:14:29.344Z",
+      "user": 3,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "Директор НИЦ офтальмологии РНИМУ им. Н.И. Пирогова, академик РАН Христо Тахчиди",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2024-12-15T19:15:27.236Z",
+      "user": 3,
+      "content_type": 14,
+      "object_id": "2",
+      "object_repr": "Основатель МНТК С.Н. Федоров",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2024-12-15T19:16:34.328Z",
+      "user": 3,
+      "content_type": 14,
+      "object_id": "3",
+      "object_repr": "Народное творчество",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2024-12-15T19:16:42.210Z",
+      "user": 3,
+      "content_type": 14,
+      "object_id": "3",
+      "object_repr": "Народное творчество",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u043e\\u0431\\u0449\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2024-12-15T20:51:29.040Z",
+      "user": 3,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "Sam, 2024-12-15 20:48:23.085725+00:00",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2024-12-17T17:29:32.716Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Подбор контактных линз (18+)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2024-12-17T17:49:13.693Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Подбор контактных линз (18+)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2024-12-17T17:50:19.220Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Рецепт на очки (18+)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2024-12-17T17:51:18.080Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Проверка зрения детям",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2024-12-17T17:52:23.552Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "Экспресс-диагностика зрения",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2024-12-17T18:07:21.100Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Подбор контактных линз (18+)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2024-12-17T18:07:26.500Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Проверка зрения детям",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2024-12-17T18:07:30.625Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Рецепт на очки (18+)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2024-12-17T18:07:35.334Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "Экспресс-диагностика зрения",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u0442\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2024-12-22T20:36:35.961Z",
+      "user": 3,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Конъюнктивит. Просто и по полочкам",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2024-12-22T20:39:55.260Z",
+      "user": 3,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Конъюнктивит. Просто и по полочкам",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2024-12-23T19:33:36.681Z",
+      "user": 3,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Поляризационные и антибликовые очки. В чем разница?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2024-12-23T19:36:33.458Z",
+      "user": 3,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Слезоточивость на морозе. Норма?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2024-12-23T19:37:28.551Z",
+      "user": 3,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Поляризационные и антибликовые очки. В чем разница?",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2024-12-25T19:11:44.148Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "ИвановаА",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2024-12-25T19:12:44.387Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "ПетроваЖ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2024-12-25T19:12:59.609Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "ИвановаА",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u043e\\u0444\\u0435\\u0441\\u0441\\u0438\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2024-12-25T19:15:24.395Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "ПетроваЖ",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2024-12-25T19:15:36.562Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "ПетроваЖ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2024-12-25T19:15:47.036Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "ИвановаА",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2024-12-25T19:23:47.385Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Подбор контактных линз (18+)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2024-12-25T19:23:52.798Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Проверка зрения детям",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2024-12-25T19:23:59.844Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Рецепт на очки (18+)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2024-12-25T19:24:06.748Z",
+      "user": 3,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "Экспресс-диагностика зрения",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Medic\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2024-12-27T20:12:35.345Z",
+      "user": 3,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "ПетроваЖ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2025-01-02T18:46:02.889Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Appointment object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2025-01-02T20:14:36.540Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "1",
+      "object_repr": "Schedule object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2025-01-02T20:15:10.192Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "2",
+      "object_repr": "Schedule object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2025-01-02T20:31:13.980Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "2",
+      "object_repr": "Schedule object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0430\\u0431\\u043e\\u0447\\u0438\\u0439 \\u0434\\u0435\\u043d\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2025-01-02T20:55:21.950Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Appointment object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0434\\u0438\\u043a\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2025-01-04T20:19:15.514Z",
+      "user": 3,
+      "content_type": 22,
+      "object_id": "1",
+      "object_repr": "sph -1.75 ..",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2025-01-04T20:19:30.841Z",
+      "user": 3,
+      "content_type": 22,
+      "object_id": "1",
+      "object_repr": "sph -2.75 ..",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"SPH\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2025-01-04T20:19:46.293Z",
+      "user": 3,
+      "content_type": 22,
+      "object_id": "2",
+      "object_repr": "sph 1.75 ..",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2025-01-04T20:19:49.126Z",
+      "user": 3,
+      "content_type": 23,
+      "object_id": "1",
+      "object_repr": "OD: sph -2.75 .. , OS: sph 1.75 ..",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2025-01-04T20:19:50.549Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "1",
+      "object_repr": "Торопов Д. Проверка зрения детям (2025-01-15)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2025-01-04T21:01:44.460Z",
+      "user": 3,
+      "content_type": 22,
+      "object_id": "3",
+      "object_repr": "sph -1.75 ..",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2025-01-04T21:05:14.438Z",
+      "user": 3,
+      "content_type": 22,
+      "object_id": "4",
+      "object_repr": "sph -2.75 ..",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2025-01-04T21:05:37.627Z",
+      "user": 3,
+      "content_type": 23,
+      "object_id": "2",
+      "object_repr": "OD: sph -2.75 .. , OS: sph -1.75 ..",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2025-01-04T21:10:39.969Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "2",
+      "object_repr": "Торопов Д. Рецепт на очки (18+) (2025-01-16)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0434\\u0438\\u043a\", \"\\u0420\\u0435\\u0437\\u0443\\u043b\\u044c\\u0442\\u0430\\u0442\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2025-01-05T20:28:22.284Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "3",
+      "object_repr": "Торопов Д. Проверка зрения детям (2025-01-08)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2025-01-05T20:28:41.303Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "4",
+      "object_repr": "Торопов Д. Проверка зрения детям (2025-01-06)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\", \"\\u0412\\u0440\\u0435\\u043c\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2025-01-05T20:48:34.121Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "2",
+      "object_repr": "Торопов Д. Рецепт на очки (18+) (2025-01-06)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\", \"\\u0412\\u0440\\u0435\\u043c\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2025-01-05T20:49:48.937Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "2",
+      "object_repr": "Торопов Д. Рецепт на очки (18+) (2025-01-05)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2025-01-05T21:03:18.713Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "4",
+      "object_repr": "Торопов Д. Проверка зрения детям (2025-01-06)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0440\\u0435\\u043c\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2025-01-05T21:03:27.595Z",
+      "user": 3,
+      "content_type": 17,
+      "object_id": "4",
+      "object_repr": "Торопов Д. Проверка зрения детям (2025-01-07)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0435\\u043d\\u044c\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "10",
+      "object_repr": "Schedule object (10)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "9",
+      "object_repr": "Schedule object (9)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "8",
+      "object_repr": "Schedule object (8)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "7",
+      "object_repr": "Schedule object (7)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "6",
+      "object_repr": "Schedule object (6)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "5",
+      "object_repr": "Schedule object (5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2025-01-06T21:11:06.917Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "4",
+      "object_repr": "Schedule object (4)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2025-01-06T21:12:44.237Z",
+      "user": 3,
+      "content_type": 24,
+      "object_id": "1",
+      "object_repr": "TunesDict object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2025-01-06T21:19:24.494Z",
+      "user": 3,
+      "content_type": 18,
+      "object_id": "18",
+      "object_repr": "Schedule object (18)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2025-01-06T21:46:08.052Z",
+      "user": 3,
+      "content_type": 24,
+      "object_id": "1",
+      "object_repr": "TunesDict object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0440\\u043e\\u043a\\u043e\\u0432\\u043e\\u0435 \\u0437\\u043d\\u0430\\u0447\\u0435\\u043d\\u0438\\u0435\", \"\\u041a\\u043e\\u043d\\u0441\\u0442\\u0430\\u043d\\u0442\\u0430 \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u0438\"]}}]"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "optics",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "optics",
+      "model": "feedback"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "optics",
+      "model": "resultofservice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "optics",
+      "model": "service"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "optics",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "blog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "optics",
+      "model": "brand"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "optics",
+      "model": "quote"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "optics",
+      "model": "contact"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "optics",
+      "model": "appointment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "appointment",
+      "model": "appointment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "appointment",
+      "model": "schedule"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "tunes",
+      "model": "contact"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "tunes",
+      "model": "feedback"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+      "app_label": "tunes",
+      "model": "quote"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+      "app_label": "appointment",
+      "model": "eye"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "appointment",
+      "model": "resultofservice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "tunes",
+      "model": "tunesdict"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8nsswi9p0655y4glzmz8x4w9ifckelm6",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGlmxvTZeSvqcIXrrDwmgRMqnQtwdIqWA9s3Me6kO29p321Lmbsjqopw6_W6C9CjjDvId423SaRrXeRC9K_qgi26nXJ7Xw_076LH039pycpGNqxIsBQ_rGIYiA03KtQpMArF4G33jyIOkkYwQmOQMSV69P9aUN_E:1tMBUD:eg60YuxIG913KidKArxoeua6a26UoZlpUA-sBWu9Zno",
+      "expire_date": "2024-12-27T19:38:05.443Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xn6130xmu29s37snyo8j2rk5p8v8gyom",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGlmxvTZeSvqcIXrrDwmgRMqnQtwdIqWA9s3Me6kO29p321Lmbsjqopw6_W6C9CjjDvId423SaRrXeRC9K_qgi26nXJ7Xw_076LH039pycpGNqxIsBQ_rGIYiA03KtQpMArF4G33jyIOkkYwQmOQMSV69P9aUN_E:1tU92r:iJIOUdllVGlMKYBAHNdu-9coeCp5coWRb3pgm8Cst24",
+      "expire_date": "2025-01-18T18:38:45.085Z"
+    }
+  },
+  {
+    "model": "optics.brand",
+    "pk": 1,
+    "fields": {
+      "name": "LORA LETI"
+    }
+  },
+  {
+    "model": "optics.brand",
+    "pk": 2,
+    "fields": {
+      "name": "BELLA VIVA"
+    }
+  },
+  {
+    "model": "optics.brand",
+    "pk": 3,
+    "fields": {
+      "name": "COMPUTRON"
+    }
+  },
+  {
+    "model": "optics.brand",
+    "pk": 4,
+    "fields": {
+      "name": "UNI-MAX"
+    }
+  },
+  {
+    "model": "optics.category",
+    "pk": 1,
+    "fields": {
+      "name": "Оправы",
+      "description": "Оправы",
+      "is_published": true,
+      "active_on_main_page": true
+    }
+  },
+  {
+    "model": "optics.category",
+    "pk": 2,
+    "fields": {
+      "name": "Линзы",
+      "description": "Линзы",
+      "is_published": true,
+      "active_on_main_page": false
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 1,
+    "fields": {
+      "brand": 1,
+      "name": "8258 c1",
+      "description": "Оправа товарного знака Lora Leti",
+      "price": "11200.00",
+      "image": "products/LORA-LETI-8258-c1_Qw670Z5.webp",
+      "created_at": "2024-12-14T15:36:47.251Z",
+      "update_at": "2024-12-14T19:32:38.511Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "52-18-138 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 2,
+    "fields": {
+      "brand": 1,
+      "name": "YJ0062 c2",
+      "description": "Оправа товарного знака Lora Leti",
+      "price": "10900.00",
+      "image": "products/LORA-LETI-YJ0062-c2.webp",
+      "created_at": "2024-12-14T16:03:29.130Z",
+      "update_at": "2024-12-14T19:37:10.057Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "51-19-142 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 3,
+    "fields": {
+      "brand": 1,
+      "name": "8258 c2",
+      "description": "Оправа товарного знака Lora Leti",
+      "price": "11200.00",
+      "image": "products/LORA-LETI-8258-c2.webp",
+      "created_at": "2024-12-14T16:05:04.030Z",
+      "update_at": "2024-12-14T19:36:22.757Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "52-18-138 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 4,
+    "fields": {
+      "brand": 1,
+      "name": "NS 21045 c5",
+      "description": "Оправа товарного знака Lora Leti",
+      "price": "11900.00",
+      "image": "products/LORA-LETI-NS-21045-c5.webp",
+      "created_at": "2024-12-14T16:07:37.449Z",
+      "update_at": "2024-12-14T19:37:02.657Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "45-22-140 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 5,
+    "fields": {
+      "brand": 1,
+      "name": "3673 c3",
+      "description": "Оправа товарного знака Lora Leti",
+      "price": "10900.00",
+      "image": "products/LORA-LETI-3673-c3.webp",
+      "created_at": "2024-12-14T16:09:38.256Z",
+      "update_at": "2024-12-14T19:32:23.211Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "55-17-140 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 6,
+    "fields": {
+      "brand": 1,
+      "name": "M2682 c9",
+      "description": "Оправа товарного знака Lora Leti",
+      "price": "8960.00",
+      "image": "products/LORA-LETI-M2682-c9.webp",
+      "created_at": "2024-12-14T16:11:55.107Z",
+      "update_at": "2024-12-14T19:36:34.143Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "52-18-140 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 7,
+    "fields": {
+      "brand": 2,
+      "name": "XC62119 c5",
+      "description": "Оправа товарного знака BELLA VIVA",
+      "price": "7840.00",
+      "image": "products/BELLA-VIVA-XC62119-c5.webp",
+      "created_at": "2024-12-14T16:15:27.859Z",
+      "update_at": "2024-12-14T19:32:09.265Z",
+      "category": 1,
+      "owner": null,
+      "parameter": "55-17-140 мм",
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 8,
+    "fields": {
+      "brand": 3,
+      "name": "HMC EMI UV N=1,56 D70мм (0,00… -4,00)",
+      "description": "Стигматические полимерные линзы COMPUTRON\r\n\r\nХарактеристики:\r\n\r\nКоэффициент преломления 1.56\r\nЧисло АББЕ 38\r\nСветопропускание 98,5%\r\nЗащита от УФ излучения 380 нм\r\nМногослойное металлизированное, упрочняющее, гидрофобное, антибликовое покрытие (остаточный рефлекс — зеленый)",
+      "price": "900.00",
+      "image": "products/IMG_5876.webp",
+      "created_at": "2024-12-14T16:19:21.638Z",
+      "update_at": "2024-12-14T19:37:37.353Z",
+      "category": 2,
+      "owner": null,
+      "parameter": null,
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 9,
+    "fields": {
+      "brand": 3,
+      "name": "HMC EMI UV N=1,56 D70мм (-4,25… -6,00)",
+      "description": "Стигматические полимерные линзы COMPUTRON\r\n\r\nХарактеристики:\r\n\r\nКоэффициент преломления 1.56\r\nЧисло АББЕ 38\r\nСветопропускание 98,5%\r\nЗащита от УФ излучения 380 нм\r\nМногослойное металлизированное, упрочняющее, гидрофобное, антибликовое покрытие (остаточный рефлекс — зеленый)",
+      "price": "1000.00",
+      "image": "products/IMG_5876_LQcL2dG.webp",
+      "created_at": "2024-12-14T16:20:40.590Z",
+      "update_at": "2024-12-14T19:37:47.696Z",
+      "category": 2,
+      "owner": null,
+      "parameter": null,
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.product",
+    "pk": 10,
+    "fields": {
+      "brand": 4,
+      "name": "As HMC EMI UV Blue block N=1,56 D70мм (+0,5…+4,0)",
+      "description": "Асферические полимерные линзы с многослойным покрытием.\r\n\r\nХарактеристики:\r\n\r\nКоэффициент преломления 1.61\r\nУпрочняющее покрытие (8H)\r\nБлокирует пропускание коротких волн света синего спектра\r\nЗащита от УФ излучения до 420 нм\r\nЗащита от электро-магнитного излучения\r\nМногослойное гидрофобное, антистатическое, антибликовое покрытие (остаточный рефлекс — зеленый)",
+      "price": "2200.00",
+      "image": "products/Uni-Max-2.webp",
+      "created_at": "2024-12-14T16:24:27.712Z",
+      "update_at": "2024-12-14T19:38:09.622Z",
+      "category": 2,
+      "owner": null,
+      "parameter": null,
+      "is_published": true
+    }
+  },
+  {
+    "model": "optics.service",
+    "pk": 1,
+    "fields": {
+      "name": "Подбор контактных линз (18+)",
+      "description": "Процедура для взрослых занимает 30-40 минут и включает в себя:\r\nСбор анамнеза.\r\nПроверка на авторефрактометре (компьютерная диагностика).\r\nПроверка зрения с помощью тестов.\r\nИсследование характера зрения.\r\nОбсуждение ваших зрительных потребностей.\r\nПримерка пробной пары контактных линз.\r\nОценка посадки линз.\r\nОбучение манипуляция с линзами, а также уходу за ними (если вы ранее не носили линзы).\r\nКонсультации по режиму ношения и посещению офтальмолога.\r\nЗаполнение компьютерной карты пациента.",
+      "price": "1500.00",
+      "duration": null,
+      "image": "products/i10.png",
+      "is_published": true,
+      "medic": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "optics.service",
+    "pk": 2,
+    "fields": {
+      "name": "Рецепт на очки (18+)",
+      "description": "Проверка зрения для подбора очков занимает 25-30 минут и включает в себя:\r\nОбсуждение истории заболевания\r\nПроверка на авторефрактометре (компьютерная диагностика)\r\nПроверка очков пациента на диоптриметре*\r\nПроверка остроты зрения с помощью тестов\r\nОпределение полной и переносимой коррекции в пробной оправе\r\nИсследование характера зрения, фории, аккомодации и конвергенции (при необходимости)\r\nОбсуждение зрительных потребностей пациента\r\nПрезентация рекомендуемых очковых линз\r\nЗаполнение компьютерной карты пациента и выписка необходимых рецептов",
+      "price": "1500.00",
+      "duration": null,
+      "image": "products/i9.png",
+      "is_published": true,
+      "medic": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "optics.service",
+    "pk": 3,
+    "fields": {
+      "name": "Проверка зрения детям",
+      "description": "Сбор анамнеза ребенка (история рождения, особенности раннего развития, у каких специалистов наблюдается).\r\nВид и степень нарушения зрения. Принесите с собой предыдущее заключение офтальмолога, а также расскажите врачу о коррекции, которой в данный момент пользуется ребенок. Захватите с собой очки его или рецепт на них и/или на контактные линзы.\r\nОсмотр передней поверхности глаз.\r\nКомпьютерная авторефрактокератометрия.\r\nИзмерение расстояния между оптическими центрами обоих глаз.\r\nТест на выявление явного или скрытого косоглазия.\r\nОпределение остроты зрения вдаль и вблизи. Проводится сначала без использования средств коррекции, а затем с помощью очков или контактных линз, которые носит ребенок.\r\nИсследование максимальной субъективной коррекции вдаль для каждого глаза отдельно по тестовым таблицам . Проводится с помощью пробной оправы и очковых линз из пробного набора.\r\nИсследование состояния характера зрения, мышечного баланса, аккомодации, конвергенции. При необходимости могут проводиться дополнительные тесты.\r\nЦиклоплегия. Врач дважды закапывает специальные капли, которые расширяют зрачок и позволяют провести осмотр глазного дна. Для этого исследования используются современные препараты короткого действия, поэтому глаза ребенока быстро вернутся к исходному состоянию. Через 30-40 минут врач проводит повторную авторефрактокератометрия, а также обследует глазное дно. В некоторых случаях применяются дополнительные тесты с диафрагмами.\r\nПодбор средств коррекции. После циклоплегии детский офтальмолог подбирает очки, учитывая зрительные потребности ребенка,а также переносимость очков. Врач дает рекомендации родителям по режиму режим ношения очков, а также может посоветовать определенные тип и дизайн очковых линз.\r\nВыписка рецепта.\r\nДополнительные рекомендации по аппаратному лечению, использованию тренажеров, компьютерных программ.",
+      "price": "2000.00",
+      "duration": null,
+      "image": "products/i12.png",
+      "is_published": true,
+      "medic": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "optics.service",
+    "pk": 4,
+    "fields": {
+      "name": "Экспресс-диагностика зрения",
+      "description": "Специалист бесплатно проверит зрение в очках и без них и даст свои рекомендации.\r\n\r\nОсмотр включает:\r\n\r\nкраткий анамнез\r\nавторефрактометрию (проверка зрения на специальном компьютерном оборудовании)\r\nопределение остроты зрения в ваших очках или линзах\r\nпроверку очков пациента на диоптриметре\r\nконсультацию по дальнейшему обследованию",
+      "price": "500.00",
+      "duration": null,
+      "image": "products/i11.png",
+      "is_published": true,
+      "medic": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "appointment.eye",
+    "pk": 1,
+    "fields": {
+      "sph": "-2.75",
+      "cyl": null,
+      "ax": null,
+      "pr": null,
+      "bas": null,
+      "dp": null,
+      "add": null
+    }
+  },
+  {
+    "model": "appointment.eye",
+    "pk": 2,
+    "fields": {
+      "sph": "1.75",
+      "cyl": null,
+      "ax": null,
+      "pr": null,
+      "bas": null,
+      "dp": null,
+      "add": null
+    }
+  },
+  {
+    "model": "appointment.eye",
+    "pk": 3,
+    "fields": {
+      "sph": "-1.75",
+      "cyl": null,
+      "ax": null,
+      "pr": null,
+      "bas": null,
+      "dp": null,
+      "add": null
+    }
+  },
+  {
+    "model": "appointment.eye",
+    "pk": 4,
+    "fields": {
+      "sph": "-2.75",
+      "cyl": null,
+      "ax": null,
+      "pr": null,
+      "bas": null,
+      "dp": null,
+      "add": null
+    }
+  },
+  {
+    "model": "appointment.resultofservice",
+    "pk": 1,
+    "fields": {
+      "od": 1,
+      "os": 2,
+      "recommendations": "hrhffh jdjkdfkj",
+      "comment": "",
+      "created_at": "2025-01-04T20:19:49.122Z",
+      "update_at": "2025-01-04T20:19:49.122Z"
+    }
+  },
+  {
+    "model": "appointment.resultofservice",
+    "pk": 2,
+    "fields": {
+      "od": 4,
+      "os": 3,
+      "recommendations": "",
+      "comment": "",
+      "created_at": "2025-01-04T21:05:37.624Z",
+      "update_at": "2025-01-04T21:05:37.625Z"
+    }
+  },
+  {
+    "model": "appointment.appointment",
+    "pk": 1,
+    "fields": {
+      "day": "2025-01-15",
+      "time": "14:00:00",
+      "comment": null,
+      "owner": 3,
+      "service": 3,
+      "medic": 4,
+      "result": 1
+    }
+  },
+  {
+    "model": "appointment.appointment",
+    "pk": 2,
+    "fields": {
+      "day": "2025-01-05",
+      "time": "23:50:00",
+      "comment": null,
+      "owner": 3,
+      "service": 2,
+      "medic": 5,
+      "result": 2
+    }
+  },
+  {
+    "model": "appointment.appointment",
+    "pk": 4,
+    "fields": {
+      "day": "2025-01-07",
+      "time": "00:05:00",
+      "comment": null,
+      "owner": 3,
+      "service": 3,
+      "medic": 4,
+      "result": null
+    }
+  },
+  {
+    "model": "appointment.appointment",
+    "pk": 5,
+    "fields": {
+      "day": "2025-01-08",
+      "time": "13:30:00",
+      "comment": null,
+      "owner": 3,
+      "service": 4,
+      "medic": 4,
+      "result": null
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 1,
+    "fields": {
+      "day": "2025-01-17",
+      "begin_time": "10:00:00",
+      "end_time": "13:00:00",
+      "is_working_day": true,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 2,
+    "fields": {
+      "day": "2025-01-18",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": false,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 11,
+    "fields": {
+      "day": "2025-01-19",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": false,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 12,
+    "fields": {
+      "day": "2025-01-20",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 13,
+    "fields": {
+      "day": "2025-01-21",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 14,
+    "fields": {
+      "day": "2025-01-22",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 15,
+    "fields": {
+      "day": "2025-01-23",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 16,
+    "fields": {
+      "day": "2025-01-24",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 17,
+    "fields": {
+      "day": "2025-01-25",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": false,
+      "medic": 4
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 18,
+    "fields": {
+      "day": "2025-01-07",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": false,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 19,
+    "fields": {
+      "day": "2025-01-08",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 20,
+    "fields": {
+      "day": "2025-01-09",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 21,
+    "fields": {
+      "day": "2025-01-10",
+      "begin_time": "10:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 22,
+    "fields": {
+      "day": "2025-01-11",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 23,
+    "fields": {
+      "day": "2025-01-12",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 24,
+    "fields": {
+      "day": "2025-01-13",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": false,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 25,
+    "fields": {
+      "day": "2025-01-14",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": false,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 26,
+    "fields": {
+      "day": "2025-01-15",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 27,
+    "fields": {
+      "day": "2025-01-16",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "appointment.schedule",
+    "pk": 28,
+    "fields": {
+      "day": "2025-01-17",
+      "begin_time": "11:00:00",
+      "end_time": "16:00:00",
+      "is_working_day": true,
+      "medic": 5
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+      "title": "Конъюнктивит. Просто и по полочкам",
+      "slug": "konyunktivit-prosto-i-po-polochkam",
+      "image": "products/2-_39_.jpg",
+      "created_at": "2024-12-22T20:36:35.958Z",
+      "update_at": "2024-12-24T19:29:22.652Z",
+      "is_published": true,
+      "views_counter": 7,
+      "content": "Казалось бы, с конъюнктивитом сталкивался практически каждый – либо болел сам, либо слышал от знакомых. Но первый же вопрос «Что такое конъюнктива?», и, если вы не офтальмолог, становится понятно, что ничего непонятно. Что такое конъюнктивит? Конъюнктива в переводе с латинского означает соединяющую оболочку. Эта прозрачная ткань покрывает верхнюю часть глазного яблока и внутреннюю поверхность глаза. В ней содержатся лимфатические и кровеносные сосуды, нервы и железы. Она выполняет множество функций – от защиты от механических повреждений до увлажнения глаза и уничтожения бактерий. Поэтому повреждения конъюнктивы очень негативно сказываются на здоровье глаз. Конъюнктивит — воспаление конъюнктивы и внутренней поверхности век, может быть как хроническим, так и острым. Различают: Вирусный (часто возникает при простудных заболеваниях); Бактериальный (вызван бактериями и отличается чаще всего воспалением одного глаза); Аллергический (появляется вследствие аллергии и отличается воспалением сразу двух глаз). Вирусный и бактериальный конъюнктивиты весьма заразны, они могут передаваться воздушно-капельным путем или через грязные руки. Симптомы конъюнктивита Симптомы отличаются в зависимости от вида конъюнктивита, но можно выделить общие: Гнойные или слизистые выделения; Жжение и зуд; Светобоязнь; Ощущение песка в глазах; Отек и покраснение слизистой. При острой форме заболевание длится в среднем 4 недели, при хронической форме – больше месяца. Причины Самая частая причина конъюнктивита – несоблюдение режима гигиены, но не всегда чистые руки могут уберечь от этой напасти, ведь существует еще ряд причин: Аллергическая реакция; Травмы глаз (механические повреждения, термические и химические ожоги); Вирусные инфекции; Аутоиммунный заболевания; Бактериальные инфекции; Грибковые поражения глаз. Помимо основных причин, благоприятствуют развитию заболевания следующие факторы: Переохлаждение; Неправильное ношение контактных линз; Длительное воздействие УФ-лучей; Длительное напряжение глаз; Несоблюдение личной гигиены; Хронические заболевания; Авитаминоз. Лечение конъюнктивита Оговоримся сразу: никакое самолечение и прикладывание чайных пакетиков на глаза не сделают лучше, возможно даже наоборот! После определения вида и причин конъюнктивита офтальмолог подберет подходяще лечение. Чаще всего назначаются мази и глазные капли с антибиотиками.",
+      "owner": null
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+      "title": "Поляризационные и антибликовые очки. В чем разница?",
+      "slug": "polyarizatsionnyie-i-antiblikovyie-ochki-v-chem-raznitsa",
+      "image": "products/132761.text.4815.jpg",
+      "created_at": "2024-12-23T19:33:36.679Z",
+      "update_at": "2025-01-01T18:50:22.091Z",
+      "is_published": true,
+      "views_counter": 19,
+      "content": "Очки принято разделять на те, что для зрения, и те, что защищают от солнца. Но на самом деле видов оптики куда больше. Сегодня рассказываем о поляризационных и антибликовых очках. В чем заключаются их ключевые преимущества, чем они отличаются друг от друга, и, быть может, вы после этой статьи поймете, что эти очки – именно то, чего вам не хватало для комфорта за рулем или во время прогулки. В чем особенность антибликовых и поляризационных очков? Такие очки – это очки со специальным покрытием, которое улучшает их оптические характеристики и повышают комфорт использования. Антибликовые и поляризационные очки пользуются особой популярностью среди автомобилистов, потому что позволяют видеть более четко и не позволяют солнечным бликам застилать обзор. Давайте поговорим о том, в чем их сходства и различия. Сходства И антибликовые, и поляризационные очки предназначены для спасения от отсветов. Они поддерживают глаза и спасают их от перенапряжения. Более того, и те, и другие очки очень привередливы в хранении: царапины на поверхности снижают их эффективность, поэтому хранить их следует в футляре и регулярно протирать специальной салфеткой. Различия Антибликовые очки Линза с обеих сторон покрывается пленкой или обрабатывается специальным составом; Способны устранить блики от фар встречных автомобилей; Хорошо пропускают свет. Потеря света не превышает 0,6%; У антибликовых очков отсутствует эффект блика линзы, о чем и говорит их название; Снимают напряжение с глаз; Чаще всего они не броские, поэтому их преимуществом можно назвать эстетичность; Обладают «просветляющими» характеристиками, то есть вы получаете чистое и яркое изображение. В чем разница поляризационных и антибликовых очков Поляризационные очки Они создаются из специального материала или, к и в случае с антибликовых очками, используется пленка, но уже с фильтрующими свойствами; Более популярны среди людей, занимающимися активными видами спорта (горнолыжный спорт, скалолазание и т.д.); Поток света в таких очках делится, поэтому пропускная способность у них ниже, чем у антибликовых; Поляризационные очки спасают от ослепления солнечным светом, поскольку компенсируют чрезмерную интенсивность УФ лучей; Аналогично снимают напряжение глаз. Выводы Антибликовые очки – оптика с дополнительным покрытием на линзе, которое увеличивает их прозрачность и способность пропускать свет. Они устраняют блики от фар и других источников света. Как результат: улучшается острота зрения и контрастность картинки. Отличный выбор для водителей. Поляризационные очки – очки, в которых используются линзы из специального материала, которые устраняют блики, возникающие при отражении света от поверхности. Эти очки буквально спасают от ослепления бликами мокрого асфальта или воды в солнечный день, так как они не пропускают лучи, отраженные от горизонтальной поверхности. Идеальны для любителей активного отдыха и спорта. Ну что, вам уже захотелось приобрести пару таких очков?",
+      "owner": null
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+      "title": "Слезоточивость на морозе. Норма?",
+      "slug": "slezotochivost-na-moroze-norma",
+      "image": "products/images-1.jpg",
+      "created_at": "2024-12-23T19:36:33.456Z",
+      "update_at": "2025-01-01T18:50:16.294Z",
+      "is_published": true,
+      "views_counter": 12,
+      "content": "Зима — пора белоснежных сугробов, бодрящего мороза и новогоднего настроения. А для многих — еще и пора слезящихся глаз. Почему организм так реагирует на температурные изменения? Нормально ли это? Разберемся в причинах этого явления. Почему слезятся глаза? Предпосылок для частого «плача» зимой на самом деле не так много. 1 причина — пробки в носослезном канале. Посмотрим на строение «слезной» системы. Если говорить простым языком, то этот аппарат состоит из двух частей: Производство слезы (слезная железа); Перемещение слезы (выводные протоки, слезные канальцы, слезный мешок и носослезный канал). Если с производством слез зимой проблем, как правило, не возникает, то на этапе их передвижения могут возникнуть затруднения. Морозная погода вызывает сужение слезных каналов и провоцирует их спазм. Более того, холод может стать причиной так называемых пробок в этих каналах. Слезы копятся, «дамба» рушится — и накопившиеся слезы вырываются из глаз и драматично стекают по вашим щекам. 2 причина — аллергия. У большого количества людей есть аллергия на мороз. Да-да, и такая существует. Аллергикам не повезло мириться с раздражением глаз, слезоточивостью и зудом только по той причине, что их аллергеном выступают, например, не коты или цитрусовые, которых легко избежать, а мороз, от которого скрыться уже не так просто. 3 причина — повышенная чувствительность к свету. Многие из нас ощущали эту болезненную резь в глазах, когда выходишь из темного помещения в солнечный зимний день. Причиной тому служит цвет снега. Белый цвет лучше всего отражает свет, и мы вынуждены бороться не только с прямым воздействием ультрафиолета, но и с его отражением. Опасна ли повышенная слезоточивость? Удивительно, но постоянные слезы на морозе, которые мы привыкли считать нормой, на самом деле не такие уж и безобидные. Постоянные слезы создают дискомфорт, временно ухудшают способность ясно видеть, раздражают кожу, повышают риск развития гнойных и воспалительных заболеваний глаз и окружающих органов. Если после того, как вы вошли в теплое помещение, слезы продолжают неконтролируемо течь, есть повод запланировать визит к офтальмологу — это может быть признаком серьезных глазных заболеваний. Как помочь своим глазам на морозе? Солнцезащитные очки Их необходимость не исчезает с наступлением зимы, а увеличивается из-за пагубной способности снега отражать солнечные лучи и делать их вдвое ярче и опаснее. Искусственная слеза Это необычное название для самых обыкновенных капель, которые помогают дополнительно увлажнить глаз в ветреную погоду. Еда и витамины Разнообразьте свой рацион продуктами, полезными для глаз: морковью, морской рыбой, черникой, орехами. Гигиена Чтобы не вызывать раздражение и не заносить грязь в глаза, правильно вытирайте слезы: промакивайте веко от наружного края к носу и вверх. Самопроверка Для того, чтобы понять, обычные ли это слезы от мороза или все же есть какие-то проблемы, стоит ответить на два вопроса: Слезится один глаз или оба? Непрошенные слезы появляются постоянно или только в холодную погоду? Если слезы постоянные или слезится только один глаз, то следует незамедлительно провериться у офтальмолога.",
+      "owner": null
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$jIu2z66zhnK2VWa8tLFtVe$CalnFO4M9tB/sjqHYWRD4lPDdUKA/6UPbsep0cuMgKk=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "",
+      "first_name": "",
+      "last_name": "",
+      "email": "dtoropov@yandex.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-12-13T19:29:32.487Z",
+      "tg_chat_id": null,
+      "avatar": "",
+      "image": "",
+      "is_medic": false,
+      "profession": null,
+      "phone": "1",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$EZ0woM2VDXLm7hzg0Q0WVH$uA125AUFwpu9HakbwJ0sA3jzK1mbO7k/q9LAjpWK5pU=",
+      "last_login": "2025-01-08T17:42:56.369Z",
+      "is_superuser": true,
+      "username": "negoro",
+      "first_name": "Даниил",
+      "last_name": "Торопов",
+      "email": "dtoropov@yandex.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-12-13T19:37:40.299Z",
+      "tg_chat_id": null,
+      "avatar": "",
+      "image": "",
+      "is_medic": false,
+      "profession": null,
+      "phone": "+79203201146",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$e9TEbUptjDZJyQvnESFX1K$dZ3VeQr4xb8Xg8eE/rOEoS2yDhIlo5H+dyFAVJNnycs=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ИвановаА",
+      "first_name": "Анжела",
+      "last_name": "Иванова",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-12-25T19:09:18Z",
+      "tg_chat_id": null,
+      "avatar": "",
+      "image": "users/acabextm4svcwxh27h8y1k0fwa0uge6f.jpg",
+      "is_medic": true,
+      "profession": "Врач-офтальмолог",
+      "phone": "1",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$IJpscwtFiOiMA2PqEvnwvz$vNECG7kIKPTgrQZ11v8FB3s6xuw9+5FIVspvhXZt6mE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ПетроваЖ",
+      "first_name": "Жанна",
+      "last_name": "Петрова",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-12-25T19:11:55Z",
+      "tg_chat_id": null,
+      "avatar": "",
+      "image": "users/111.jpg",
+      "is_medic": true,
+      "profession": "Оптометрист",
+      "phone": "1",
+      "token": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$F6AuQ4Z7rlljMjK09EQoIl$t4qZG62MsI5F8QcF5xbG3sAnj2pa6Fzbsbydl1XGBaQ=",
+      "last_login": "2025-01-04T18:09:30.287Z",
+      "is_superuser": false,
+      "username": "test",
+      "first_name": "1",
+      "last_name": "2",
+      "email": "dtoropov@yandex.ru",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-01-03T20:17:30.334Z",
+      "tg_chat_id": null,
+      "avatar": "",
+      "image": "",
+      "is_medic": false,
+      "profession": null,
+      "phone": "+79203201146",
+      "token": "430a8689a4275203e015ca30e767e539",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$rVv5Ief3WPk96UXfxC5ZaG$W4zDrb61vmfjD9SG/KjFXLBAWoL6+yaOMxjwftf6zB8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "test_new",
+      "first_name": "1",
+      "last_name": "2",
+      "email": "dtoropov@yandex.ru",
+      "is_staff": false,
+      "is_active": false,
+      "date_joined": "2025-01-03T20:25:02.108Z",
+      "tg_chat_id": null,
+      "avatar": "",
+      "image": "",
+      "is_medic": false,
+      "profession": null,
+      "phone": "+79203201146",
+      "token": "87cf4842d659bbee541f3a3b52fa6414",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 1,
+    "fields": {
+      "name": "Юля Тихонова",
+      "phone": null,
+      "message": "Отличная оптика! Всем рекомендую. Прекрасная консультация и адекватные цены, по своему опыту, скажу: лучшая оптика в городе!",
+      "created_at": "2024-12-15T19:05:02.976Z",
+      "is_read": true,
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 2,
+    "fields": {
+      "name": "Екатерина Машутова",
+      "phone": null,
+      "message": "В первый раз была в этой Оптики и осталась довольна. Девушка которая там работает помогла с выбором очков и все подробно рассказала.Большое спасибо мастеру который делает очки, он сделал все быстро))) Советую эту Оптику!",
+      "created_at": "2024-12-15T19:05:40.946Z",
+      "is_read": true,
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 3,
+    "fields": {
+      "name": "Владимир Г.",
+      "phone": null,
+      "message": "Обратился за помощью в Оптика Сити.\r\nМенеджер оказалась очень приветлива, помогла с выбором очков.\r\nОстался очень доволен, буду обращаться только сюда.\r\nВсем рекомендую, останетесь очень довольны.",
+      "created_at": "2024-12-15T19:06:03.808Z",
+      "is_read": true,
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 4,
+    "fields": {
+      "name": "Галина Ильичева",
+      "phone": null,
+      "message": "Замечательное и очень приятное обслуживание, профессиональный подбор оправы и хорошие советы по подбору солнечных очков. Большое спасибо .",
+      "created_at": "2024-12-15T19:06:30.173Z",
+      "is_read": true,
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 5,
+    "fields": {
+      "name": "Ольга Елисеева",
+      "phone": null,
+      "message": "Всё сделано на высшем уровне! Цены приятные. Выбор оправ хороший, на любой кошелек.\r\nПриятные бонусы в подарок- салфетка для протирки очков и мешочек - порадовали. Приветливое общение, подробно разъяснили всё, что интересовало. Вообще впечатление осталось очень позитивное. Теперь буду обращаться только сюда!)",
+      "created_at": "2024-12-15T19:06:59.217Z",
+      "is_read": true,
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 7,
+    "fields": {
+      "name": "Sam",
+      "phone": "+79889898",
+      "message": "sssss",
+      "created_at": "2024-12-15T20:53:33.937Z",
+      "is_read": false,
+      "is_published": false
+    }
+  },
+  {
+    "model": "tunes.feedback",
+    "pk": 8,
+    "fields": {
+      "name": "sss",
+      "phone": "sdsad",
+      "message": "dsasdsdas",
+      "created_at": "2025-01-05T21:41:45.161Z",
+      "is_read": false,
+      "is_published": false
+    }
+  },
+  {
+    "model": "tunes.quote",
+    "pk": 1,
+    "fields": {
+      "name": "Директор НИЦ офтальмологии РНИМУ им. Н.И. Пирогова, академик РАН Христо Тахчиди",
+      "quote": "Древний человек, в основном он жил и работал в природе. В первую очередь он должен был защитить себя, а значит, увидеть опасность как можно быстрее и как можно дальше. Эффективно находить пищу на расстоянии. По законам эволюции выживали те, у кого было хорошее зрение вдаль и при этом глаз не напрягался. Поэтому глаз при взгляде в даль как бы отдыхает, он не напряжен. Он напрягается при взгляде вблизи. И вот это напряжение дает перегрузку глазу. Современный человек практически на даль не работает, до 90% зрения им используется вблизи: это письмо, чтение, гаджеты, мелкая работа, ограниченные пространства и т.д. В результате сегодня катастрофически растут аномалии рефракции глаза — близорукость, дальнозоркость, астигматизм — это всё от ненормального развития глаза из-за перегрузки.",
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.quote",
+    "pk": 2,
+    "fields": {
+      "name": "Основатель МНТК С.Н. Федоров",
+      "quote": "Посмотрите, люди, как прекрасна жизнь, природа, Земля! Можно жить сто и тысячи лет, и каждый день не переставать удивляться восходу и закату солнца, пению птиц, краскам лесного озера, вкусному обеду, хорошему умному слову... Нет, самое замечательное, что у нас есть – это жизнь! Жаль, что она быстротечна. Обидно, что наука и медицина пока не в силах тут ничего изменить. Вот за это и надо бороться врачам! Всеми силами ума, таланта, души. Моя самая заветная мечта – задержать старение людей и начать... с глаза. Я хочу хотя бы начать, получить какие-то первые результаты, а дальше дело пойдет",
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.quote",
+    "pk": 3,
+    "fields": {
+      "name": "Народное творчество",
+      "quote": "И один глаз — да зорок, не надо и со́рок...",
+      "is_published": true
+    }
+  },
+  {
+    "model": "tunes.tunesdict",
+    "pk": 1,
+    "fields": {
+      "key": "begin_time",
+      "value_int": null,
+      "value_char": null,
+      "value_time": "11:00:00",
+      "value_date": null
+    }
+  }
+]
