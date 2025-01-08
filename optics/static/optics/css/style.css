@@ -1016,6 +1016,9 @@ h2.product-title{
 
 /* - Section Padding
 --------------------------------------------------------------*/
+.padding-my {
+  padding-top: 2em;
+}
 .padding-xsmall {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -2339,6 +2342,17 @@ a.blog-categories {
     color: var(--accent-color);
 }
 a.blog-categories:hover{
+    color: var(--primary-color);
+}
+a.service-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgb(0,128,0);
+}
+a.service-link:hover{
     color: var(--primary-color);
 }
 @media screen and (max-width: 1599px) {

@@ -18,16 +18,35 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='owner',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='products', to=settings.AUTH_USER_MODEL, verbose_name='Владелец'),
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name='products',
+                to=settings.AUTH_USER_MODEL,
+                verbose_name='Владелец',
+            ),
         ),
         migrations.AddField(
             model_name='resultofservice',
             name='owner',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='results', to=settings.AUTH_USER_MODEL, verbose_name='Владелец'),
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name='results',
+                to=settings.AUTH_USER_MODEL,
+                verbose_name='Владелец',
+            ),
         ),
         migrations.AddField(
             model_name='resultofservice',
             name='service',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='results', to='optics.service', verbose_name='Услуга'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.PROTECT,
+                related_name='results',
+                to='optics.service',
+                verbose_name='Услуга',
+            ),
         ),
     ]

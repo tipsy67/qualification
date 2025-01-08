@@ -12,10 +12,16 @@ pillow = "^11.0.0"
 python-dotenv = "^1.0.1"
 psycopg2-binary = "^2.9.10"
 pytils = "^0.4.1"
+requests = "^2.32.3"
+redis = "^5.2.1"
+celery = "^5.4.0"
 
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13.2"
+black = "^24.10.0"
+flower = "^2.0.1"
+coverage = "^7.6.10"
 
 [build-system]
 requires = ["poetry-core"]

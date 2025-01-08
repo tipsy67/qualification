@@ -13,7 +13,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Contact',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
                 ('country', models.CharField(max_length=50, verbose_name='Страна')),
                 ('inn', models.CharField(max_length=20, verbose_name='ИНН')),
                 ('address', models.CharField(max_length=255, verbose_name='Адрес')),
@@ -30,11 +38,19 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='service',
             name='image',
-            field=models.ImageField(blank=True, null=True, upload_to='products/', verbose_name='Изображение'),
+            field=models.ImageField(
+                blank=True, null=True, upload_to='products/', verbose_name='Изображение'
+            ),
         ),
         migrations.AddField(
             model_name='service',
             name='price',
-            field=models.DecimalField(blank=True, decimal_places=2, max_digits=15, null=True, verbose_name='Цена'),
+            field=models.DecimalField(
+                blank=True,
+                decimal_places=2,
+                max_digits=15,
+                null=True,
+                verbose_name='Цена',
+            ),
         ),
     ]

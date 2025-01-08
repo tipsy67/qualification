@@ -1,0 +1,52 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+{% load appointment_tags %}
+
+<section id="staff" class="product-store padding-large">
+    <div class="container">
+        <div class="row d-flex flex-wrap">
+            {% for object in object_list %}
+            <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                    {% if object.image %}
+                    <img class="card-img-left img-fluid img-thumbnail" src="{{ object.image|add_media }}">
+                    {% endif %}
+                </div>
+                <div class="cart-concern">
+                    <div class="cart-button d-flex justify-content-between align-items-center">
+                        <a href="{% url 'appointment:step-2' %}?service_pk={{ service_pk }}&medic_pk={{ object.pk }}"
+                           role="button" class="btn-wrap cart-link d-flex align-items-center">записаться
+                            <i class="icon icon-arrow-io"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <h4 class="product-title">
+                        <a href="#">{{ object.profession }}</a>
+                    </h4>
+                    <div class="item-price text-primary">{{ object.last_name }} {{ object.first_name }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+        <div class="pagination loop-pagination d-flex justify-content-center">
+            <a href="#" class="pagination-arrow d-flex align-items-center">
+                <i class="icon icon-arrow-left"></i>
+            </a>
+            <span aria-current="page" class="page-numbers current">1</span>
+            <a class="page-numbers" href="#">2</a>
+            <a class="page-numbers" href="#">3</a>
+            <a href="#" class="pagination-arrow d-flex align-items-center">
+                <i class="icon icon-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+</section>
+
+{% include 'shipping-info.html' %}
+
+{% endblock content %}

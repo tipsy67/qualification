@@ -1,0 +1,36 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+
+<section id="thank-you" class="padding-large bg-light-grey">
+    <div class="container">
+        <div class="row">
+            <div class="page-header col-md-6">
+                <div class="section-header">
+                    <h1 class="section-title">Запись на услугу</h1>
+                    <div class="detail">
+                        <h3>{{ service.name }}</h3>
+                        <p> {{ medic.fio }} ({{ medic.profession }})</p>
+                    </div>
+                    <form action="{% url 'appointment:step-3' %}" method="post">
+                        {% csrf_token %}
+                        <p>{{ form.appointment_day.label }}: {{ form.appointment_day }}</p>
+                        <div class="button-area col-md-10">
+                            <button class="btn btn-dark btn-full" type="submit">Следующий шаг</button>
+                            <a href="{% url 'appointment:step-1' %}?service_pk={{ service.pk }}"
+                               type="button" class="btn btn-grey btn-full">Назад</a>
+                        </div>
+                        {{ form.service_pk }}
+                        {{ form.medic_pk }}
+                    </form>
+                </div>
+            </div>
+            {% include 'contacts.html' %}
+        </div>
+    </div>
+</section>
+
+{% include 'shipping-info.html' %}
+
+{% endblock content %}

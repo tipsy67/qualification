@@ -1,0 +1,67 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+{% load static %}
+{% load optics_tags %}
+
+{% include 'streamer.html' %}
+
+<section id="results" class="product-store padding-large">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <h3>Результаты проверки зрения</h3>
+                <table class="u-full-width">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>SPH</th>
+                        <th>CYL</th>
+                        <th>AX</th>
+                        <th>Pr</th>
+                        <th>BAS</th>
+                        <th>DP</th>
+                        <th>ADD</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>OD</td>
+                        <td>{{ result.od.sph|default:"-" }}</td>
+                        <td>{{ result.od.cyl|default:"-" }}</td>
+                        <td>{{ result.od.ax|default:"-" }}</td>
+                        <td>{{ result.od.pr|default:"-" }}</td>
+                        <td>{{ result.od.bas|default:"-" }}</td>
+                        <td>{{ result.od.dp|default:"-" }}</td>
+                        <td>{{ result.od.add|default:"-" }}</td>
+                    </tr>
+                    <tr>
+                        <td>OS</td>
+                        <td>{{ result.os.sph|default:"-" }}</td>
+                        <td>{{ result.os.cyl|default:"-" }}</td>
+                        <td>{{ result.os.ax|default:"-" }}</td>
+                        <td>{{ result.os.pr|default:"-" }}</td>
+                        <td>{{ result.os.bas|default:"-" }}</td>
+                        <td>{{ result.os.dp|default:"-" }}</td>
+                        <td>{{ result.os.add|default:"-" }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% if result.recommendations %}
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Рекомендации</h3>
+                <p>{{ result.recommendations }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+<hr>
+
+{% include 'shipping-info.html' %}
+
+{% endblock content %}

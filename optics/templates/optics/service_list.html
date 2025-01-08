@@ -2,48 +2,53 @@
 
 {% block content %}
 {% load static %}
+{% load optics_tags %}
 
 {% include 'streamer.html' %}
+{% include 'shipping-info.html' %}
 
-    <section id="latest-blog" class="post-grid padding-large">
-      <div class="container">
+<section id="services" class="product-store padding-large">
+    <div class="container">
         <div class="row d-flex flex-wrap">
-          <service class="col-md-4 post-item">
-            <div class="image-holder zoom-effect">
-              <a href="single-post.html">
-                <img src="images/post-img1.jpg" alt="post" class="post-image">
-              </a>
+            {% for service in object_list %}
+            <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                <div class="image-holder">
+                    {% if service.image %}
+                    <img class="card-img-left img-thumbnail" src="{{ service.image|add_media }}">
+                    {% endif %}
+                </div>
+                <div class="cart-concern">
+                    <div class="cart-button d-flex justify-content-between align-items-center">
+                        <a href="{% url 'appointment:step-1' %}?service_pk={{ service.pk }}" class="btn-wrap cart-link d-flex align-items-center" role="button" >записаться
+                            <i class="icon icon-arrow-io"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <h4 class="product-title">
+                        <a href="{% url 'optics:service-detail' service.pk %}">{{ service.name }}</a>
+                    </h4>
+                    <div class="item-price text-primary">P {{ service.price }}</div>
+                </div>
             </div>
-            <div class="post-content d-flex">
-              <div class="meta-date">
-                <div class="meta-day text-primary">22</div>
-                <div class="meta-month">Aug-2021</div>
-              </div>
-              <div class="post-header">
-                <h3 class="post-title">
-                  <a href="single-post.html">top 10 casual look ideas to dress up your kids</a>
-                </h3>
-                <a href="" class="blog-categories">Услуги</a>
-              </div>
-            </div>
-          </service>
+            {% endfor %}
         </div>
-        <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
-          <div class="pagination loop-pagination d-flex justify-content-center">
+    </div>
+    <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+        <div class="pagination loop-pagination d-flex justify-content-center">
             <a href="#" class="pagination-arrow d-flex align-items-center">
-              <i class="icon icon-arrow-left"></i>
+                <i class="icon icon-arrow-left"></i>
             </a>
             <span aria-current="page" class="page-numbers current">1</span>
             <a class="page-numbers" href="#">2</a>
             <a class="page-numbers" href="#">3</a>
             <a href="#" class="pagination-arrow d-flex align-items-center">
-              <i class="icon icon-arrow-right"></i>
+                <i class="icon icon-arrow-right"></i>
             </a>
-          </div>
-        </nav>
-      </div>
-    </section>
+        </div>
+    </nav>
+    </div>
+</section>
 
-{% include 'shipping-info.html' %}
 
 {% endblock content %}

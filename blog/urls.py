@@ -2,11 +2,11 @@ from django.urls import path
 from django.views.decorators.cache import cache_page
 
 from blog.apps import BlogConfig
-from blog.views import (BlogDetailView, BlogListView,)
+from blog.views import BlogDetailView, BlogListView
 
 appname = BlogConfig.name
 
 urlpatterns = [
-   path ('blog/', BlogListView.as_view(),name='blog_list'),
-   path('view_blog/<slug:slug>', BlogDetailView.as_view(), name='blog_detail'),
+    path('blog/', BlogListView.as_view(), name='blog_list'),
+    path('view-blog/<slug:slug>/', BlogDetailView.as_view(), name='blog_detail'),
 ]

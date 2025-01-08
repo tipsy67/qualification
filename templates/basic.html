@@ -30,41 +30,6 @@
       </div>
     </div>
 
-    <div class="search-popup">
-      <div class="search-popup-container">
-
-        <form role="search" method="get" class="search-form" action="">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
-          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
-        </form>
-
-        <h5 class="cat-list-title">Browse Categories</h5>
-        
-        <ul class="cat-list">
-          <li class="cat-list-item">
-            <a href="shop.html" title="Men Jackets">Men Jackets</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Fashion">Fashion</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Casual Wears">Casual Wears</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Women">Women</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Trending">Trending</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Hoodie">Hoodie</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Kids">Kids</a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <header id="header">
       <div id="header-wrap">
         <nav class="secondary-nav border-bottom">
@@ -79,26 +44,39 @@
               </div>
               <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
+                  {% if user.is_authenticated %}
                   <li>
-                    <a href="login.html">
+                    <a title="Профиль" href="{% url 'users:profile' %}">
                       <i class="icon icon-user"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="cart.html">
-                      <i class="icon icon-shopping-cart"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="wishlist.html">
+                    <a title="Моя медкарта" href="{% url 'appointment:appointment-list'%}">
                       <i class="icon icon-heart"></i>
                     </a>
                   </li>
-                  <li class="user-items search-item pe-3">
-                    <a href="#" class="search-button">
-                      <i class="icon icon-search"></i>
+                  <li>
+                    <a title="Выйти" href="{% url 'users:logout_form' %}">
+                      <i class="icon icon-cancel"></i>
                     </a>
                   </li>
+                  {% else %}
+                  <li>
+                    <a title="Войти" href="{% url 'users:login' %}">
+                      <i class="icon icon-user"></i>
+                    </a>
+                  </li>
+<!--                  <li>-->
+<!--                    <a href="#">-->
+<!--                      <i class="icon icon-shopping-cart"></i>-->
+<!--                    </a>-->
+<!--                  </li>-->
+                  {% endif %}
+<!--                  <li class="user-items search-item pe-3">-->
+<!--                    <a href="#" class="search-button">-->
+<!--                      <i class="icon icon-search"></i>-->
+<!--                    </a>-->
+<!--                  </li>-->
                 </ul>
               </div>
             </div>
@@ -160,60 +138,54 @@
           <div class="row d-flex flex-wrap justify-content-between">
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Ultras</h5>
+                <h5 class="widget-title">ОПТИКА СИТИ</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="about.html">About us</a>
+                    <a href="about.html">О нас</a>
                   </li>
                   <li class="menu-item">
                     <a href="#">Conditions </a>
                   </li>
                   <li class="menu-item">
-                    <a href="blog.html">Our Journals</a>
+                    <a href="blog.html">Наш блог</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Careers</a>
+                    <a href="#">Вакансии</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Affiliate Programme</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Ultras Press</a>
+                    <a href="#">Наши партнеры</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Customer Service</h5>
+                <h5 class="widget-title">Поддержка</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
                     <a href="faqs.html">FAQ</a>
                   </li>
                   <li class="menu-item">
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">Контакты</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">Политика защиты ПД</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Returns & Refunds</a>
+                    <a href="#">Как вернуть</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Cookie Guidelines</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Delivery Information</a>
+                    <a href="#">Доставка</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any questions or suggestions? <a href="#" class="email">ourservices@ultras.com</a>
+                <h5 class="widget-title">Наши контакты</h5>
+                <p>У вас есть предложения? <a href="#" class="email">ourservices@ultras.com</a>
                 </p>
-                <p>Do you need assistance? Give us a call. <br>
+                <p>У вас есть вопросы? Позвоните. <br>
                   <strong>+57 444 11 00 35</strong>
                 </p>
               </div>

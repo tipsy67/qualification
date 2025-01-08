@@ -13,6 +13,8 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='parameter',
-            field=models.CharField(blank=True, max_length=30, null=True, verbose_name='Параметр'),
+            field=models.CharField(
+                blank=True, max_length=30, null=True, verbose_name='Параметр'
+            ),
         ),
     ]
