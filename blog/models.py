@@ -11,7 +11,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=100, verbose_name='Заголовок')
     slug = models.CharField(max_length=100, unique=True, verbose_name='Slug')
     image = models.ImageField(
-        upload_to='products/', blank=True, verbose_name='Изображение'
+        upload_to='blog/', blank=True, verbose_name='Изображение'
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Создан')
     update_at = models.DateTimeField(auto_now=True, verbose_name='Изменен')

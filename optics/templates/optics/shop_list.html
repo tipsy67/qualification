@@ -23,7 +23,7 @@
                         {% for object in object_list %}
                         <div id="{{ object.category.name }}" data-tab-content {% if object.category.active_on_main_page %} class="active" {% endif %}>
                             <div class="row d-flex flex-wrap">
-                                {% for product in object.product_list %}
+                                {% for product in object.page_obj %}
                                 <div class="product-item col-lg-3 col-md-6 col-sm-6">
                                     <div class="image-holder">
                                         {% if product.image %}
@@ -57,22 +57,10 @@
                                 </div>
                                 {% endfor %}
                             </div>
+                        {% include 'page-panel-product.html' %}
                         </div>
                         {% endfor %}
                     </div>
-                    <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
-                        <div class="pagination loop-pagination d-flex justify-content-center">
-                            <a href="#" class="pagination-arrow d-flex align-items-center">
-                                <i class="icon icon-arrow-left"></i>
-                            </a>
-                            <span aria-current="page" class="page-numbers current">1</span>
-                            <a class="page-numbers" href="#">2</a>
-                            <a class="page-numbers" href="#">3</a>
-                            <a href="#" class="pagination-arrow d-flex align-items-center">
-                                <i class="icon icon-arrow-right"></i>
-                            </a>
-                        </div>
-                    </nav>
                 </div>
             </section>
 

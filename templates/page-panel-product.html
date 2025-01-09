@@ -1,0 +1,27 @@
+<nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+    <div class="pagination loop-pagination d-flex justify-content-center">
+
+        {% if object.page_obj.has_previous %}
+        <li class="pagination-arrow d-flex align-items-center">
+            <a href="?page={{ page_obj.previous_page_number }}"><i class="icon icon-arrow-left"></i></a>
+        </li>
+        {% endif %}
+
+        {% for p in object.page_obj.paginator.page_range %}
+        {% if object.page_obj.number == p %}
+        <li class="page-numbers current">{{ p }}</li>
+        {% elif p >= object.page_obj.number|add:-2 and p <= object.page_obj.number|add:2 %}
+        <li class="page-numbers">
+            <a href="?page={{ p }}">{{ p }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+
+        {% if object.page_obj.has_next %}
+        <li class="pagination-arrow d-flex align-items-center">
+            <a href="?page={{ page_obj.next_page_number }}"><i class="icon icon-arrow-right"></i></a>
+        </li>
+        {% endif %}
+
+    </div>
+</nav>

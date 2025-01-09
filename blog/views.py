@@ -1,11 +1,12 @@
 from django.views.generic import DetailView, ListView
 
 from blog.models import Blog
-from config.settings import MAIN_STREAMER_PATH
+from config.settings import MAIN_STREAMER_PATH, BLOG_PER_PAGE
 
 
 class BlogListView(ListView):
     model = Blog
+    paginate_by = BLOG_PER_PAGE
 
     streamer_content = {'title': 'Наш блог'}
     streamer_path = MAIN_STREAMER_PATH.copy()
