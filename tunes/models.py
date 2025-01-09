@@ -42,6 +42,8 @@ class Contact(models.Model):
     phone = models.CharField(max_length=30, verbose_name='Телефон')
     email = models.EmailField(verbose_name='Эл.почта')
     updated_at = models.DateTimeField(auto_now=True)
+    is_published = models.BooleanField(default=False, verbose_name='Активно')
+
 
     def __str__(self):
         return f"{self.email}"

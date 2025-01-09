@@ -123,7 +123,6 @@ def service_list_view(request):
 def service_detail_view(request, pk):
 
     obj = Service.objects.filter(pk=pk).first()
-    print(obj)
 
     streamer_content = {'title': "Наши услуги"}
     streamer_path = MAIN_STREAMER_PATH.copy()
