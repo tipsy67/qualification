@@ -11,7 +11,7 @@ from optics.src.utils import get_random_quote, get_random_reviews
 from tunes.models import Feedback, TunesDict, Banner
 
 
-@cache_page(600)
+# @cache_page(600)
 def main_page(request):
 
     banner_list = Banner.objects.filter(is_published=True)

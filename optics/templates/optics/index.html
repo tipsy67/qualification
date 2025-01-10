@@ -102,7 +102,7 @@
                  class="active" {% endif %}>
                 <div class="row d-flex flex-wrap">
                     {% for product in object.product_list %}
-                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                    <div id="product_{{ product.pk }}" class="product-item col-lg-3 col-md-6 col-sm-6">
                         <div class="image-holder">
                             {% if product.image %}
                             <img class="card-img-left img-thumbnail" src="{{ product.image|add_media }}">
@@ -110,16 +110,9 @@
                         </div>
                         <div class="cart-concern">
                             <div class="cart-button d-flex justify-content-between align-items-center">
-                                <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart
+                                <a href="{% url 'cart:cart_add' product.pk %}" type="button" class="btn-wrap cart-link d-flex align-items-center">добавить в корзину
                                     <i class="icon icon-arrow-io"></i>
-                                </button>
-                                <button type="button" class="view-btn tooltip d-flex">
-                                    <i class="icon icon-screen-full"></i>
-                                    <span class="tooltip-text">Quick view</span>
-                                </button>
-                                <button type="button" class="wishlist-btn">
-                                    <i class="icon icon-heart"></i>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="product-detail">
