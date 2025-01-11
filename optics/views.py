@@ -61,7 +61,7 @@ class FeedbackCreateView(CreateView):
     }
 
 
-@cache_page(600)
+# @cache_page(600)
 def product_list_view(request):
 
     category_list = Category.objects.filter(is_published=True)

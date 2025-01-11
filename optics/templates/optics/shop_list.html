@@ -24,7 +24,7 @@
                         <div id="{{ object.category.name }}" data-tab-content {% if object.category.active_on_main_page %} class="active" {% endif %}>
                             <div class="row d-flex flex-wrap">
                                 {% for product in object.page_obj %}
-                                <div id="product_{{ product.pk }} class="product-item col-lg-3 col-md-6 col-sm-6">
+                                <div id="product_{{ product.pk }}" class="product-item col-lg-3 col-md-6 col-sm-6">
                                     <div class="image-holder">
                                         {% if product.image %}
                                         <img class="card-img-left img-thumbnail" src="{{ product.image|add_media }}">

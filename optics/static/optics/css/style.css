@@ -1575,8 +1575,16 @@ blockquote cite {
 /* -- Header Top
 --------------------------------------------------------------*/
 .nav-fixed {
-position: fixed !important;
-top:0
+  position: fixed !important;
+  top:0;
+  width: 100%;
+  background: #fff;
+  padding: 0 0;
+  z-index: 100;
+}
+
+.margin-content {
+    margin-top: 130px; /* Отступ равный высоте фиксированного элемента */
 }
 
 .secondary-nav,

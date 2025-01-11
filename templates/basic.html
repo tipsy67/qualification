@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<header id="header">
+<header id="header" class="nav-fixed">
     <div id="header-wrap">
         <nav class="secondary-nav border-bottom">
             <div class="container">
@@ -58,7 +58,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{% url 'cart:cart_detail'%}">
                                     <i class="icon icon-shopping-cart"></i>
                                     {% if cart|length > 0 %}
                                         {{ cart|length }}
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="primary-nav padding-small">
+        <nav class="primary-nav">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-2 col-md-2">
@@ -139,7 +139,9 @@
         </nav>
     </div>
 </header>
+<div class="margin-content">
 
+</div>
 {% block content %}
 {% endblock content %}
 
