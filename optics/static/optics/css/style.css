@@ -1574,6 +1574,11 @@ blockquote cite {
 
 /* -- Header Top
 --------------------------------------------------------------*/
+.nav-fixed {
+position: fixed !important;
+top:0
+}
+
 .secondary-nav,
 .secondary-nav p {
     line-height: 2.5em;
