@@ -5,28 +5,29 @@
 {% load cart_tags %}
 
 {% include 'streamer.html' %}
+{% include 'shipping-info.html' %}
 
-<section id="card-list" class="product-store padding-large">
+<section id="card-list" class="product-store padding-small">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr>
-                <h3>Записи на прием и результаты</h3>
+                <h3>Корзина</h3>
                 <table class="u-full-width">
                     <thead>
                     <tr>
-                        <th>Image</th>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Remove</th>
-                        <th>Unit price</th>
-                        <th>Price</th>
+                        <th></th>
+                        <th>Товар</th>
+                        <th>Количество</th>
+                        <th></th>
+                        <th></th>
+                        <th>Цена</th>
+                        <th>Итого</th>
                     </tr>
                     </thead>
                     <tbody>
                     {% for item in cart %}
                     {% with product=item.product %}
-                    <tr class="mt-auto" >
+                    <tr id="product_{{ product.pk }}">
                         <td>
                             <a href="{{ product.get_absolute_url }}">
                                 {% if product.image %}
@@ -34,34 +35,43 @@
                                 {% endif %} </a>
                         </td>
                         <td>{{ product.name }}</td>
-                        <td>{{ item.quantity }}</td>
+                        <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                            {% csrf_token %}
+                        <td valign="bottom">
+                            {{ item.update_quantity_form.quantity }}
+                            {{ item.update_quantity_form.override }}
+                        </td>
+                        <td>
+                            <button class="btn btn-outline-primary btn-pill" type="submit">
+                                Обновить
+                            </button>
+                        </td>
+                        </form>
                         <td>
                             <a href="{% url 'cart:cart_remove' product.id %}">
-                            Удалить
+                                Удалить
                             </a>
                         </td>
-                        <td class="num">${{ item.price }}</td>
-                        <td class="num">${{ item.total_price }}</td>
-                    </trclas>
+                        <td class="num">P{{ item.price }}</td>
+                        <td class="num">P{{ item.total_price }}</td>
+                    </tr>
                     {% endwith %}
                     {% endfor %}
-                    <tr class="total">
-                        <td>Total</td>
+                    <tr>
+                        <td><h4>Всего</h4></td>
                         <td colspan="4"></td>
-                        <td class="num">${{ cart.get_total_price }}</td>
+                        <td class="num"><h4>P{{ cart.get_total_price }}</h4></td>
                     </tr>
                     </tbody>
                 </table>
                 <p class="text-right">
-                    <a href="{% url 'optics:shop-list' %}" class="button light">Continue shopping</a>
-                    <a href="#" class="button">Checkout</a>
+                    <a href="{% url 'optics:shop-list' %}" class="btn btn-accent">Продолжить покупки</a>
+                    <a href="#" class="btn btn-primary">Оформить заказ</a>
                 </p>
             </div>
         </div>
     </div>
 </section>
 <hr>
-
-{% include 'shipping-info.html' %}
 
 {% endblock content %}
