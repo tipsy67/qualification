@@ -18,13 +18,13 @@
                         <p>Если Вы заинтересованы в сотрудничестве или хотите получить дополнительную информацию, можете связаться с нами по телефону или электронной почте. Наши специалисты с радостью ответят на все интересующие Вас вопросы в рабочие дни с 10:00 до 18:00 по московскому времени.</p>
                         <ul class="list-unstyled list-icon">
                             <li>
-                                <a href="#"><i class="icon icon-phone"></i>+1650-243-0000</a>
+                                <a href="#"><i class="icon icon-phone"></i>{{ contact.phone }}</a>
                             </li>
                             <li>
-                                <a href="mailto:info@yourcompany.com"><i class="icon icon-mail"></i>info@yourcompany.com</a>
+                                <a href="mailto:{{ contact.email }}"><i class="icon icon-mail"></i>{{ contact.email }}</a>
                             </li>
                             <li>
-                                <a href="#"><i class="icon icon-map-pin"></i>North Melbourne VIC 3051, Australia</a>
+                                <a href="#"><i class="icon icon-map-pin"></i>{{ contact.address }}</a>
                             </li>
                         </ul>
                     </div>

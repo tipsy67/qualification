@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'blog',
     'users',
     'tunes',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'tunes.context_processors.get_contact',
+                'cart.context_processors.cart',
             ],
         },
     },
@@ -114,10 +118,16 @@ if CACHE_ENABLED:
             'LOCATION': os.environ.get("CELERY_BROKER_URL"),
         }
     }
+# else:
+#     CACHES = {
+#         'default': {
+#             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+#         }
+#     }
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-SESSION_COOKIE_AGE = 3600
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+# SESSION_COOKIE_AGE = 60*60*24
 
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL")
 CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND")
@@ -133,6 +143,7 @@ CELERY_BEAT_SCHEDULE = {
     },
 }
 
+
 NULLABLE = {'blank': True, 'null': True}
 MAIN_STREAMER_PATH = [{'url': "optics:home", 'name': "Главная"}]
 NUMBER_OF_REVIEWS_DISPLAYED = 5
@@ -140,3 +151,8 @@ NUMBER_OF_PRODUCTS_DISPLAYED = 4
 DEFAULT_SERVICE_DURATION = 30
 DEFAULT_BEGIN_TIME = "10:00"
 DEFAULT_END_TIME = "16:00"
+SERVICE_PER_PAGE = 4
+PRODUCT_PER_PAGE = 4
+BLOG_PER_PAGE = 3
+# NUMBER_OFFSET_PAGE = 2
+CART_SESSION_ID='optics_cart'

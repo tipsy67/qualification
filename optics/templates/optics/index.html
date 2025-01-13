@@ -13,18 +13,22 @@
     </button>
     <div class="swiper main-swiper">
         <div class="swiper-wrapper">
+            {% for banner in banner_list %}
             <div class="swiper-slide"
-                 style="background-image: url('{% static 'optics/images/banner1.jpg' %}');background-repeat: no-repeat;background-size: cover;background-position: center;">
+                 style="background-image: url('\
+                        {% if banner.image %} \
+                        {{ banner.image|add_media }} \
+                        {% endif %} \
+                        ');background-repeat: no-repeat;background-size: cover;background-position: center;">
                 <div class="banner-content">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <h2 class="banner-title">Summer Collection</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
-                                    ipsum enim pharetra hac.</p>
+                                <h2 class="banner-title">{{ banner.title }}</h2>
+                                <p>{{ banner.content }}</p>
                                 <div class="btn-wrap">
-                                    <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center"
-                                       tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                                    <a href="{% url 'optics:shop-list' %}" class="btn btn-light btn-medium d-flex align-items-center"
+                                       tabindex="0">За покупками <i class="icon icon-arrow-io"></i>
                                     </a>
                                 </div>
                             </div>
@@ -32,33 +36,14 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide"
-                 style="background-image: url('{% static 'optics/images/banner2.jpg' %}');background-repeat: no-repeat;background-size: cover;background-position: center;">
-                <div class="banner-content">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h2 class="banner-title">Casual Collection</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
-                                    ipsum enim pharetra hac.</p>
-                                <div class="btn-wrap">
-                                    <a href="shop.html"
-                                       class="btn btn-light btn-light-arrow btn-medium d-flex align-items-center"
-                                       tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
 
-{% include 'testimonials.html' %}
+{% include 'shipping-info.html' %}
 
-<section id="featured-products" class="product-store padding-large">
+<section id="featured-products" class="product-store padding-large no-padding-top">
     <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши услуги</h2>
@@ -94,8 +79,10 @@
         </div>
     </div>
 </section>
-<hr>
-<section id="selling-products" class="product-store bg-light-grey padding-large">
+
+{% include 'testimonials.html' %}
+
+<section id="selling-products" class="product-store bg-light-grey padding-large no-padding-top">
     <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наши товары</h2>
@@ -115,7 +102,7 @@
                  class="active" {% endif %}>
                 <div class="row d-flex flex-wrap">
                     {% for product in object.product_list %}
-                    <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                    <div id="product_{{ product.pk }}" class="product-item col-lg-3 col-md-6 col-sm-6">
                         <div class="image-holder">
                             {% if product.image %}
                             <img class="card-img-left img-thumbnail" src="{{ product.image|add_media }}">
@@ -123,16 +110,9 @@
                         </div>
                         <div class="cart-concern">
                             <div class="cart-button d-flex justify-content-between align-items-center">
-                                <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart
+                                <a href="{% url 'cart:cart_add' product.pk %}" type="button" class="btn-wrap cart-link d-flex align-items-center">добавить в корзину
                                     <i class="icon icon-arrow-io"></i>
-                                </button>
-                                <button type="button" class="view-btn tooltip d-flex">
-                                    <i class="icon icon-screen-full"></i>
-                                    <span class="tooltip-text">Quick view</span>
-                                </button>
-                                <button type="button" class="wishlist-btn">
-                                    <i class="icon icon-heart"></i>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="product-detail">
@@ -155,9 +135,7 @@
 
 {% include 'quotation.html' %}
 
-{% include 'shipping-info.html' %}
-
-<section id="latest-blog" class="padding-large">
+<section id="latest-blog" class="padding-large no-padding-top">
     <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
             <h2 class="section-title">Наш блог</h2>

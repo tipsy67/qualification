@@ -23,8 +23,8 @@
                         {% for object in object_list %}
                         <div id="{{ object.category.name }}" data-tab-content {% if object.category.active_on_main_page %} class="active" {% endif %}>
                             <div class="row d-flex flex-wrap">
-                                {% for product in object.product_list %}
-                                <div class="product-item col-lg-3 col-md-6 col-sm-6">
+                                {% for product in object.page_obj %}
+                                <div id="product_{{ product.pk }}" class="product-item col-lg-3 col-md-6 col-sm-6">
                                     <div class="image-holder">
                                         {% if product.image %}
                                         <img class="card-img-left img-thumbnail" src="{{ product.image|add_media }}">
@@ -32,17 +32,10 @@
                                     </div>
                                     <div class="cart-concern">
                                         <div class="cart-button d-flex justify-content-between align-items-center">
-                                            <button type="button" class="btn-wrap cart-link d-flex align-items-center">
+                                            <a href="{% url 'cart:cart_add' product.pk %}" type="button" class="btn-wrap cart-link d-flex align-items-center">
                                                 add to cart
                                                 <i class="icon icon-arrow-io"></i>
-                                            </button>
-                                            <button type="button" class="view-btn tooltip d-flex">
-                                                <i class="icon icon-screen-full"></i>
-                                                <span class="tooltip-text">Quick view</span>
-                                            </button>
-                                            <button type="button" class="wishlist-btn">
-                                                <i class="icon icon-heart"></i>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="product-detail">
@@ -57,22 +50,10 @@
                                 </div>
                                 {% endfor %}
                             </div>
+                        {% include 'page-panel-product.html' %}
                         </div>
                         {% endfor %}
                     </div>
-                    <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
-                        <div class="pagination loop-pagination d-flex justify-content-center">
-                            <a href="#" class="pagination-arrow d-flex align-items-center">
-                                <i class="icon icon-arrow-left"></i>
-                            </a>
-                            <span aria-current="page" class="page-numbers current">1</span>
-                            <a class="page-numbers" href="#">2</a>
-                            <a class="page-numbers" href="#">3</a>
-                            <a href="#" class="pagination-arrow d-flex align-items-center">
-                                <i class="icon icon-arrow-right"></i>
-                            </a>
-                        </div>
-                    </nav>
                 </div>
             </section>
 

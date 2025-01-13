@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-  <head>
+<head>
     <title>ОПТИКА СИТИ - салон оптики</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,240 +13,255 @@
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="{% static 'optics/css/normalize.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'optics/icomoon/icomoon.css' %}">
-    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'optics/css/vendor.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'optics/css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <!-- script
     ================================================== -->
     <script src="{% static 'optics/js/modernizr.js' %}"></script>
-  </head>
-  <body>
+</head>
+<body>
 
-    <div class="preloader-wrapper">
-      <div class="preloader">
-      </div>
+<div class="preloader-wrapper">
+    <div class="preloader">
     </div>
+</div>
 
-    <header id="header">
-      <div id="header-wrap">
+<header id="header" class="nav-fixed">
+    <div id="header-wrap">
         <nav class="secondary-nav border-bottom">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-4 header-contact">
-                <p>Есть вопросы? <strong>+7 920 110 00 35</strong>
-                </p>
-              </div>
-              <div class="col-md-4 shipping-purchase text-center">
-                <p>Бесплатная доставка при покупке от 10.000</p>
-              </div>
-              <div class="col-md-4 col-sm-12 user-items">
-                <ul class="d-flex justify-content-end list-unstyled">
-                  {% if user.is_authenticated %}
-                  <li>
-                    <a title="Профиль" href="{% url 'users:profile' %}">
-                      <i class="icon icon-user"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a title="Моя медкарта" href="{% url 'appointment:appointment-list'%}">
-                      <i class="icon icon-heart"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a title="Выйти" href="{% url 'users:logout_form' %}">
-                      <i class="icon icon-cancel"></i>
-                    </a>
-                  </li>
-                  {% else %}
-                  <li>
-                    <a title="Войти" href="{% url 'users:login' %}">
-                      <i class="icon icon-user"></i>
-                    </a>
-                  </li>
-<!--                  <li>-->
-<!--                    <a href="#">-->
-<!--                      <i class="icon icon-shopping-cart"></i>-->
-<!--                    </a>-->
-<!--                  </li>-->
-                  {% endif %}
-<!--                  <li class="user-items search-item pe-3">-->
-<!--                    <a href="#" class="search-button">-->
-<!--                      <i class="icon icon-search"></i>-->
-<!--                    </a>-->
-<!--                  </li>-->
-                </ul>
-              </div>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-4 header-contact">
+                        <p>Есть вопросы? <strong>{{contact.phone}}</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-4 shipping-purchase text-center">
+                        <p>Бесплатная доставка при покупке от 10.000</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 user-items">
+                        <ul class="d-flex justify-content-end list-unstyled">
+                            {% if user.is_authenticated %}
+                            <li>
+                                <a title="Профиль" href="{% url 'users:profile' %}">
+                                    <i class="icon icon-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Моя медкарта" href="{% url 'appointment:appointment-list'%}">
+                                    <i class="icon icon-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'cart:cart_detail'%}">
+                                    <i class="icon icon-shopping-cart"></i>
+                                    {% if cart|length > 0 %}
+                                        {{ cart|length }}
+                                    {% endif %}
+                                </a>
+                            </li>
+                            <li>
+                                <a title="Выйти" href="{% url 'users:logout_form' %}">
+                                    <i class="icon icon-cancel"></i>
+                                </a>
+                            </li>
+                            {% else %}
+                            <li>
+                                <a title="Войти" href="{% url 'users:login' %}">
+                                    <i class="icon icon-user"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                            <!--                  <li class="user-items search-item pe-3">-->
+                            <!--                    <a href="#" class="search-button">-->
+                            <!--                      <i class="icon icon-search"></i>-->
+                            <!--                    </a>-->
+                            <!--                  </li>-->
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </nav>
-        <nav class="primary-nav padding-small">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-2 col-md-2">
-                <div class="main-logo">
-                  <a href="{% url 'optics:home' %}">
-                    <img src="{% static 'optics/images/main-logo.png' %}" alt="logo">
-                  </a>
+        <nav class="primary-nav">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="main-logo">
+                            <a href="{% url 'optics:home' %}">
+                                <img src="{% static 'optics/images/main-logo.png' %}" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10">
+                        <div class="navbar">
+
+                            <div id="main-nav" class="stellarnav d-flex justify-content-end right">
+                                <ul class="menu-list">
+
+                                    <li>
+                                        <a href="{% url 'optics:home' %}" class="item-anchor d-flex align-item-center"
+                                           data-effect="Home">Главная</a>
+                                    </li>
+
+                                    <li><a href="{% url 'optics:about' %}" class="item-anchor" data-effect="About">О
+                                        компании</a></li>
+
+                                    <li class="menu-item">
+                                        <a href="{% url 'optics:shop-list'%}"
+                                           class="item-anchor d-flex align-item-center" data-effect="Shop">Товары</a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{% url 'optics:service-list'%}"
+                                           class="item-anchor d-flex align-item-center" data-effect="Pages">Услуги</a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{% url 'blog:blog_list' %}"
+                                           class="item-anchor d-flex align-item-center" data-effect="Blog">Блог</a>
+                                    </li>
+
+                                    <li><a href="{% url 'optics:contact' %}" class="item-anchor" data-effect="Contact">Контакты</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-10 col-md-10">
-                <div class="navbar">
-
-                  <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                    <ul class="menu-list">
-
-                      <li>
-                        <a href="{% url 'optics:home' %}" class="item-anchor d-flex align-item-center" data-effect="Home">Главная</a>
-                      </li>
-
-                      <li><a href="{% url 'optics:about' %}" class="item-anchor" data-effect="About">О компании</a></li>
-
-                      <li class="menu-item">
-                        <a href="{% url 'optics:shop-list'%}" class="item-anchor d-flex align-item-center" data-effect="Shop">Товары</a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a href="{% url 'optics:service-list'%}" class="item-anchor d-flex align-item-center" data-effect="Pages">Услуги</a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a href="{% url 'blog:blog_list' %}" class="item-anchor d-flex align-item-center" data-effect="Blog">Блог</a>
-                      </li>
-
-                      <li><a href="{% url 'optics:contact' %}" class="item-anchor" data-effect="Contact">Контакты</a></li>
-
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
             </div>
-          </div>
         </nav>
-      </div>
-    </header>
-
-    {% block content %}
-    {% endblock content %}
-
-    <footer id="footer">
-      <div class="container">
-        <div class="footer-menu-list">
-          <div class="row d-flex flex-wrap justify-content-between">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-menu">
-                <h5 class="widget-title">ОПТИКА СИТИ</h5>
-                <ul class="menu-list list-unstyled">
-                  <li class="menu-item">
-                    <a href="about.html">О нас</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Conditions </a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="blog.html">Наш блог</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Вакансии</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Наши партнеры</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-menu">
-                <h5 class="widget-title">Поддержка</h5>
-                <ul class="menu-list list-unstyled">
-                  <li class="menu-item">
-                    <a href="faqs.html">FAQ</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="contact.html">Контакты</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Политика защиты ПД</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Как вернуть</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Доставка</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-menu">
-                <h5 class="widget-title">Наши контакты</h5>
-                <p>У вас есть предложения? <a href="#" class="email">ourservices@ultras.com</a>
-                </p>
-                <p>У вас есть вопросы? Позвоните. <br>
-                  <strong>+57 444 11 00 35</strong>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-menu">
-                <h5 class="widget-title">Forever 2018</h5>
-                <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
-                <div class="social-links">
-                  <ul class="d-flex list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube-play"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance-square"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </footer>
-
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="d-flex align-items-center flex-wrap justify-content-between">
-          <div class="copyright">
-            <p>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-            </p>
-          </div>
-          <div class="payment-method">
-            <p>Payment options :</p>
-            <div class="card-wrap">
-              <img src="{% static 'optics/images/visa-icon.jpg' %}" alt="visa">
-              <img src="{% static 'optics/images/mastercard.png' %}" alt="mastercard">
-              <img src="{% static 'optics/images/american-express.jpg' %}" alt="american-express">
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+</header>
+<div class="margin-content">
 
-    <script src="{% static 'optics/js/jquery-1.11.0.min.js' %}"></script>
-    <script src="{% static 'optics/js/plugins.js' %}"></script>
-    <script src="{% static 'optics/js/script.js' %}"></script>
-  </body>
+</div>
+{% block content %}
+{% endblock content %}
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer-menu-list">
+            <div class="row d-flex flex-wrap justify-content-between">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-menu">
+                        <h5 class="widget-title">ОПТИКА СИТИ</h5>
+                        <ul class="menu-list list-unstyled">
+                            <li class="menu-item">
+                                <a href="about.html">О нас</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Conditions </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="blog.html">Наш блог</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Наши партнеры</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-menu">
+                        <h5 class="widget-title">Поддержка</h5>
+                        <ul class="menu-list list-unstyled">
+                            <li class="menu-item">
+                                <a href="faqs.html">FAQ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact.html">Контакты</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Политика защиты ПД</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Как вернуть</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Доставка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-menu">
+                        <h5 class="widget-title">Наши контакты</h5>
+                        <p>У вас есть предложения? <a href="#" class="email">{{contact.email}}</a>
+                        </p>
+                        <p>У вас есть вопросы? Позвоните. <br>
+                            <strong>{{contact.phone}}</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-menu">
+                        <h5 class="widget-title">Forever 2018</h5>
+                        <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices
+                            integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
+                        <div class="social-links">
+                            <ul class="d-flex list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-behance-square"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</footer>
+
+<div id="footer-bottom">
+    <div class="container">
+        <div class="d-flex align-items-center flex-wrap justify-content-between">
+            <div class="copyright">
+                <p>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> Distributed by <a
+                        href="https://themewagon.com">ThemeWagon</a>
+                </p>
+            </div>
+            <div class="payment-method">
+                <p>Payment options :</p>
+                <div class="card-wrap">
+                    <img src="{% static 'optics/images/visa-icon.jpg' %}" alt="visa">
+                    <img src="{% static 'optics/images/mastercard.png' %}" alt="mastercard">
+                    <img src="{% static 'optics/images/american-express.jpg' %}" alt="american-express">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'optics/js/jquery-1.11.0.min.js' %}"></script>
+<script src="{% static 'optics/js/plugins.js' %}"></script>
+<script src="{% static 'optics/js/script.js' %}"></script>
+</body>
 </html>

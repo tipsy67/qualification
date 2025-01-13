@@ -10,7 +10,7 @@
 <section id="services" class="product-store padding-large">
     <div class="container">
         <div class="row d-flex flex-wrap">
-            {% for service in object_list %}
+            {% for service in page_obj %}
             <div class="product-item col-lg-3 col-md-6 col-sm-6">
                 <div class="image-holder">
                     {% if service.image %}
@@ -34,20 +34,7 @@
             {% endfor %}
         </div>
     </div>
-    <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
-        <div class="pagination loop-pagination d-flex justify-content-center">
-            <a href="#" class="pagination-arrow d-flex align-items-center">
-                <i class="icon icon-arrow-left"></i>
-            </a>
-            <span aria-current="page" class="page-numbers current">1</span>
-            <a class="page-numbers" href="#">2</a>
-            <a class="page-numbers" href="#">3</a>
-            <a href="#" class="pagination-arrow d-flex align-items-center">
-                <i class="icon icon-arrow-right"></i>
-            </a>
-        </div>
-    </nav>
-    </div>
+    {% include 'page-panel.html' %}
 </section>
 
 

@@ -42,6 +42,8 @@ class Contact(models.Model):
     phone = models.CharField(max_length=30, verbose_name='Телефон')
     email = models.EmailField(verbose_name='Эл.почта')
     updated_at = models.DateTimeField(auto_now=True)
+    is_published = models.BooleanField(default=False, verbose_name='Активно')
+
 
     def __str__(self):
         return f"{self.email}"
@@ -67,3 +69,24 @@ class TunesDict(models.Model):
 
     def __str__(self):
         return f"{self.key}"
+
+
+class Banner(models.Model):
+    title = models.CharField(max_length=300, verbose_name='Заголовок')
+    content = models.TextField(**NULLABLE, verbose_name='Описание')
+    image = models.ImageField(
+        upload_to='tunes/', **NULLABLE, verbose_name='Изображение'
+    )
+    is_published = models.BooleanField(default=False, verbose_name='Активно')
+
+    class Meta:
+        ordering = ['title']
+        verbose_name = 'Заглавный баннер'
+        verbose_name_plural = 'Заглавные баннеры'
+
+    def __str__(self):
+        return f"{self.title}"
+
+    @property
+    def short_content(self):
+        return f"{self.content[:40]} ..."
